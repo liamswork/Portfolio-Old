@@ -28,11 +28,18 @@
 h1 {
   font-family: Grifter;
   font-size: 72px;
+  margin: 0;
 }
 
 p {
   font-family: Grifter;
   font-size: 36px;
+}
+
+@media (min-width: 1260px) {
+  .main {
+    margin-left: 300px;
+  }
 }
 
 .icon-display1:before {
@@ -449,4 +456,33 @@ p {
 
 .icon-facebook:before {
   content: "\e905";
+}
+
+.sidenav {
+  display: none;
+  position: absolute;
+  width: 300px;
+  height: 100vh;
+  background-color: red;
+  overflow: hidden;
+}
+
+.banner {
+  overflow: hidden;
+}
+
+.banner .banner-container {
+  overflow: hidden;
+}
+
+.banner .banner-container img {
+  width: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+@media (min-width: 1260px) {
+  .sidenav {
+    display: block;
+  }
 }

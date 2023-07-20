@@ -39,10 +39,17 @@ $color-tertiary:#212330;
 h1{
   font-family: Grifter;
   font-size: 72px;
+  margin:0;
 }
 p{
   font-family: Grifter;
   font-size: 36px;
+}
+
+.main{
+  @media(min-width:1260px){
+    margin-left:300px;
+  }
 }
 
 //Icon content links.

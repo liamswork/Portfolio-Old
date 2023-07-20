@@ -1,0 +1,11 @@
+.banner{
+    overflow:hidden;
+    .banner-container{
+        overflow:hidden;
+        img{
+            width:100%;
+            object-fit: cover;
+            overflow:hidden;
+        }
+    }
+}
