@@ -5,14 +5,15 @@
     height: 100%;
     top:0;
     left:0;
-    background-color: #3a3636;
-    border-right:3px solid #ae00ff;
+    background-color: #000000;
+    border-right:3px solid $color-glowpurple;
+    box-shadow: 8px 0px 8px $color-glowblue;
     overflow:hidden;
 
     .image-container{
         text-align: center;
         img{
-            height:300px;
+            height:250px;
             width:300px;
             object-fit: cover;
         }

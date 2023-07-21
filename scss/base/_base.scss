@@ -3,6 +3,9 @@ $color-primary:#3a3636;
 $color-secondary:#191a22;
 $color-tertiary:#3a3939;
 
+$color-glowblue:#003cff;
+$color-glowpurple:#ae00ff;
+
 //Icon font include
 @font-face {
   font-family: 'icomoon';
@@ -46,24 +49,42 @@ html{
 }
 
 h1{
-  font-size: 72px;
+  font-size: 48px;
   margin:0;
 }
 
 p{
-  font-size: 36px;
+  font-size: 24px;
+}
+
+h1, h2, h3, h4, p, a{
+  color:#fff;
+}
+
+body{
+  @media(min-width:1260px){
+    margin-left:300px;
+  }
 }
 
 .main{
   height:100%;
   background-color: $color-primary;
-  @media(min-width:1260px){
-    margin-left:300px;
-  }
+  border-top:3px solid $color-glowpurple;
+  box-shadow:inset 0px 9px 5px -2px $color-glowblue;
 }
+
 .inner{
   margin:0 50px;
 }
+
+hr.rounded {
+  background-color: $color-glowpurple;
+  border: 3px solid $color-glowpurple;
+  box-shadow: 8px 0px 8px 5px $color-glowblue;
+  border-radius: 5px;
+}
+
 
 //Icon content links.
 .icon-display1:before {
