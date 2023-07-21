@@ -42,21 +42,19 @@ p {
   font-size: 36px;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-}
-
 .main {
-  background-color: #3a3636;
   height: 100%;
+  background-color: #3a3636;
 }
 
 @media (min-width: 1260px) {
   .main {
     margin-left: 300px;
   }
+}
+
+.inner {
+  margin: 0 50px;
 }
 
 .icon-display1:before {
@@ -475,6 +473,13 @@ body {
   content: "\e905";
 }
 
+.footer-bottom {
+  color: #fff;
+  width: 100%;
+  background-color: #191a22;
+  display: flex;
+}
+
 .sidenav {
   display: none;
   position: fixed;
@@ -483,11 +488,18 @@ body {
   top: 0;
   left: 0;
   background-color: #3a3636;
+  border-right: 3px solid #ae00ff;
+  overflow: hidden;
 }
 
-.sidenav overflow:hidden
-.image-container {
+.sidenav .image-container {
+  text-align: center;
+}
+
+.sidenav .image-container img {
   height: 300px;
+  width: 300px;
+  object-fit: cover;
 }
 
 .banner {
@@ -499,7 +511,6 @@ body {
 
 .banner .banner-container {
   display: flex;
-  position: relative;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
@@ -522,10 +533,16 @@ body {
 .banner .banner-container .banner-text {
   z-index: 10;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   flex-direction: column;
   color: #fff;
-  text-shadow: 0 0 7px #d60e93, 0 0 10px #d60e93, 0 0 21px #d60e93, 0 0 42px #003cff, 0 0 82px #003cff, 0 0 92px #003cff, 0 0 102px #003cff, 0 0 151px #003cff;
+  text-shadow: 0 0 7px #ae00ff, 0 0 10px #ae00ff, 0 0 21px #ae00ff, 0 0 42px #003cff, 0 0 82px #003cff, 0 0 92px #003cff, 0 0 102px #003cff, 0 0 151px #003cff;
+}
+
+.banner .banner-container .banner-text h1 {
+  display: flex;
+  letter-spacing: 12px;
 }
 
 @media (min-width: 1260px) {

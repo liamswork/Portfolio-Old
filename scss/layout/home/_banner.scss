@@ -6,7 +6,6 @@
 
     .banner-container{
         display:flex;
-        position: relative;
         justify-content: center;
         align-items: center;
         min-height:100vh;
@@ -27,18 +26,24 @@
         .banner-text{
             z-index: 10;
             display:flex;
+            flex-wrap: wrap;
             align-items: center;
             flex-direction: column;
             color:#fff;
             text-shadow:
-            0 0 7px #d60e93,
-            0 0 10px #d60e93,
-            0 0 21px #d60e93,
+            0 0 7px #ae00ff,
+            0 0 10px #ae00ff,
+            0 0 21px #ae00ff,
             0 0 42px rgb(0, 60, 255),
             0 0 82px rgb(0, 60, 255),
             0 0 92px rgb(0, 60, 255),
             0 0 102px rgb(0, 60, 255),
             0 0 151px rgb(0, 60, 255);
+            
+            h1{
+                display:flex;
+                letter-spacing: 12px;
+            }
         }
 
     }

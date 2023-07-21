@@ -54,18 +54,15 @@ p{
   font-size: 36px;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  height:100%;
-}
-
 .main{
+  height:100%;
   background-color: $color-primary;
-  height: 100%;
   @media(min-width:1260px){
     margin-left:300px;
   }
+}
+.inner{
+  margin:0 50px;
 }
 
 //Icon content links.
