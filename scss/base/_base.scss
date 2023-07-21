@@ -1,7 +1,7 @@
 //Base webpage colours
-$color-primary:#333645;
-$color-secondary:#323544;
-$color-tertiary:#212330;
+$color-primary:#3a3636;
+$color-secondary:#191a22;
+$color-tertiary:#3a3939;
 
 //Icon font include
 @font-face {
@@ -18,8 +18,9 @@ $color-tertiary:#212330;
 
 //Primary font include
 @font-face {
-  font-family: 'Grifter';
-  src: url('../fonts/grifterbold.otf') format('truetype');
+  font-family: 'Poppins';
+  src: url('../fonts/poppins-v15-latin-regular.woff2') format('woff2'),
+       url('../fonts/poppins-v15-latin-600italic.woff2') format('woff2');
 }
 
 //Icon class base styles.
@@ -36,18 +37,32 @@ $color-tertiary:#212330;
   -moz-osx-font-smoothing: grayscale;
 }
 
+*{
+  box-sizing: border-box;
+}
+
+html{
+  font-family: Poppins;
+}
+
 h1{
-  font-family: Grifter;
   font-size: 72px;
   margin:0;
 }
+
 p{
-  font-family: Grifter;
   font-size: 36px;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  height:100%;
+}
+
 .main{
-  width: calc(100% - 300px);
+  background-color: $color-primary;
+  height: 100%;
   @media(min-width:1260px){
     margin-left:300px;
   }

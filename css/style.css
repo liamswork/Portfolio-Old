@@ -8,8 +8,8 @@
 }
 
 @font-face {
-  font-family: 'Grifter';
-  src: url("../fonts/grifterbold.otf") format("truetype");
+  font-family: 'Poppins';
+  src: url("../fonts/poppins-v15-latin-regular.woff2") format("woff2"), url("../fonts/poppins-v15-latin-600italic.woff2") format("woff2");
 }
 
 [class^="icon-"], [class*=" icon-"] {
@@ -25,19 +25,32 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Poppins;
+}
+
 h1 {
-  font-family: Grifter;
   font-size: 72px;
   margin: 0;
 }
 
 p {
-  font-family: Grifter;
   font-size: 36px;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
 .main {
-  width: calc(100% - 300px);
+  background-color: #3a3636;
+  height: 100%;
 }
 
 @media (min-width: 1260px) {
@@ -469,17 +482,31 @@ p {
   height: 100%;
   top: 0;
   left: 0;
-  background-color: red;
-  overflow: hidden;
+  background-color: #3a3636;
+}
+
+.sidenav overflow:hidden
+.image-container {
+  height: 300px;
 }
 
 .banner {
   position: relative;
   display: block;
-  top: 0;
-  left: 0;
   min-height: 100vh;
   overflow: hidden;
+}
+
+.banner .banner-container {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 .banner .banner-container img {
@@ -489,7 +516,16 @@ p {
   height: 100%;
   width: 100%;
   object-fit: cover;
-  z-index: -1;
+  z-index: 0;
+}
+
+.banner .banner-container .banner-text {
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+  text-shadow: 0 0 7px #d60e93, 0 0 10px #d60e93, 0 0 21px #d60e93, 0 0 42px #003cff, 0 0 82px #003cff, 0 0 92px #003cff, 0 0 102px #003cff, 0 0 151px #003cff;
 }
 
 @media (min-width: 1260px) {

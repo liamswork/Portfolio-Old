@@ -1,12 +1,20 @@
 .banner{
     position: relative;
     display:block;
-    top:0;
-    left:0;
     min-height:100vh;
     overflow:hidden;
 
     .banner-container{
+        display:flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        min-height:100vh;
+        top:0;
+        right:0;
+        bottom:0;
+        left:0;
+
         img{
             position:absolute;
             top:0;
@@ -14,7 +22,24 @@
             height:100%;
             width:100%;
             object-fit: cover;
-            z-index: -1;
+            z-index: 0;
         }
+        .banner-text{
+            z-index: 10;
+            display:flex;
+            align-items: center;
+            flex-direction: column;
+            color:#fff;
+            text-shadow:
+            0 0 7px #d60e93,
+            0 0 10px #d60e93,
+            0 0 21px #d60e93,
+            0 0 42px rgb(0, 60, 255),
+            0 0 82px rgb(0, 60, 255),
+            0 0 92px rgb(0, 60, 255),
+            0 0 102px rgb(0, 60, 255),
+            0 0 151px rgb(0, 60, 255);
+        }
+
     }
 }
