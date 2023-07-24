@@ -24,11 +24,13 @@
                             position: absolute;
                             top: 10px;              //These top three styles position the tooltip above the image, top right.
                             right: 0;
-                            
                             padding: 0 10px;
                             line-height: 3rem;
                             text-transform: uppercase;
                             z-index: 1;
+                    }
+                    img{
+                        //object-fit: cover;
                     }
                 }
                 .block{

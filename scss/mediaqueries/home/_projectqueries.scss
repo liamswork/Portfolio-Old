@@ -1,5 +1,11 @@
 @media (min-width: 768px){
-
+    .project-list{
+        .img-container{
+            img{
+                //temp
+            }
+        }
+    }
 }
 
 @media (min-width: 992px){
@@ -10,16 +16,7 @@
     .project-list .row{
         .col-lg-4{
             
-            width:27%;
-        }
-    }
-}
-
-@media (min-width: 1440px){
-    .project-list .row{
-        .col-lg-4{
-            
-            width:31%;
+            width:33%;
         }
     }
 }

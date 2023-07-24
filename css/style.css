@@ -712,7 +712,7 @@ hr.rounded {
     margin-left: 300px;
   }
   .container {
-    width: 1170px;
+    width: 100%;
   }
   .inner {
     margin: 0 60px;
@@ -740,12 +740,6 @@ hr.rounded {
 
 @media (min-width: 1260px) {
   .project-list .row .col-lg-4 {
-    width: 27%;
-  }
-}
-
-@media (min-width: 1440px) {
-  .project-list .row .col-lg-4 {
-    width: 31%;
+    width: 33%;
   }
 }
