@@ -80,6 +80,18 @@ hr.rounded {
   padding: 15px;
 }
 
+/* Animate neon flicker */
+@keyframes flicker {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+    text-shadow: -0.2rem -0.2rem 1rem #fff, 0.2rem 0.2rem 1rem #fff, 0 0 2rem #ae00ff, 0 0 4rem #ae00ff, 0 0 6rem #ae00ff, 0 0 8rem #ae00ff, 0 0 10rem #ae00ff;
+    box-shadow: 0 0 0.5rem #fff, inset 0 0 0.5rem #fff, 0 0 2rem #003cff, inset 0 0 2rem #003cff, 0 0 4rem #003cff, inset 0 0 4rem #003cff;
+  }
+  20%, 24%, 55% {
+    text-shadow: none;
+    box-shadow: none;
+  }
+}
+
 .icon-display1:before {
   content: "\e926";
 }
@@ -646,7 +658,7 @@ hr.rounded {
   align-items: center;
   flex-direction: column;
   color: #fff;
-  text-shadow: 0 0 7px #ae00ff, 0 0 10px #ae00ff, 0 0 21px #ae00ff, 0 0 42px #003cff, 0 0 82px #003cff, 0 0 92px #003cff, 0 0 102px #003cff, 0 0 151px #003cff;
+  text-shadow: 0 0 7px #003cff, 0 0 10px #003cff, 0 0 21px #003cff, 0 0 42px #ae00ff, 0 0 82px #ae00ff, 0 0 92px #ae00ff, 0 0 102px #ae00ff, 0 0 151px #ae00ff;
 }
 
 .banner .banner-container .banner-text h1 {
@@ -655,6 +667,11 @@ hr.rounded {
   margin-bottom: 25px;
   letter-spacing: 12px;
   line-height: 50px;
+  padding: 4rem 6rem 5.5rem;
+  border: 0.4rem solid #fff;
+  border-radius: 2rem;
+  text-transform: uppercase;
+  animation: flicker 1.5s infinite alternate;
 }
 
 .banner .banner-container .banner-text p {

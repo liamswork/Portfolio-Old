@@ -31,14 +31,14 @@
             flex-direction: column;
             color:#fff;
             text-shadow:
-            0 0 7px $color-glowpurple,
-            0 0 10px $color-glowpurple,
-            0 0 21px $color-glowpurple,
-            0 0 42px $color-glowblue,
-            0 0 82px $color-glowblue,
-            0 0 92px $color-glowblue,
-            0 0 102px $color-glowblue,
-            0 0 151px $color-glowblue;
+            0 0 7px $color-glowblue,
+            0 0 10px $color-glowblue,
+            0 0 21px $color-glowblue,
+            0 0 42px $color-glowpurple,
+            0 0 82px $color-glowpurple,
+            0 0 92px $color-glowpurple,
+            0 0 102px $color-glowpurple,
+            0 0 151px $color-glowpurple;
             
             h1{
                 text-align: center;
@@ -46,6 +46,14 @@
                 margin-bottom:25px;
                 letter-spacing: 12px;
                 line-height: 50px;
+
+                //Padding and border for banner text
+                padding: 4rem 6rem 5.5rem;
+                border: 0.4rem solid #fff;
+                border-radius: 2rem;
+                text-transform: uppercase;
+                animation: flicker 1.5s infinite alternate;
+                //Flicker keyframes found in base file. Will move if I use more
             }
             p{
                 font-size: 24px;
