@@ -706,6 +706,23 @@ hr.rounded {
   z-index: 1;
 }
 
+.container-contact-form {
+  margin-top: 25px;
+}
+
+.container-contact-form .contact-info {
+  background-color: #fff;
+}
+
+.container-contact-form .contact-form {
+  background-color: aqua;
+  margin: 25px 0;
+}
+
+.container-contact-form .contact-form input, .container-contact-form .contact-form textarea {
+  width: 100%;
+}
+
 @media (min-width: 768px) {
   .container {
     width: 680px;
@@ -758,5 +775,12 @@ hr.rounded {
 @media (min-width: 1260px) {
   .project-list .row .col-lg-4 {
     width: 33%;
+  }
+}
+
+@media (min-width: 1260px) {
+  .container-contact-form .contact-form {
+    background-color: aqua;
+    margin: 0;
   }
 }
