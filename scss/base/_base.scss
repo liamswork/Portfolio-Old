@@ -112,7 +112,7 @@ body{
 .main{
   height:100%;
   background-color: $color-primary;
-  border-top:3px solid $color-glowpurple;
+  border-top:3px solid white;
   box-shadow:inset 0px 9px 5px -2px $color-glowblue;
   overflow:hidden;
   .inner{
@@ -123,8 +123,8 @@ body{
 
 
 hr.rounded {
-  background-color: $color-glowpurple;
-  border: 3px solid $color-glowpurple;
+  background-color: white;
+  border: 3px solid white;
   box-shadow: 8px 0px 8px 5px $color-glowblue;
   border-radius: 2px;
 }
@@ -133,6 +133,15 @@ hr.rounded {
   display: block;
   border-radius: 3px;
   padding: 15px;
+}
+
+.btn{
+  color:white;
+  background-color: $color-glowblue;
+  height:auto;
+  line-height: 35px;
+  padding: 5px 15px;
+  font-size: 2.5rem;
 }
 
 

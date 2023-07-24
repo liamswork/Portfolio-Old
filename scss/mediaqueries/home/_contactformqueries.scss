@@ -1,18 +1,35 @@
 @media (min-width: 768px){
+    .container-contact-form{
+        .contact-info{
+            margin:25px 0;
+        }
+        .contact-form{
 
+        }
+    }
 }
 
 @media (min-width: 992px){
-
-}
-
-@media (min-width: 1260px){
     .container-contact-form{
+        margin:25px 0;
         .contact-info{
             
         }
         .contact-form{
-            background-color: aqua;
+
+
+        }
+    }
+}
+
+@media (min-width: 1260px){
+    .container-contact-form{
+        margin:25px 0;
+        .contact-info{
+            
+        }
+        .contact-form{
+
             margin:0;
         }
     }
