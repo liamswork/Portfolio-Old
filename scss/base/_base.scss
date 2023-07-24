@@ -89,12 +89,12 @@ h1{
 }
 
 h2{
-  font-size: 24px;
+  font-size: 36px;
   margin:0;
 }
 
 h3{
-  font-size: 26px;
+  font-size: 24px;
 }
 
 p{
@@ -106,9 +106,7 @@ h1, h2, h3, h4, p, a{
 }
 
 body{
-  @media(min-width:1260px){
-    margin-left:300px;
-  }
+
 }
 
 .main{
@@ -116,11 +114,13 @@ body{
   background-color: $color-primary;
   border-top:3px solid $color-glowpurple;
   box-shadow:inset 0px 9px 5px -2px $color-glowblue;
+  
+  .inner{
+    margin:15px 15px;
+  }
 }
 
-.inner{
-  margin:0 15px;
-}
+
 
 hr.rounded {
   background-color: $color-glowpurple;

@@ -39,12 +39,12 @@ h1 {
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 36px;
   margin: 0;
 }
 
 h3 {
-  font-size: 26px;
+  font-size: 24px;
 }
 
 p {
@@ -55,12 +55,6 @@ h1, h2, h3, h4, p, a {
   color: #fff;
 }
 
-@media (min-width: 1260px) {
-  body {
-    margin-left: 300px;
-  }
-}
-
 .main {
   height: 100%;
   background-color: #3a3636;
@@ -68,8 +62,8 @@ h1, h2, h3, h4, p, a {
   box-shadow: inset 0px 9px 5px -2px #003cff;
 }
 
-.inner {
-  margin: 0 15px;
+.main .inner {
+  margin: 15px 15px;
 }
 
 hr.rounded {
@@ -712,8 +706,11 @@ hr.rounded {
 }
 
 @media (min-width: 1260px) {
+  body {
+    margin-left: 300px;
+  }
   .container {
-    width: 1160px;
+    width: 900px;
   }
   .inner {
     margin: 0 60px;
@@ -730,11 +727,11 @@ hr.rounded {
   .banner-text {
     display: flex;
   }
-  h1 {
+  .banner-text h1 {
     font-size: 72px;
     margin-bottom: 0;
   }
-  p {
+  .banner-text p {
     font-size: 36px;
   }
 }

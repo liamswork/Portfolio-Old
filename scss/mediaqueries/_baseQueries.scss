@@ -1,5 +1,14 @@
-//Some base media queries, including .container bootstrap overwriting.
+//BASE FONT-SIZES
+//h1 48px
+//h2 36px
+//h3 24px
+//
+//
+//
+//
 
+
+//Some base media queries, including .container bootstrap overwriting.
 @media (min-width: 768px){
     .container{
         width:680px;
@@ -19,8 +28,11 @@
 }
 
 @media (min-width: 1260px){
+    body{
+        margin-left:300px;
+    }
     .container{
-        width:1160px;
+        width:900px;
     }
     .inner{
         margin:0 60px;
