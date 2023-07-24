@@ -1,0 +1,36 @@
+//Some base media queries, including .container bootstrap overwriting.
+
+@media (min-width: 768px){
+    .container{
+        width:680px;
+        .inner{
+            margin:0 35px;
+        }
+    }
+}
+
+@media (min-width: 992px){
+    .container{
+        width:900px;
+    }
+    .inner{
+        margin:0 45px;
+    }
+}
+
+@media (min-width: 1260px){
+    .container{
+        width:1160px;
+    }
+    .inner{
+        margin:0 60px;
+    }
+}
+
+
+
+
+
+
+
+

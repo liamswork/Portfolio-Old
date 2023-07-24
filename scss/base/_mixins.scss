@@ -1,0 +1,30 @@
+//Included in the header file.
+@mixin service-colors($color-type: primary) {
+    $colors: map-get($color-themes, $color-type);
+    
+    @each $class, $color in $colors {
+        .project-list{
+            .#{$class}{
+                &:hover{
+
+                }
+                .category{
+                    color:white;
+                    background-color: $color;
+                    border-color: $color;
+                }
+
+                .btn-#{$class}{
+                    color:white;
+                    background-color: $color;
+                    border-color: $color;
+                }
+            }
+        }
+
+        //Add more locations above this^
+    }
+}
+
+
+@include service-colors;

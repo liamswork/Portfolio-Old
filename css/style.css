@@ -38,8 +38,17 @@ h1 {
   margin: 0;
 }
 
-p {
+h2 {
   font-size: 24px;
+  margin: 0;
+}
+
+h3 {
+  font-size: 26px;
+}
+
+p {
+  font-size: 16px;
 }
 
 h1, h2, h3, h4, p, a {
@@ -60,14 +69,20 @@ h1, h2, h3, h4, p, a {
 }
 
 .inner {
-  margin: 0 50px;
+  margin: 0 15px;
 }
 
 hr.rounded {
   background-color: #ae00ff;
   border: 3px solid #ae00ff;
   box-shadow: 8px 0px 8px 5px #003cff;
-  border-radius: 5px;
+  border-radius: 2px;
+}
+
+.block {
+  display: block;
+  border-radius: 3px;
+  padding: 15px;
 }
 
 .icon-display1:before {
@@ -486,6 +501,90 @@ hr.rounded {
   content: "\e905";
 }
 
+.project-list .webpage .category {
+  color: white;
+  background-color: #1a358f;
+  border-color: #1a358f;
+}
+
+.project-list .webpage .btn-webpage {
+  color: white;
+  background-color: #1a358f;
+  border-color: #1a358f;
+}
+
+.project-list .javascript .category {
+  color: white;
+  background-color: #7807ac;
+  border-color: #7807ac;
+}
+
+.project-list .javascript .btn-javascript {
+  color: white;
+  background-color: #7807ac;
+  border-color: #7807ac;
+}
+
+.project-list .placeholder .category {
+  color: white;
+  background-color: #00a5a5;
+  border-color: #00a5a5;
+}
+
+.project-list .placeholder .btn-placeholder {
+  color: white;
+  background-color: #00a5a5;
+  border-color: #00a5a5;
+}
+
+.project-list .telecoms .category {
+  color: white;
+  background-color: #d64541;
+  border-color: #d64541;
+}
+
+.project-list .telecoms .btn-telecoms {
+  color: white;
+  background-color: #d64541;
+  border-color: #d64541;
+}
+
+.project-list .web .category {
+  color: white;
+  background-color: #926fb1;
+  border-color: #926fb1;
+}
+
+.project-list .web .btn-web {
+  color: white;
+  background-color: #926fb1;
+  border-color: #926fb1;
+}
+
+.project-list .security .category {
+  color: white;
+  background-color: #f62459;
+  border-color: #f62459;
+}
+
+.project-list .security .btn-security {
+  color: white;
+  background-color: #f62459;
+  border-color: #f62459;
+}
+
+.project-list .developer-course .category {
+  color: white;
+  background-color: #ce4125;
+  border-color: #ce4125;
+}
+
+.project-list .developer-course .btn-developer-course {
+  color: white;
+  background-color: #ce4125;
+  border-color: #ce4125;
+}
+
 .footer-bottom {
   color: #fff;
   width: 100%;
@@ -557,8 +656,68 @@ hr.rounded {
 .banner .banner-container .banner-text h1 {
   text-align: center;
   margin: 0 20px;
+  margin-bottom: 25px;
   letter-spacing: 12px;
   line-height: 50px;
+}
+
+.banner .banner-container .banner-text p {
+  font-size: 24px;
+}
+
+.main .inner .latest-projects {
+  color: #fff;
+}
+
+.main .inner .item {
+  position: relative;
+  margin-top: 25px;
+  top: 0;
+  transition: 0.5s ease;
+  color: #fff;
+  border: 2px solid #ae00ff;
+  box-shadow: 0px 0px 8px 5px #003cff;
+}
+
+.main .inner .item .img-container {
+  position: relative;
+}
+
+.main .inner .item .img-container .category {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  padding: 0 10px;
+  line-height: 3rem;
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 680px;
+  }
+  .container .inner {
+    margin: 0 35px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 900px;
+  }
+  .inner {
+    margin: 0 45px;
+  }
+}
+
+@media (min-width: 1260px) {
+  .container {
+    width: 1160px;
+  }
+  .inner {
+    margin: 0 60px;
+  }
 }
 
 @media (min-width: 1260px) {
@@ -573,6 +732,7 @@ hr.rounded {
   }
   h1 {
     font-size: 72px;
+    margin-bottom: 0;
   }
   p {
     font-size: 36px;

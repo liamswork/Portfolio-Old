@@ -3,8 +3,43 @@ $color-primary:#3a3636;
 $color-secondary:#191a22;
 $color-tertiary:#3a3939;
 
+//Base glow scheme
 $color-glowblue:#003cff;
 $color-glowpurple:#ae00ff;
+
+//Social media
+$color-facebook:#3b5998;
+$color-linkedin:#0077b5;
+$color-twitter:#00aced;
+$color-instagram:#d93175;
+
+//Project themes
+$color-webpage:#1a358f;
+$color-javascript:#7807ac;
+$color-placeholder:#00ffff;
+//add more as we work on them.
+
+$color-themes: (
+  primary: (
+    webpage:          #1a358f,
+    javascript:       #7807ac,
+    placeholder:      #00a5a5,
+    telecoms:         #d64541,
+    web:              #926fb1,
+    security:         #f62459,
+    developer-course: #ce4125
+  ),
+  darken: (
+    software:         #526781,
+    it:               #286abd,
+    digital:          #25a25a,
+    telecoms:         #bc2c28,
+    web:              #79539a,
+    security:         #de093f,
+    developer-course: #a3331d
+  )
+);
+
 
 //Icon font include
 @font-face {
@@ -53,8 +88,17 @@ h1{
   margin:0;
 }
 
-p{
+h2{
   font-size: 24px;
+  margin:0;
+}
+
+h3{
+  font-size: 26px;
+}
+
+p{
+  font-size: 16px;
 }
 
 h1, h2, h3, h4, p, a{
@@ -75,14 +119,21 @@ body{
 }
 
 .inner{
-  margin:0 50px;
+  margin:0 15px;
 }
 
 hr.rounded {
   background-color: $color-glowpurple;
   border: 3px solid $color-glowpurple;
   box-shadow: 8px 0px 8px 5px $color-glowblue;
-  border-radius: 5px;
+  border-radius: 2px;
+}
+
+.block {
+  display: block;
+  border-radius: 3px;
+  padding: 15px;
+
 }
 
 
