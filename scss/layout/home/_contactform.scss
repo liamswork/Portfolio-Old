@@ -1,10 +1,13 @@
 .container-contact-form{
-    @include glowborder('all');
+
     padding: 25px 5px;
 
     .contact-info{
         margin-bottom: 50px;
         .contact-details{
+            h2{
+                margin-bottom: 0;
+            }
             display:flex;
             flex-direction: column;
             text-align: center;
@@ -25,8 +28,16 @@
                 flex-wrap: wrap;
                 //Logo boxes.
                 a{
+                    position: relative;
                     @include glowborder('all');
-                    background-color:transparent;
+
+                    top:0;
+                    transition: 0.5s ease;
+                    &:hover{
+                        @include levitate;
+                        @include glowborder('all','hover');
+                    }
+                    background-color:#000;
 
                     margin:5px; //Margin seperating social buttons
 

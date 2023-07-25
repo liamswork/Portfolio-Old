@@ -22,17 +22,20 @@
             }
         }
 
-        .social-logos{
+        .container-contact-form .contact-info .contact-social .social-logos{
             a.#{$class}{
                 color:#fff;
                 &:hover{
                     @include glowborder('all','hover');
+                    background-color: #fff;
                     span{
                         color:$color;
+
                     }
                 }
             }
         }
+        
 
         //Add more locations above this^
     }

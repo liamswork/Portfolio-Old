@@ -40,7 +40,7 @@ h1 {
 
 h2 {
   font-size: 24px;
-  margin: 0;
+  margin-bottom: 20px;
 }
 
 h3 {
@@ -63,6 +63,31 @@ h1, h2, h3, h4, p, a {
 
 .main .inner {
   margin: 15px 15px;
+  padding: 5px 10px 0 10px;
+}
+
+@media (min-width: 530px) {
+  .main .inner {
+    padding: 5px 25px 0 25px;
+  }
+}
+
+@media (min-width: 768px) {
+  .main .inner {
+    padding: 10px 50px 0 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .main .inner {
+    padding: 10px 65px 0 65px;
+  }
+}
+
+@media (min-width: 1260px) {
+  .main .inner {
+    padding: 10px 75px 0 75px;
+  }
 }
 
 hr.rounded {
@@ -84,7 +109,8 @@ hr.rounded {
   height: auto;
   line-height: 35px;
   padding: 5px 15px;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
 }
 
 /* Animate neon flicker */
@@ -535,16 +561,17 @@ hr.rounded {
   border-color: #1a358f;
 }
 
-.social-logos a.webpage {
+.container-contact-form .contact-info .contact-social .social-logos a.webpage {
   color: #fff;
 }
 
-.social-logos a.webpage:hover {
+.container-contact-form .contact-info .contact-social .social-logos a.webpage:hover {
   border: 3px solid white;
   box-shadow: 0px 0px 6px white, 0px 0px 12px #ae00ff, 0px 0px 16px 7px #003cff;
+  background-color: #fff;
 }
 
-.social-logos a.webpage:hover span {
+.container-contact-form .contact-info .contact-social .social-logos a.webpage:hover span {
   color: #1a358f;
 }
 
@@ -560,16 +587,17 @@ hr.rounded {
   border-color: #7807ac;
 }
 
-.social-logos a.javascript {
+.container-contact-form .contact-info .contact-social .social-logos a.javascript {
   color: #fff;
 }
 
-.social-logos a.javascript:hover {
+.container-contact-form .contact-info .contact-social .social-logos a.javascript:hover {
   border: 3px solid white;
   box-shadow: 0px 0px 6px white, 0px 0px 12px #ae00ff, 0px 0px 16px 7px #003cff;
+  background-color: #fff;
 }
 
-.social-logos a.javascript:hover span {
+.container-contact-form .contact-info .contact-social .social-logos a.javascript:hover span {
   color: #7807ac;
 }
 
@@ -585,16 +613,17 @@ hr.rounded {
   border-color: #00a5a5;
 }
 
-.social-logos a.placeholder {
+.container-contact-form .contact-info .contact-social .social-logos a.placeholder {
   color: #fff;
 }
 
-.social-logos a.placeholder:hover {
+.container-contact-form .contact-info .contact-social .social-logos a.placeholder:hover {
   border: 3px solid white;
   box-shadow: 0px 0px 6px white, 0px 0px 12px #ae00ff, 0px 0px 16px 7px #003cff;
+  background-color: #fff;
 }
 
-.social-logos a.placeholder:hover span {
+.container-contact-form .contact-info .contact-social .social-logos a.placeholder:hover span {
   color: #00a5a5;
 }
 
@@ -610,16 +639,17 @@ hr.rounded {
   border-color: #3b5998;
 }
 
-.social-logos a.facebook {
+.container-contact-form .contact-info .contact-social .social-logos a.facebook {
   color: #fff;
 }
 
-.social-logos a.facebook:hover {
+.container-contact-form .contact-info .contact-social .social-logos a.facebook:hover {
   border: 3px solid white;
   box-shadow: 0px 0px 6px white, 0px 0px 12px #ae00ff, 0px 0px 16px 7px #003cff;
+  background-color: #fff;
 }
 
-.social-logos a.facebook:hover span {
+.container-contact-form .contact-info .contact-social .social-logos a.facebook:hover span {
   color: #3b5998;
 }
 
@@ -635,16 +665,17 @@ hr.rounded {
   border-color: #0077b5;
 }
 
-.social-logos a.linkedin {
+.container-contact-form .contact-info .contact-social .social-logos a.linkedin {
   color: #fff;
 }
 
-.social-logos a.linkedin:hover {
+.container-contact-form .contact-info .contact-social .social-logos a.linkedin:hover {
   border: 3px solid white;
   box-shadow: 0px 0px 6px white, 0px 0px 12px #ae00ff, 0px 0px 16px 7px #003cff;
+  background-color: #fff;
 }
 
-.social-logos a.linkedin:hover span {
+.container-contact-form .contact-info .contact-social .social-logos a.linkedin:hover span {
   color: #0077b5;
 }
 
@@ -660,16 +691,17 @@ hr.rounded {
   border-color: #00aced;
 }
 
-.social-logos a.twitter {
+.container-contact-form .contact-info .contact-social .social-logos a.twitter {
   color: #fff;
 }
 
-.social-logos a.twitter:hover {
+.container-contact-form .contact-info .contact-social .social-logos a.twitter:hover {
   border: 3px solid white;
   box-shadow: 0px 0px 6px white, 0px 0px 12px #ae00ff, 0px 0px 16px 7px #003cff;
+  background-color: #fff;
 }
 
-.social-logos a.twitter:hover span {
+.container-contact-form .contact-info .contact-social .social-logos a.twitter:hover span {
   color: #00aced;
 }
 
@@ -685,16 +717,17 @@ hr.rounded {
   border-color: #d93175;
 }
 
-.social-logos a.instagram {
+.container-contact-form .contact-info .contact-social .social-logos a.instagram {
   color: #fff;
 }
 
-.social-logos a.instagram:hover {
+.container-contact-form .contact-info .contact-social .social-logos a.instagram:hover {
   border: 3px solid white;
   box-shadow: 0px 0px 6px white, 0px 0px 12px #ae00ff, 0px 0px 16px 7px #003cff;
+  background-color: #fff;
 }
 
-.social-logos a.instagram:hover span {
+.container-contact-form .contact-info .contact-social .social-logos a.instagram:hover span {
   color: #d93175;
 }
 
@@ -710,16 +743,17 @@ hr.rounded {
   border-color: #5fcf80;
 }
 
-.social-logos a.treehouse {
+.container-contact-form .contact-info .contact-social .social-logos a.treehouse {
   color: #fff;
 }
 
-.social-logos a.treehouse:hover {
+.container-contact-form .contact-info .contact-social .social-logos a.treehouse:hover {
   border: 3px solid white;
   box-shadow: 0px 0px 6px white, 0px 0px 12px #ae00ff, 0px 0px 16px 7px #003cff;
+  background-color: #fff;
 }
 
-.social-logos a.treehouse:hover span {
+.container-contact-form .contact-info .contact-social .social-logos a.treehouse:hover span {
   color: #5fcf80;
 }
 
@@ -735,16 +769,17 @@ hr.rounded {
   border-color: #6e5494;
 }
 
-.social-logos a.github {
+.container-contact-form .contact-info .contact-social .social-logos a.github {
   color: #fff;
 }
 
-.social-logos a.github:hover {
+.container-contact-form .contact-info .contact-social .social-logos a.github:hover {
   border: 3px solid white;
   box-shadow: 0px 0px 6px white, 0px 0px 12px #ae00ff, 0px 0px 16px 7px #003cff;
+  background-color: #fff;
 }
 
-.social-logos a.github:hover span {
+.container-contact-form .contact-info .contact-social .social-logos a.github:hover span {
   color: #6e5494;
 }
 
@@ -753,6 +788,24 @@ hr.rounded {
   width: 100%;
   background-color: #191a22;
   display: flex;
+}
+
+.footer-bottom .inner {
+  padding: 5px 25px;
+}
+
+.footer-bottom .inner .nav-link-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-bottom .inner .nav-link-container a {
+  margin-right: 15px;
+  text-decoration: none;
+}
+
+.footer-bottom .inner .nav-link-container a h2 {
+  font-size: 16px;
 }
 
 .sidenav {
@@ -798,7 +851,7 @@ hr.rounded {
 }
 
 .sidenav .nav-link-container a h2 {
-  margin: 10px 0;
+  margin: 30px 0;
 }
 
 .banner {
@@ -893,8 +946,6 @@ hr.rounded {
 }
 
 .container-contact-form {
-  border: 3px solid white;
-  box-shadow: 0px 0px 6px white, 0px 0px 8px #ae00ff, 0px 0px 8px 3px #003cff;
   padding: 25px 5px;
 }
 
@@ -907,6 +958,10 @@ hr.rounded {
   flex-direction: column;
   text-align: center;
   margin-bottom: 20px;
+}
+
+.container-contact-form .contact-info .contact-details h2 {
+  margin-bottom: 0;
 }
 
 .container-contact-form .contact-info .contact-social h2 {
@@ -922,13 +977,23 @@ hr.rounded {
 }
 
 .container-contact-form .contact-info .contact-social .social-logos a {
+  position: relative;
   border: 3px solid white;
   box-shadow: 0px 0px 6px white, 0px 0px 8px #ae00ff, 0px 0px 8px 3px #003cff;
-  background-color: transparent;
+  top: 0;
+  transition: 0.5s ease;
+  background-color: #000;
   margin: 5px;
   width: 60px;
   height: 60px;
   border-radius: 50%;
+}
+
+.container-contact-form .contact-info .contact-social .social-logos a:hover {
+  top: -10px;
+  transition: .5s ease;
+  border: 3px solid white;
+  box-shadow: 0px 0px 6px white, 0px 0px 12px #ae00ff, 0px 0px 16px 7px #003cff;
 }
 
 .container-contact-form .contact-info .contact-social .social-logos a span {
@@ -966,12 +1031,20 @@ hr.rounded {
   width: 48%;
 }
 
+.main .inner .scs-container {
+  border: 3px solid white;
+  box-shadow: 0px 0px 6px white, 0px 0px 8px #ae00ff, 0px 0px 8px 3px #003cff;
+}
+
 @media (min-width: 768px) {
   .container {
     width: 680px;
   }
   .container .inner {
     margin: 0 35px;
+  }
+  .btn {
+    font-size: 1.5rem;
   }
 }
 
