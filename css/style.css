@@ -99,11 +99,15 @@ hr.rounded {
   }
 }
 
-.icon-display1:before {
+.icon-treehouse:before {
+  content: "\e943";
+}
+
+.icon-display:before {
   content: "\e926";
 }
 
-.icon-bar-graph1:before {
+.icon-bar-graph:before {
   content: "\e927";
 }
 
@@ -263,7 +267,7 @@ hr.rounded {
   content: "\e925";
 }
 
-.icon-bar-graph:before {
+.icon-bar-graph1:before {
   content: "\e901";
 }
 
@@ -399,7 +403,7 @@ hr.rounded {
   content: "\e912";
 }
 
-.icon-display:before {
+.icon-display1:before {
   content: "\e900";
 }
 
@@ -499,6 +503,10 @@ hr.rounded {
   content: "\f005";
 }
 
+.icon-github:before {
+  content: "\f09b";
+}
+
 .icon-twitter:before {
   content: "\e902";
 }
@@ -527,6 +535,19 @@ hr.rounded {
   border-color: #1a358f;
 }
 
+.social-logos a.webpage {
+  color: #fff;
+}
+
+.social-logos a.webpage:hover {
+  border: 3px solid white;
+  box-shadow: 0px 0px 6px white, 0px 0px 12px #ae00ff, 0px 0px 16px 7px #003cff;
+}
+
+.social-logos a.webpage:hover span {
+  color: #1a358f;
+}
+
 .project-list .javascript .category {
   color: white;
   background-color: #7807ac;
@@ -537,6 +558,19 @@ hr.rounded {
   color: white;
   background-color: #7807ac;
   border-color: #7807ac;
+}
+
+.social-logos a.javascript {
+  color: #fff;
+}
+
+.social-logos a.javascript:hover {
+  border: 3px solid white;
+  box-shadow: 0px 0px 6px white, 0px 0px 12px #ae00ff, 0px 0px 16px 7px #003cff;
+}
+
+.social-logos a.javascript:hover span {
+  color: #7807ac;
 }
 
 .project-list .placeholder .category {
@@ -551,52 +585,167 @@ hr.rounded {
   border-color: #00a5a5;
 }
 
-.project-list .telecoms .category {
-  color: white;
-  background-color: #d64541;
-  border-color: #d64541;
+.social-logos a.placeholder {
+  color: #fff;
 }
 
-.project-list .telecoms .btn-telecoms {
-  color: white;
-  background-color: #d64541;
-  border-color: #d64541;
+.social-logos a.placeholder:hover {
+  border: 3px solid white;
+  box-shadow: 0px 0px 6px white, 0px 0px 12px #ae00ff, 0px 0px 16px 7px #003cff;
 }
 
-.project-list .web .category {
-  color: white;
-  background-color: #926fb1;
-  border-color: #926fb1;
+.social-logos a.placeholder:hover span {
+  color: #00a5a5;
 }
 
-.project-list .web .btn-web {
+.project-list .facebook .category {
   color: white;
-  background-color: #926fb1;
-  border-color: #926fb1;
+  background-color: #3b5998;
+  border-color: #3b5998;
 }
 
-.project-list .security .category {
+.project-list .facebook .btn-facebook {
   color: white;
-  background-color: #f62459;
-  border-color: #f62459;
+  background-color: #3b5998;
+  border-color: #3b5998;
 }
 
-.project-list .security .btn-security {
-  color: white;
-  background-color: #f62459;
-  border-color: #f62459;
+.social-logos a.facebook {
+  color: #fff;
 }
 
-.project-list .developer-course .category {
-  color: white;
-  background-color: #ce4125;
-  border-color: #ce4125;
+.social-logos a.facebook:hover {
+  border: 3px solid white;
+  box-shadow: 0px 0px 6px white, 0px 0px 12px #ae00ff, 0px 0px 16px 7px #003cff;
 }
 
-.project-list .developer-course .btn-developer-course {
+.social-logos a.facebook:hover span {
+  color: #3b5998;
+}
+
+.project-list .linkedin .category {
   color: white;
-  background-color: #ce4125;
-  border-color: #ce4125;
+  background-color: #0077b5;
+  border-color: #0077b5;
+}
+
+.project-list .linkedin .btn-linkedin {
+  color: white;
+  background-color: #0077b5;
+  border-color: #0077b5;
+}
+
+.social-logos a.linkedin {
+  color: #fff;
+}
+
+.social-logos a.linkedin:hover {
+  border: 3px solid white;
+  box-shadow: 0px 0px 6px white, 0px 0px 12px #ae00ff, 0px 0px 16px 7px #003cff;
+}
+
+.social-logos a.linkedin:hover span {
+  color: #0077b5;
+}
+
+.project-list .twitter .category {
+  color: white;
+  background-color: #00aced;
+  border-color: #00aced;
+}
+
+.project-list .twitter .btn-twitter {
+  color: white;
+  background-color: #00aced;
+  border-color: #00aced;
+}
+
+.social-logos a.twitter {
+  color: #fff;
+}
+
+.social-logos a.twitter:hover {
+  border: 3px solid white;
+  box-shadow: 0px 0px 6px white, 0px 0px 12px #ae00ff, 0px 0px 16px 7px #003cff;
+}
+
+.social-logos a.twitter:hover span {
+  color: #00aced;
+}
+
+.project-list .instagram .category {
+  color: white;
+  background-color: #d93175;
+  border-color: #d93175;
+}
+
+.project-list .instagram .btn-instagram {
+  color: white;
+  background-color: #d93175;
+  border-color: #d93175;
+}
+
+.social-logos a.instagram {
+  color: #fff;
+}
+
+.social-logos a.instagram:hover {
+  border: 3px solid white;
+  box-shadow: 0px 0px 6px white, 0px 0px 12px #ae00ff, 0px 0px 16px 7px #003cff;
+}
+
+.social-logos a.instagram:hover span {
+  color: #d93175;
+}
+
+.project-list .treehouse .category {
+  color: white;
+  background-color: #5fcf80;
+  border-color: #5fcf80;
+}
+
+.project-list .treehouse .btn-treehouse {
+  color: white;
+  background-color: #5fcf80;
+  border-color: #5fcf80;
+}
+
+.social-logos a.treehouse {
+  color: #fff;
+}
+
+.social-logos a.treehouse:hover {
+  border: 3px solid white;
+  box-shadow: 0px 0px 6px white, 0px 0px 12px #ae00ff, 0px 0px 16px 7px #003cff;
+}
+
+.social-logos a.treehouse:hover span {
+  color: #5fcf80;
+}
+
+.project-list .github .category {
+  color: white;
+  background-color: #6e5494;
+  border-color: #6e5494;
+}
+
+.project-list .github .btn-github {
+  color: white;
+  background-color: #6e5494;
+  border-color: #6e5494;
+}
+
+.social-logos a.github {
+  color: #fff;
+}
+
+.social-logos a.github:hover {
+  border: 3px solid white;
+  box-shadow: 0px 0px 6px white, 0px 0px 12px #ae00ff, 0px 0px 16px 7px #003cff;
+}
+
+.social-logos a.github:hover span {
+  color: #6e5494;
 }
 
 .footer-bottom {
@@ -633,6 +782,19 @@ hr.rounded {
   border: 0.4rem solid #fff;
   text-transform: uppercase;
   animation: flicker 1.5s infinite alternate;
+}
+
+.sidenav .nav-link-container {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.sidenav .nav-link-container a {
+  text-decoration: none;
+}
+
+.sidenav .nav-link-container a h2 {
+  margin: 10px 0;
 }
 
 .banner {
@@ -736,21 +898,38 @@ hr.rounded {
   margin-bottom: 50px;
 }
 
-.container-contact-form .contact-info .social h2 {
-  margin-bottom: 20px;
-}
-
-.container-contact-form .contact-info .social .social-logos {
+.container-contact-form .contact-info .contact-details {
   display: flex;
   flex-direction: column;
-}
-
-.container-contact-form .contact-info .social .social-logos a {
+  text-align: center;
   margin-bottom: 20px;
 }
 
-.container-contact-form .contact-info .social .social-logos a span {
+.container-contact-form .contact-info .contact-social h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.container-contact-form .contact-info .contact-social .social-logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.container-contact-form .contact-info .contact-social .social-logos a {
+  border: 3px solid white;
+  box-shadow: 0px 0px 6px white, 0px 0px 8px #ae00ff, 0px 0px 8px 3px #003cff;
+  background-color: transparent;
+  margin: 5px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.container-contact-form .contact-info .contact-social .social-logos a span {
   font-size: 32px;
+  line-height: 40px;
 }
 
 .container-contact-form .contact-form .container {
@@ -759,6 +938,7 @@ hr.rounded {
 
 .container-contact-form .contact-form .container h2 {
   margin-bottom: 25px;
+  text-align: center;
 }
 
 .container-contact-form .contact-form .container form {
@@ -838,26 +1018,36 @@ hr.rounded {
 }
 
 @media (min-width: 768px) {
-  .inner .container-contact-form .contact-info .social-logos {
+  .inner .container-contact-form .contact-info .contact-social .social-logos {
     flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
   }
-  .inner .container-contact-form .contact-info .social-logos a {
-    margin-bottom: 20px;
+  .inner .container-contact-form .contact-info .contact-social .social-logos a {
+    width: 55px;
+    height: 55px;
+    padding: 3px;
+    margin-right: 5px;
   }
-  .inner .container-contact-form .contact-info .social-logos a span {
-    font-size: 48px;
+  .inner .container-contact-form .contact-info .contact-social .social-logos a span {
+    font-size: 28px;
   }
 }
 
 @media (min-width: 992px) {
-  .inner .container-contact-form .contact-info .social-logos {
+  .inner .container-contact-form .contact-info .contact-social .social-logos {
     flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
   }
-  .inner .container-contact-form .contact-info .social-logos a {
-    margin-bottom: 20px;
+  .inner .container-contact-form .contact-info .contact-social .social-logos a {
+    width: 60px;
+    height: 60px;
+    margin-right: 5px;
+    padding: 8px;
   }
-  .inner .container-contact-form .contact-info .social-logos a span {
-    font-size: 48px;
+  .inner .container-contact-form .contact-info .contact-social .social-logos a span {
+    font-size: 32px;
   }
 }
 
@@ -865,14 +1055,22 @@ hr.rounded {
   .inner .container-contact-form {
     margin: 25px 0;
   }
-  .inner .container-contact-form .contact-info .social-logos {
+  .inner .container-contact-form .contact-info {
+    display: block;
+  }
+  .inner .container-contact-form .contact-info .contact-details, .inner .container-contact-form .contact-info .contact-social {
+    height: 50%;
+  }
+  .inner .container-contact-form .contact-info .contact-social .social-logos {
     flex-direction: row;
+    flex-wrap: wrap;
   }
-  .inner .container-contact-form .contact-info .social-logos a {
-    margin-bottom: 20px;
+  .inner .container-contact-form .contact-info .contact-social .social-logos a {
+    margin-right: 5px;
+    padding: 8px;
   }
-  .inner .container-contact-form .contact-info .social-logos a span {
-    font-size: 48px;
+  .inner .container-contact-form .contact-info .contact-social .social-logos a span {
+    font-size: 36px;
   }
   .inner .container-contact-form .contact-form {
     margin: 0;

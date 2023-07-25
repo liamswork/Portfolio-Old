@@ -3,18 +3,41 @@
     padding: 25px 5px;
 
     .contact-info{
-        margin-bottom:50px;
-        .social{
+        margin-bottom: 50px;
+        .contact-details{
+            display:flex;
+            flex-direction: column;
+            text-align: center;
+            margin-bottom:20px; //Margin seperating contact details from socials
+        }
+
+
+        .contact-social{
+
             h2{
-                margin-bottom: 20px;
+                text-align: center;
+                margin-bottom: 20px; //Seperate "Follow me on:" from logos.
             }
             .social-logos{
                 display:flex;
-                flex-direction: column;
+                flex-direction: row;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                //Logo boxes.
                 a{
-                    margin-bottom:20px; //Margin seperating social buttons
+                    @include glowborder('all');
+                    background-color:transparent;
+
+                    margin:5px; //Margin seperating social buttons
+
+                    width:60px;
+                    height:60px;
+                    border-radius: 50%;
+
+                    //Logo Icon
                     span{
                         font-size:32px;
+                        line-height: 40px;
                     }
                 }
             }
@@ -27,6 +50,7 @@
 
             h2{
                 margin-bottom: 25px;
+                text-align: center;
             }
 
             form{

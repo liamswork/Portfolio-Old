@@ -22,6 +22,18 @@
             }
         }
 
+        .social-logos{
+            a.#{$class}{
+                color:#fff;
+                &:hover{
+                    @include glowborder('all','hover');
+                    span{
+                        color:$color;
+                    }
+                }
+            }
+        }
+
         //Add more locations above this^
     }
 }

@@ -1,37 +1,58 @@
 @media (min-width: 768px){
     .inner .container-contact-form{
-        
+        //Contact info container
         .contact-info{
-            .social-logos{
-                flex-direction: row;
-                a{
-                    margin-bottom:20px; //Margin seperating social buttons
-                    span{
-                        font-size:48px;
+            .contact-social{
+
+                //logo box container
+                .social-logos{
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    width:100%;
+                    //logo boxes
+                    a{
+                        width:55px;
+                        height:55px;
+                        padding:3px;
+                        margin-right:5px;
+                        //logo icon
+                        span{
+                            font-size:28px;
+                        }
                     }
-                }
-            }   
+                }   
+            }
+
         }
-
+        //Contact form container
         .contact-form{
-
         }
     }
 }
 
 @media (min-width: 992px){
     .inner .container-contact-form{
-
         .contact-info{
-            .social-logos{
-                flex-direction: row;
-                a{
-                    margin-bottom:20px; //Margin seperating social buttons
-                    span{
-                        font-size:48px;
+            .contact-social{
+                //logo box container
+                .social-logos{
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    width:100%;
+                    //Logo boxes
+                    a{
+                        width:60px;
+                        height:60px;
+                        margin-right:5px;
+                        padding:8px;
+
+                        //logo icon
+                        span{
+                            font-size:32px;
+                        }
                     }
-                }
-            }   
+                }   
+            }
         }
         .contact-form{
 
@@ -44,18 +65,30 @@
     .inner .container-contact-form{
         margin:25px 0;
         .contact-info{
-            .social-logos{
-                flex-direction: row;
-                a{
-                    margin-bottom:20px; //Margin seperating social buttons
-                    span{
-                        font-size:48px;
+            display:block;
+            .contact-details, .contact-social{
+                height:50%;
+            }
+
+            .contact-social{
+                //logo box container
+                .social-logos{
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    //logo boxes
+                    a{
+                        margin-right:5px;
+                        padding:8px;
+                        //logo icons
+                        span{
+                            
+                            font-size:36px;
+                        }
                     }
-                }
-            }   
+                }   
+            }
         }
         .contact-form{
-
             margin:0;
         }
     }

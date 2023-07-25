@@ -8,14 +8,16 @@ $color-glowblue:#003cff;
 $color-glowpurple:#ae00ff;
 
 //Social media
-$color-facebook:#3b5998;
-$color-linkedin:#0077b5;
-$color-twitter:#00aced;
-$color-instagram:#d93175;
+$color-facebook:  #3b5998;
+$color-linkedin:  #0077b5;
+$color-twitter:   #00aced;
+$color-instagram: #d93175;
+$color-treehouse: #5fcf80;
+$color-github:    #6e5494;
 
 //Project themes
-$color-webpage:#1a358f;
-$color-javascript:#7807ac;
+$color-webpage:    #1a358f;
+$color-javascript: #7807ac;
 $color-placeholder:#00ffff;
 //add more as we work on them.
 
@@ -24,19 +26,18 @@ $color-themes: (
     webpage:          #1a358f,
     javascript:       #7807ac,
     placeholder:      #00a5a5,
-    telecoms:         #d64541,
-    web:              #926fb1,
-    security:         #f62459,
-    developer-course: #ce4125
+    facebook:         #3b5998,
+    linkedin:         #0077b5,
+    twitter:          #00aced,
+    instagram:        #d93175,
+    treehouse:        #5fcf80,
+    github:           #6e5494
   ),
   darken: (
     software:         #526781,
     it:               #286abd,
-    digital:          #25a25a,
-    telecoms:         #bc2c28,
-    web:              #79539a,
-    security:         #de093f,
-    developer-course: #a3331d
+    digital:          #25a25a
+
   )
 );
 
@@ -175,10 +176,13 @@ hr.rounded {
 
 
 //Icon content links.
-.icon-display1:before {
+.icon-treehouse:before {
+  content: "\e943";
+}
+.icon-display:before {
   content: "\e926";
 }
-.icon-bar-graph1:before {
+.icon-bar-graph:before {
   content: "\e927";
 }
 .icon-monitor2:before {
@@ -298,7 +302,7 @@ hr.rounded {
 .icon-paperplane1:before {
   content: "\e925";
 }
-.icon-bar-graph:before {
+.icon-bar-graph1:before {
   content: "\e901";
 }
 .icon-monitor:before {
@@ -400,7 +404,7 @@ hr.rounded {
 .icon-store:before {
   content: "\e912";
 }
-.icon-display:before {
+.icon-display1:before {
   content: "\e900";
 }
 .icon-screen1:before {
@@ -474,6 +478,9 @@ hr.rounded {
 }
 .icon-star:before {
   content: "\f005";
+}
+.icon-github:before {
+  content: "\f09b";
 }
 .icon-twitter:before {
   content: "\e902";
