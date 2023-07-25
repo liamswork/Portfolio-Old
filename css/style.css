@@ -773,7 +773,11 @@ hr.rounded {
   text-align: center;
 }
 
-.sidenav .initials-container h1 {
+.sidenav .initials-container a {
+  text-decoration: none;
+}
+
+.sidenav .initials-container a h1 {
   height: 250px;
   width: 300px;
   font-size: 13rem;
