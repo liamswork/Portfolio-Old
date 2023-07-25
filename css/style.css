@@ -34,17 +34,17 @@ html {
 }
 
 h1 {
-  font-size: 48px;
-  margin: 0;
-}
-
-h2 {
   font-size: 36px;
   margin: 0;
 }
 
-h3 {
+h2 {
   font-size: 24px;
+  margin: 0;
+}
+
+h3 {
+  font-size: 16px;
 }
 
 p {
@@ -57,9 +57,7 @@ h1, h2, h3, h4, p, a {
 
 .main {
   height: 100%;
-  background-color: #3a3636;
-  border-top: 3px solid white;
-  box-shadow: inset 0px 9px 5px -2px #003cff;
+  background-color: #000;
   overflow: hidden;
 }
 
@@ -618,18 +616,23 @@ hr.rounded {
   left: 0;
   background-color: #000000;
   border-right: 3px solid white;
-  box-shadow: 8px 0px 8px #003cff;
+  box-shadow: 2px 0px 6px white, 4px 0px 8px #ae00ff, 6px 0px 8px #003cff;
   overflow: hidden;
 }
 
-.sidenav .image-container {
+.sidenav .initials-container {
   text-align: center;
 }
 
-.sidenav .image-container img {
+.sidenav .initials-container h1 {
   height: 250px;
   width: 300px;
-  object-fit: cover;
+  font-size: 13rem;
+  text-shadow: 0 0 7px #003cff, 0 0 10px #003cff, 0 0 21px #003cff, 0 0 42px #ae00ff, 0 0 82px #ae00ff, 0 0 92px #ae00ff, 0 0 102px #ae00ff, 0 0 151px #ae00ff;
+  padding: 4rem 6rem 5.5rem;
+  border: 0.4rem solid #fff;
+  text-transform: uppercase;
+  animation: flicker 1.5s infinite alternate;
 }
 
 .banner {
@@ -689,6 +692,7 @@ hr.rounded {
 
 .main .inner .latest-projects {
   color: #fff;
+  margin-bottom: 50px;
 }
 
 .main .inner .project-list .item {
@@ -697,8 +701,15 @@ hr.rounded {
   top: 0;
   transition: 0.5s ease;
   color: #fff;
-  border: 2px solid white;
-  box-shadow: 0px 0px 8px 5px #003cff;
+  border: 3px solid white;
+  box-shadow: 0px 0px 6px white, 0px 0px 8px #ae00ff, 0px 0px 8px 3px #003cff;
+}
+
+.main .inner .project-list .item:hover {
+  top: -10px;
+  transition: .5s ease;
+  border: 3px solid white;
+  box-shadow: 0px 0px 6px white, 0px 0px 12px #ae00ff, 0px 0px 16px 7px #003cff;
 }
 
 .main .inner .project-list .item .img-container {
@@ -716,11 +727,30 @@ hr.rounded {
 }
 
 .container-contact-form {
-  margin-top: 25px;
+  border: 3px solid white;
+  box-shadow: 0px 0px 6px white, 0px 0px 8px #ae00ff, 0px 0px 8px 3px #003cff;
+  padding: 25px 5px;
 }
 
 .container-contact-form .contact-info {
-  background-color: #fff;
+  margin-bottom: 50px;
+}
+
+.container-contact-form .contact-info .social h2 {
+  margin-bottom: 20px;
+}
+
+.container-contact-form .contact-info .social .social-logos {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-contact-form .contact-info .social .social-logos a {
+  margin-bottom: 20px;
+}
+
+.container-contact-form .contact-info .social .social-logos a span {
+  font-size: 32px;
 }
 
 .container-contact-form .contact-form .container {
@@ -750,11 +780,6 @@ hr.rounded {
 
 .container-contact-form .contact-form .container #fname, .container-contact-form .contact-form .container #lname {
   width: 48%;
-}
-
-.container-contact-form .contact-form .container .btn {
-  color: white;
-  background-color: #003cff;
 }
 
 @media (min-width: 768px) {
@@ -813,22 +838,43 @@ hr.rounded {
 }
 
 @media (min-width: 768px) {
-  .container-contact-form .contact-info {
-    margin: 25px 0;
+  .inner .container-contact-form .contact-info .social-logos {
+    flex-direction: row;
+  }
+  .inner .container-contact-form .contact-info .social-logos a {
+    margin-bottom: 20px;
+  }
+  .inner .container-contact-form .contact-info .social-logos a span {
+    font-size: 48px;
   }
 }
 
 @media (min-width: 992px) {
-  .container-contact-form {
-    margin: 25px 0;
+  .inner .container-contact-form .contact-info .social-logos {
+    flex-direction: row;
+  }
+  .inner .container-contact-form .contact-info .social-logos a {
+    margin-bottom: 20px;
+  }
+  .inner .container-contact-form .contact-info .social-logos a span {
+    font-size: 48px;
   }
 }
 
 @media (min-width: 1260px) {
-  .container-contact-form {
+  .inner .container-contact-form {
     margin: 25px 0;
   }
-  .container-contact-form .contact-form {
+  .inner .container-contact-form .contact-info .social-logos {
+    flex-direction: row;
+  }
+  .inner .container-contact-form .contact-info .social-logos a {
+    margin-bottom: 20px;
+  }
+  .inner .container-contact-form .contact-info .social-logos a span {
+    font-size: 48px;
+  }
+  .inner .container-contact-form .contact-form {
     margin: 0;
   }
 }

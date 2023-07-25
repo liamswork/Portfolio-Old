@@ -1,8 +1,18 @@
 @media (min-width: 768px){
-    .container-contact-form{
+    .inner .container-contact-form{
+        
         .contact-info{
-            margin:25px 0;
+            .social-logos{
+                flex-direction: row;
+                a{
+                    margin-bottom:20px; //Margin seperating social buttons
+                    span{
+                        font-size:48px;
+                    }
+                }
+            }   
         }
+
         .contact-form{
 
         }
@@ -10,10 +20,18 @@
 }
 
 @media (min-width: 992px){
-    .container-contact-form{
-        margin:25px 0;
+    .inner .container-contact-form{
+
         .contact-info{
-            
+            .social-logos{
+                flex-direction: row;
+                a{
+                    margin-bottom:20px; //Margin seperating social buttons
+                    span{
+                        font-size:48px;
+                    }
+                }
+            }   
         }
         .contact-form{
 
@@ -23,10 +41,18 @@
 }
 
 @media (min-width: 1260px){
-    .container-contact-form{
+    .inner .container-contact-form{
         margin:25px 0;
         .contact-info{
-            
+            .social-logos{
+                flex-direction: row;
+                a{
+                    margin-bottom:20px; //Margin seperating social buttons
+                    span{
+                        font-size:48px;
+                    }
+                }
+            }   
         }
         .contact-form{
 

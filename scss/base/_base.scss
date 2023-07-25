@@ -84,17 +84,17 @@ html{
 }
 
 h1{
-  font-size: 48px;
-  margin:0;
-}
-
-h2{
   font-size: 36px;
   margin:0;
 }
 
-h3{
+h2{
   font-size: 24px;
+  margin:0;
+}
+
+h3{
+  font-size: 16px;
 }
 
 p{
@@ -111,10 +111,9 @@ body{
 
 .main{
   height:100%;
-  background-color: $color-primary;
-  border-top:3px solid white;
-  box-shadow:inset 0px 9px 5px -2px $color-glowblue;
+  background-color: #000;
   overflow:hidden;
+  
   .inner{
     margin:15px 15px;
   }

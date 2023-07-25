@@ -1,4 +1,4 @@
-//Included in the header file.
+//Included in the bottom of this mixin file.
 @mixin service-colors($color-type: primary) {
     $colors: map-get($color-themes, $color-type);
     
@@ -25,6 +25,91 @@
         //Add more locations above this^
     }
 }
+
+//requires object to have top:0 to function correctly. This way, it resets when not hovered.
+@mixin levitate{
+    top: -10px;
+    transition: .5s ease;
+}
+
+@mixin glowborder($side: 'left', $state : 'base') {
+    @if $state=='base'{
+        @if $side=='left'{
+            border-left:3px solid white;
+            box-shadow: 2px 0px 6px white,
+                        4px 0px 8px $color-glowpurple,
+                        6px 0px 8px$color-glowblue;
+        }
+    
+        @if $side=='right'{
+            border-right:3px solid white;
+            box-shadow: 2px 0px 6px white,
+                        4px 0px 8px $color-glowpurple,
+                        6px 0px 8px$color-glowblue;
+        }
+    
+        @if $side=='top'{
+            border-top:2px solid white;
+            box-shadow: 0px -2px 2px white,
+                        0px -4px 3px $color-glowpurple,
+                        0px -6px 6px$color-glowblue;
+        }
+    
+        @if $side=='bottom'{
+            border-bottom:3px solid white;
+            box-shadow: 2px 0px 6px white,
+                        4px 0px 8px $color-glowpurple,
+                        6px 0px 8px$color-glowblue;
+        }
+        
+        @if $side=='all'{
+            border:3px solid white;
+            box-shadow: 0px 0px 6px white,
+                        0px 0px 8px #ae00ff,
+                        0px 0px 8px 3px #003cff;
+        }
+    }
+
+    @if $state=='hover'{
+        @if $side=='left'{
+            border-left:3px solid white;
+            box-shadow: 2px 0px 6px white,
+                        4px 0px 8px $color-glowpurple,
+                        6px 0px 8px$color-glowblue;
+        }
+    
+        @if $side=='right'{
+            border-right:3px solid white;
+            box-shadow: 2px 0px 6px white,
+                        4px 0px 8px $color-glowpurple,
+                        6px 0px 8px$color-glowblue;
+        }
+    
+        @if $side=='top'{
+            border-top:2px solid white;
+            box-shadow: 0px -2px 2px white,
+                        0px -4px 3px $color-glowpurple,
+                        0px -6px 6px$color-glowblue;
+        }
+    
+        @if $side=='bottom'{
+            border-bottom:3px solid white;
+            box-shadow: 2px 0px 6px white,
+                        4px 0px 8px $color-glowpurple,
+                        6px 0px 8px$color-glowblue;
+        }
+        
+        @if $side=='all'{
+            border:3px solid white;
+            box-shadow: 0px 0px 6px white,
+                        0px 0px 12px #ae00ff,
+                        0px 0px 16px 7px #003cff;
+        }
+    }
+
+
+}
+
 
 
 @include service-colors;

@@ -2,7 +2,8 @@
     .inner{
         //Latest projects heading
         .latest-projects{
-            color:#fff;
+            color:#fff; //Default all text to white
+            margin-bottom: 50px;
         }
 
         .project-list{
@@ -14,9 +15,12 @@
                 top: 0;
                 transition: 0.5s ease;
                 color:#fff;
-    
-                border: 2px solid white;
-                box-shadow: 0px 0px 8px 5px #003cff;
+                @include glowborder('all');
+
+                &:hover{
+                    @include levitate;
+                    @include glowborder('all','hover');
+                }
     
                 .img-container{
                     position: relative;

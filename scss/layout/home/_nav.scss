@@ -7,16 +7,30 @@
     top:0;
     left:0;
     background-color: #000000;
-    border-right:3px solid white;
-    box-shadow: 8px 0px 8px $color-glowblue;
+    @include glowborder('right');
     overflow:hidden;
 
-    .image-container{
+    .initials-container{
         text-align: center;
-        img{
+        h1{
             height:250px;
             width:300px;
-            object-fit: cover;
+            font-size: 13rem;
+            text-shadow:
+            0 0 7px $color-glowblue,
+            0 0 10px $color-glowblue,
+            0 0 21px $color-glowblue,
+            0 0 42px $color-glowpurple,
+            0 0 82px $color-glowpurple,
+            0 0 92px $color-glowpurple,
+            0 0 102px $color-glowpurple,
+            0 0 151px $color-glowpurple;
+
+            //Padding and border for initial
+            padding: 4rem 6rem 5.5rem;
+            border: 0.4rem solid #fff;
+            text-transform: uppercase;
+            animation: flicker 1.5s infinite alternate;
         }
     }
 }
