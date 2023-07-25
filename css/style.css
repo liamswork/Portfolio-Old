@@ -31,6 +31,7 @@
 
 html {
   font-family: Poppins;
+  background-color: #000;
 }
 
 h1 {
@@ -92,8 +93,8 @@ h1, h2, h3, h4, p, a {
 
 hr.rounded {
   background-color: white;
-  border: 3px solid white;
-  box-shadow: 8px 0px 8px 5px #003cff;
+  border: 1px solid white;
+  box-shadow: 0px 0px 8px 1px white, 0px 0px 8px 3px #ae00ff, 0px 0px 8px 5px #003cff;
   border-radius: 2px;
 }
 
@@ -792,6 +793,7 @@ hr.rounded {
 
 .footer-bottom .inner {
   padding: 5px 25px;
+  margin: 0 15px;
 }
 
 .footer-bottom .inner .nav-link-container {
@@ -806,6 +808,7 @@ hr.rounded {
 
 .footer-bottom .inner .nav-link-container a h2 {
   font-size: 16px;
+  margin: 10px 0;
 }
 
 .sidenav {
@@ -898,7 +901,7 @@ hr.rounded {
   margin-bottom: 25px;
   letter-spacing: 12px;
   line-height: 50px;
-  padding: 4rem 6rem 5.5rem;
+  padding: 3rem 4rem 4rem;
   border: 0.4rem solid #fff;
   border-radius: 2rem;
   text-transform: uppercase;
@@ -1001,6 +1004,10 @@ hr.rounded {
   line-height: 40px;
 }
 
+.container-contact-form .contact-form {
+  padding: 0;
+}
+
 .container-contact-form .contact-form .container {
   width: 100%;
 }
@@ -1031,9 +1038,14 @@ hr.rounded {
   width: 48%;
 }
 
-.main .inner .scs-container {
-  border: 3px solid white;
-  box-shadow: 0px 0px 6px white, 0px 0px 8px #ae00ff, 0px 0px 8px 3px #003cff;
+.main .inner .scs-container h1 {
+  font-weight: 600;
+}
+
+.main .inner .scs-container h2 {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 20px;
 }
 
 @media (min-width: 768px) {
@@ -1076,15 +1088,26 @@ hr.rounded {
 }
 
 @media (min-width: 768px) {
-  .banner-text {
+  header .banner .banner-container .banner-text {
     display: flex;
   }
-  .banner-text h1 {
+  header .banner .banner-container .banner-text h1 {
     font-size: 72px;
     margin-bottom: 0;
+    padding: 3.5rem 5rem 5rem;
   }
-  .banner-text p {
+  header .banner .banner-container .banner-text p {
     font-size: 36px;
+  }
+}
+
+@media (min-width: 1260px) {
+  header .banner .banner-container .banner-text {
+    display: flex;
+  }
+  header .banner .banner-container .banner-text h1 {
+    font-size: 72px;
+    margin-bottom: 0;
   }
 }
 
@@ -1151,5 +1174,6 @@ hr.rounded {
   }
   .inner .container-contact-form .contact-form {
     margin: 0;
+    padding: 0 15px;
   }
 }

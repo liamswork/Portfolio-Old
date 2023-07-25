@@ -1,7 +1,14 @@
 .main{
     .inner{
         .scs-container{
-            @include glowborder('all')
+            h1{
+                font-weight:600;
+            }
+            h2{
+                display:flex;
+                flex-wrap: wrap;
+                font-size:20px;
+            }
         }
     }
 }

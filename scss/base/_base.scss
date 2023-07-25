@@ -82,6 +82,7 @@ $color-themes: (
 
 html{
   font-family: Poppins;
+  background-color: #000;
 }
 
 h1{
@@ -138,8 +139,10 @@ body{
 
 hr.rounded {
   background-color: white;
-  border: 3px solid white;
-  box-shadow: 8px 0px 8px 5px $color-glowblue;
+  border: 1px solid white;
+  box-shadow: 0px 0px 8px 1px white,
+              0px 0px 8px 3px $color-glowpurple,
+              0px 0px 8px 5px $color-glowblue;
   border-radius: 2px;
 }
 
