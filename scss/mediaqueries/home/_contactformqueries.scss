@@ -1,5 +1,6 @@
 @media (min-width: 768px){
     .inner .container-contact-form{
+
         //Contact info container
         .contact-info{
             .contact-social{
@@ -33,7 +34,14 @@
 
 @media (min-width: 992px){
     .inner .container-contact-form{
+        .row{
+            display: flex;
+            align-items: center;
+        }
         .contact-info{
+            .contact-details, .contact-social{
+                height:50%;
+            }
             .contact-social{
                 //logo box container
                 .social-logos{
@@ -56,8 +64,8 @@
             }
         }
         .contact-form{
-
-
+            margin:0;
+            padding: 0 15px;
         }
     }
 }
@@ -82,7 +90,6 @@
                         padding:8px;
                         //logo icons
                         span{
-                            
                             font-size:36px;
                         }
                     }

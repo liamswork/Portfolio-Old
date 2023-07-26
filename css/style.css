@@ -41,19 +41,37 @@ h1 {
 
 h2 {
   font-size: 24px;
-  margin-bottom: 20px;
+  margin: 0;
 }
 
 h3 {
-  font-size: 16px;
+  font-size: 20px;
+  margin: 0;
+}
+
+h4 {
+  margin: 0;
 }
 
 p {
   font-size: 16px;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover, a:visited, a:focus {
+  color: #fff;
 }
 
 h1, h2, h3, h4, p, a {
   color: #fff;
+}
+
+h1, h2, h3, h4, p, a, span {
+  text-align: center;
 }
 
 .main {
@@ -63,13 +81,13 @@ h1, h2, h3, h4, p, a {
 }
 
 .main .inner {
-  margin: 15px 15px;
+  margin: 35px 5px;
   padding: 5px 10px 0 10px;
 }
 
 @media (min-width: 530px) {
   .main .inner {
-    padding: 5px 25px 0 25px;
+    padding: 5px 15px 0 15px;
   }
 }
 
@@ -120,8 +138,14 @@ hr.rounded {
 
 .content-container {
   background-color: #333333;
-  border-radius: 50px;
-  padding: 20px;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+@media (min-width: 768) {
+  .content-container {
+    padding: 15px;
+  }
 }
 
 /* Animate neon flicker */
@@ -855,16 +879,30 @@ hr.rounded {
 }
 
 .sidenav .nav-link-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 50px 0;
   text-align: center;
 }
 
 .sidenav .nav-link-container a {
+  top: 0;
+  transition: 0.5s ease;
+  border: 3px solid transparent;
+  border-radius: 15px;
   text-decoration: none;
+  width: 75%;
+  margin-bottom: 15px;
+}
+
+.sidenav .nav-link-container a:hover {
+  border: 3px solid white;
+  box-shadow: 0px 0px 6px white, 0px 0px 12px #ae00ff, 0px 0px 16px 7px #003cff;
 }
 
 .sidenav .nav-link-container a h2 {
-  margin: 30px 0;
+  margin: 15px 0;
 }
 
 .banner {
@@ -927,28 +965,43 @@ hr.rounded {
   margin-bottom: 50px;
 }
 
-.main .inner .project-list .item {
+.main .inner .latest-projects .bar .container h1 {
+  margin-top: 15px;
+}
+
+.main .inner .latest-projects .view-all {
+  margin: 15px 0;
+}
+
+.main .inner .latest-projects .project-list .row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.main .inner .latest-projects .project-list .item {
   position: relative;
-  margin-top: 25px;
   top: 0;
   transition: 0.5s ease;
-  color: #fff;
+  min-height: 375px;
+  margin-top: 25px;
+  border-radius: 8px;
   border: 3px solid white;
   box-shadow: 0px 0px 6px white, 0px 0px 8px #ae00ff, 0px 0px 8px 3px #003cff;
 }
 
-.main .inner .project-list .item:hover {
+.main .inner .latest-projects .project-list .item:hover {
   top: -10px;
   transition: .5s ease;
+}
+
+.main .inner .latest-projects .project-list .item:hover {
   border: 3px solid white;
   box-shadow: 0px 0px 6px white, 0px 0px 12px #ae00ff, 0px 0px 16px 7px #003cff;
 }
 
-.main .inner .project-list .item .img-container {
-  position: relative;
-}
-
-.main .inner .project-list .item .img-container .category {
+.main .inner .latest-projects .project-list .item .img-container .category {
   position: absolute;
   top: 10px;
   right: 0;
@@ -958,12 +1011,24 @@ hr.rounded {
   z-index: 1;
 }
 
-.container-contact-form {
-  padding: 25px 5px;
+.main .inner .latest-projects .project-list .item .img-container img {
+  object-fit: cover;
 }
 
-.container-contact-form .contact-info {
-  margin-bottom: 50px;
+.main .inner .latest-projects .project-list .item .block {
+  text-align: center;
+}
+
+.main .inner .latest-projects .project-list .item .block h3 {
+  margin-bottom: 15px;
+}
+
+.main .inner .latest-projects .project-list .item .block h3 a {
+  text-decoration: none;
+}
+
+.main .inner .latest-projects .project-list .item .block p {
+  margin-bottom: 15px;
 }
 
 .container-contact-form .contact-info .contact-details {
@@ -973,8 +1038,8 @@ hr.rounded {
   margin-bottom: 20px;
 }
 
-.container-contact-form .contact-info .contact-details h2 {
-  margin-bottom: 0;
+.container-contact-form .contact-info .contact-details h1 {
+  margin: 15px 0;
 }
 
 .container-contact-form .contact-info .contact-social h2 {
@@ -991,27 +1056,30 @@ hr.rounded {
 
 .container-contact-form .contact-info .contact-social .social-logos a {
   position: relative;
-  border: 3px solid white;
-  box-shadow: 0px 0px 6px white, 0px 0px 8px #ae00ff, 0px 0px 8px 3px #003cff;
+  margin: 5px;
   top: 0;
   transition: 0.5s ease;
-  background-color: #000;
-  margin: 5px;
-  width: 60px;
-  height: 60px;
+  border: 3px solid white;
+  box-shadow: 0px 0px 6px white, 0px 0px 8px #ae00ff, 0px 0px 8px 3px #003cff;
+  width: 65px;
+  height: 65px;
   border-radius: 50%;
+  background-color: #000;
 }
 
 .container-contact-form .contact-info .contact-social .social-logos a:hover {
   top: -10px;
   transition: .5s ease;
+}
+
+.container-contact-form .contact-info .contact-social .social-logos a:hover {
   border: 3px solid white;
   box-shadow: 0px 0px 6px white, 0px 0px 12px #ae00ff, 0px 0px 16px 7px #003cff;
 }
 
 .container-contact-form .contact-info .contact-social .social-logos a span {
   font-size: 32px;
-  line-height: 40px;
+  line-height: 48px;
 }
 
 .container-contact-form .contact-form {
@@ -1059,19 +1127,7 @@ hr.rounded {
   color: #fff;
 }
 
-.main .inner .scs-container h1 {
-  font-weight: 600;
-}
-
-.main .inner .scs-container h2 {
-  display: flex;
-  flex-wrap: wrap;
-  font-size: 20px;
-  line-height: 30px;
-  justify-content: center;
-}
-
-.main .inner .scs-container .article-container {
+.main .inner .article-container {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -1080,25 +1136,53 @@ hr.rounded {
   margin: 50px 0;
 }
 
-.main .inner .scs-container .article-container .article-text {
+.main .inner .article-container h1 {
+  font-weight: 600;
+}
+
+.main .inner .article-container h2 {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 20px;
+  line-height: 30px;
+  justify-content: center;
+}
+
+.main .inner .article-container .article-text {
   text-align: center;
   width: 100%;
 }
 
-.main .inner .scs-container .article-container .article-text h1 {
+.main .inner .article-container .article-text h1 {
   text-align: center;
 }
 
-.main .inner .scs-container .article-container .article-img {
+.main .inner .article-container .article-img {
   margin-top: 20px;
 }
 
-.main .inner .scs-container .article-container .article-img img {
+.main .inner .article-container .article-img img {
   border-radius: 50px;
   width: 100%;
   object-fit: fill;
   border: 3px solid white;
   box-shadow: 0px 0px 6px white, 0px 0px 8px #ae00ff, 0px 0px 8px 3px #003cff;
+}
+
+@media (min-width: 768px) {
+  .main .inner .article-container {
+    flex-wrap: nowrap;
+  }
+  .main .inner .article-container:nth-child(4n+1) {
+    flex-direction: row-reverse;
+  }
+  .main .inner .article-container .article-img {
+    margin: 0 30px;
+  }
+  .main .inner .article-container .article-img img {
+    width: 300px;
+    height: 300px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1164,7 +1248,7 @@ hr.rounded {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1260px) {
   .latest-projects .project-list .row .col-sm-6 {
     width: 45%;
   }
@@ -1194,6 +1278,13 @@ hr.rounded {
 }
 
 @media (min-width: 992px) {
+  .inner .container-contact-form .row {
+    display: flex;
+    align-items: center;
+  }
+  .inner .container-contact-form .contact-info .contact-details, .inner .container-contact-form .contact-info .contact-social {
+    height: 50%;
+  }
   .inner .container-contact-form .contact-info .contact-social .social-logos {
     flex-direction: row;
     flex-wrap: wrap;
@@ -1207,6 +1298,10 @@ hr.rounded {
   }
   .inner .container-contact-form .contact-info .contact-social .social-logos a span {
     font-size: 32px;
+  }
+  .inner .container-contact-form .contact-form {
+    margin: 0;
+    padding: 0 15px;
   }
 }
 
@@ -1234,21 +1329,5 @@ hr.rounded {
   .inner .container-contact-form .contact-form {
     margin: 0;
     padding: 0 15px;
-  }
-}
-
-@media (min-width: 768px) {
-  .main .inner .scs-container .article-container {
-    flex-wrap: nowrap;
-  }
-  .main .inner .scs-container .article-container:nth-child(4n+1) {
-    flex-direction: row-reverse;
-  }
-  .main .inner .scs-container .article-container .article-img {
-    margin: 0 30px;
-  }
-  .main .inner .scs-container .article-container .article-img img {
-    width: 300px;
-    height: 300px;
   }
 }

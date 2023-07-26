@@ -43,8 +43,22 @@
 
 //requires object to have top:0 to function correctly. This way, it resets when not hovered.
 @mixin levitate{
-    top: -10px;
-    transition: .5s ease;
+    top: 0;
+    transition: 0.5s ease;
+    &:hover{
+        top: -10px;
+        transition: .5s ease;
+    }
+}
+
+@mixin tooltip{
+    position: absolute;
+    top: 10px;              //These top three styles position the tooltip above the image, top right.
+    right: 0;
+    padding: 0 10px;
+    line-height: 3rem;
+    text-transform: uppercase;
+    z-index: 1;
 }
 
 @mixin glowborder($side: 'left', $state : 'base') {
@@ -121,10 +135,5 @@
                         0px 0px 16px 7px #003cff;
         }
     }
-
-
 }
-
-
-
 @include service-colors;
