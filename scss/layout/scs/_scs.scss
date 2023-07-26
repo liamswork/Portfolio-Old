@@ -1,13 +1,16 @@
 .main{
     .inner{
         .scs-container{
-            h1{
-                font-weight:600;
-            }
-            h2{
-                display:flex;
-                flex-wrap: wrap;
-                font-size:20px;
+            .netmatters-text{
+                ul{
+                    list-style: none;
+                    margin-top: 20px;
+                    li{
+                        margin:4px 0;
+                        font-size:16px;
+                        color:#fff;
+                    }
+                }
             }
         }
     }

@@ -91,6 +91,10 @@ h1, h2, h3, h4, p, a {
   }
 }
 
+a {
+  text-decoration: none;
+}
+
 hr.rounded {
   background-color: white;
   border: 1px solid white;
@@ -1038,6 +1042,17 @@ hr.rounded {
   width: 48%;
 }
 
+.main .inner .scs-container .netmatters-text ul {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.main .inner .scs-container .netmatters-text ul li {
+  margin: 4px 0;
+  font-size: 16px;
+  color: #fff;
+}
+
 .main .inner .scs-container h1 {
   font-weight: 600;
 }
@@ -1046,6 +1061,38 @@ hr.rounded {
   display: flex;
   flex-wrap: wrap;
   font-size: 20px;
+  line-height: 30px;
+  justify-content: center;
+}
+
+.main .inner .scs-container .article-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 50px 0;
+}
+
+.main .inner .scs-container .article-container .article-text {
+  text-align: center;
+  width: 100%;
+}
+
+.main .inner .scs-container .article-container .article-text h1 {
+  text-align: center;
+}
+
+.main .inner .scs-container .article-container .article-img {
+  margin-top: 20px;
+}
+
+.main .inner .scs-container .article-container .article-img img {
+  border-radius: 50px;
+  width: 100%;
+  object-fit: fill;
+  border: 3px solid white;
+  box-shadow: 0px 0px 6px white, 0px 0px 8px #ae00ff, 0px 0px 8px 3px #003cff;
 }
 
 @media (min-width: 768px) {
@@ -1175,5 +1222,21 @@ hr.rounded {
   .inner .container-contact-form .contact-form {
     margin: 0;
     padding: 0 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  .main .inner .scs-container .article-container {
+    flex-wrap: nowrap;
+  }
+  .main .inner .scs-container .article-container:nth-child(4n+1) {
+    flex-direction: row-reverse;
+  }
+  .main .inner .scs-container .article-container .article-img {
+    margin: 0 30px;
+  }
+  .main .inner .scs-container .article-container .article-img img {
+    width: 300px;
+    height: 300px;
   }
 }

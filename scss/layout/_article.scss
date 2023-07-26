@@ -1,0 +1,45 @@
+.main{
+    .inner{
+        .scs-container{
+            h1{
+                font-weight:600;
+            }
+            h2{
+                display:flex;
+                flex-wrap: wrap;
+                font-size:20px;
+                line-height: 30px;
+                justify-content: center;
+            }
+
+            .article-container{
+                display:flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+                margin:50px 0;
+
+                //Text box
+                .article-text{
+                    text-align: center;
+                    width:100%;
+                    h1{text-align: center;}
+                }
+
+                //Image box
+                .article-img{
+                    margin-top:20px;
+                    img{
+                        border-radius: 50px;
+                        width:100%;
+                        object-fit:fill;
+                        @include glowborder('all');
+                    }
+                }
+            }
+
+
+        }
+    }
+}
