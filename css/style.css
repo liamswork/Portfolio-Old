@@ -31,7 +31,7 @@
 
 html {
   font-family: Poppins;
-  background-color: #000;
+  background-color: #121212;
 }
 
 h1 {
@@ -58,7 +58,7 @@ h1, h2, h3, h4, p, a {
 
 .main {
   height: 100%;
-  background-color: #000;
+  background-color: #121212;
   overflow: hidden;
 }
 
@@ -75,19 +75,19 @@ h1, h2, h3, h4, p, a {
 
 @media (min-width: 768px) {
   .main .inner {
-    padding: 10px 50px 0 50px;
+    padding: 10px 35px 0 35px;
   }
 }
 
 @media (min-width: 992px) {
   .main .inner {
-    padding: 10px 65px 0 65px;
+    padding: 10px 35px 0 35px;
   }
 }
 
 @media (min-width: 1260px) {
   .main .inner {
-    padding: 10px 75px 0 75px;
+    padding: 10px 60px 0 60px;
   }
 }
 
@@ -116,6 +116,12 @@ hr.rounded {
   padding: 5px 15px;
   font-size: 1.5rem;
   text-transform: uppercase;
+}
+
+.content-container {
+  background-color: #333333;
+  border-radius: 50px;
+  padding: 20px;
 }
 
 /* Animate neon flicker */
@@ -1155,6 +1161,12 @@ hr.rounded {
   header .banner .banner-container .banner-text h1 {
     font-size: 72px;
     margin-bottom: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .latest-projects .project-list .row .col-sm-6 {
+    width: 45%;
   }
 }
 

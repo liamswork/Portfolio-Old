@@ -1,15 +1,9 @@
 @media (min-width: 768px){
     .latest-projects{
-        .project-list{
-            //max-height:100vh;
-        .img-container{
-            img{
-                //temp
+        .project-list .row{
+            .col-sm-6 {
+                width: 45%;
             }
-        }
-        
-        //Project card area 100vh
-        
         }
     }
 }
@@ -21,8 +15,8 @@
 @media (min-width: 1260px){
     .project-list .row{
         .col-lg-4{
-            
             width:33%;
         }
+
     }
 }

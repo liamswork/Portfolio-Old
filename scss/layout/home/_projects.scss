@@ -4,11 +4,16 @@
         .latest-projects{
             color:#fff; //Default all text to white
             margin-bottom: 50px;
-        }
 
-        .project-list{
+        }
+       
         //Project list cards. Cards are Items, within their bootstrap col grid class divs.
         //img in img-container, text within block.
+        .project-list{
+            .row{
+
+            }
+
             .item{
                 position: relative;
                 margin-top: 25px;
@@ -16,6 +21,7 @@
                 transition: 0.5s ease;
                 color:#fff;
                 @include glowborder('all');
+
 
                 &:hover{
                     @include levitate;
