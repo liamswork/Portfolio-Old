@@ -7,23 +7,37 @@
 //
 //
 
-
 //Some base media queries, including .container bootstrap overwriting.
+@media (min-width: 530px){
+    .inner{
+        padding:5px 15px 0 15px;
+    }
+}
 @media (min-width: 768px){
+    .inner{
+        padding:10px 35px 0 35px;
+    }
     .container{
         width:680px;
         .inner{
             margin:0 35px;
         }
     }
-
     .btn{
         font-size:1.5rem;
 
     }
+    .content-container{
+        @media (min-width:768){
+        padding:15px;
+        }
+    }
 }
 
 @media (min-width: 992px){
+    .inner{
+        padding:10px 35px 0 35px;
+    }
     .container{
         width:900px;
     }
@@ -33,6 +47,9 @@
 }
 
 @media (min-width: 1260px){
+    .inner{
+        padding:10px 60px 0 60px;
+    }
     body{
         margin-left:300px;
     }

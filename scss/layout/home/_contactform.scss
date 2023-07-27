@@ -90,6 +90,14 @@
                 width:48%;
                 font-size: 22px;
             }
+            .btn{
+                letter-spacing: 2px;
+                font-weight: 600;
+                &:hover{
+                    background-color: white;
+                    color:#003cff;
+                }
+            }
 
         }
 

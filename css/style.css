@@ -85,30 +85,6 @@ h1, h2, h3, h4, p, a, span {
   padding: 5px 10px 0 10px;
 }
 
-@media (min-width: 530px) {
-  .main .inner {
-    padding: 5px 15px 0 15px;
-  }
-}
-
-@media (min-width: 768px) {
-  .main .inner {
-    padding: 10px 35px 0 35px;
-  }
-}
-
-@media (min-width: 992px) {
-  .main .inner {
-    padding: 10px 35px 0 35px;
-  }
-}
-
-@media (min-width: 1260px) {
-  .main .inner {
-    padding: 10px 60px 0 60px;
-  }
-}
-
 a {
   text-decoration: none;
 }
@@ -134,18 +110,14 @@ hr.rounded {
   padding: 5px 15px;
   font-size: 1.5rem;
   text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
 }
 
 .content-container {
   background-color: #333333;
   border-radius: 10px;
   padding: 5px;
-}
-
-@media (min-width: 768) {
-  .content-container {
-    padding: 15px;
-  }
 }
 
 /* Animate neon flicker */
@@ -1150,6 +1122,16 @@ hr.rounded {
   font-size: 22px;
 }
 
+.contact-form .container .btn {
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.contact-form .container .btn:hover {
+  background-color: white;
+  color: #003cff;
+}
+
 .inner-about-me .aboutme-container .aboutme-text {
   width: 50%;
 }
@@ -1253,7 +1235,16 @@ hr.rounded {
   }
 }
 
+@media (min-width: 530px) {
+  .inner {
+    padding: 5px 15px 0 15px;
+  }
+}
+
 @media (min-width: 768px) {
+  .inner {
+    padding: 10px 35px 0 35px;
+  }
   .container {
     width: 680px;
   }
@@ -1265,7 +1256,16 @@ hr.rounded {
   }
 }
 
+@media (min-width: 768px) and (min-width: 768) {
+  .content-container {
+    padding: 15px;
+  }
+}
+
 @media (min-width: 992px) {
+  .inner {
+    padding: 10px 35px 0 35px;
+  }
   .container {
     width: 900px;
   }
@@ -1275,6 +1275,9 @@ hr.rounded {
 }
 
 @media (min-width: 1260px) {
+  .inner {
+    padding: 10px 60px 0 60px;
+  }
   body {
     margin-left: 300px;
   }

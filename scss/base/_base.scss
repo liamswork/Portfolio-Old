@@ -137,19 +137,6 @@ body{
   .inner{
     margin:35px 5px;
     padding:5px 10px 0 10px;
-    @media(min-width:530px){
-      padding:5px 15px 0 15px;
-    }
-    @media(min-width:768px){
-      padding:10px 35px 0 35px;
-    }
-    @media(min-width:992px){
-      padding:10px 35px 0 35px;
-    }
-    @media(min-width:1260px){
-      padding:10px 60px 0 60px;
-    }
-
   }
 }
 
@@ -180,15 +167,14 @@ hr.rounded {
   padding: 5px 15px;
   font-size: 1.5rem;
   text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
 }
 
 .content-container{
   background-color: #333333;
   border-radius: 10px;
   padding:5px;
-  @media (min-width:768){
-    padding:15px;
-  }
 }
 
 .row{
