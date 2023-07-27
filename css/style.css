@@ -1165,6 +1165,22 @@ hr.rounded {
   height: initial;
 }
 
+.main .codingexamples-inner h1 {
+  margin-bottom: 20px;
+}
+
+.main .codingexamples-inner h2 {
+  margin-bottom: 15px;
+}
+
+.main .codingexamples-inner p {
+  padding-bottom: 15px;
+}
+
+.main .codingexamples-inner .contact-social {
+  margin: 15px 0;
+}
+
 .main .inner .scs-container .netmatters-text ul {
   list-style: none;
   margin-top: 20px;

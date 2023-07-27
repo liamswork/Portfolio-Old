@@ -5,9 +5,6 @@
     @each $class, $color in $colors {
         .project-list{
             .#{$class}{
-                &:hover{
-
-                }
                 .category{
                     color:white;
                     background-color: $color;
@@ -34,9 +31,6 @@
                 }
             }
         }
-        
-
-        //Add more locations above this^
     }
 }
 

@@ -11,6 +11,7 @@
     <script src="../js/jquery.min.js"></script>
     <script src="../js/bootstrap.js"></script>
     <script src="../js/bootstrap.min.js"></script>
+
 </head>
 
 <body>
@@ -44,9 +45,45 @@
     </div>
 
     <div class="main">
-        <div class="inner">
-            
-            <h1>Coming soon!</h1>
+        <div class="inner codingexamples-inner">
+            <h1>Fancy buttons coloured with a mixin by classname.</h1>
+            <h2>Start by creating the mixin to colour objects by their class.</h2>
+            <p>This mixin, when initialised will take an optional parameter, this is to access any of the layers of our colour map for whatever reason we choose to use a colour from the darkened palette.</p>
+            <p>It then loops through each key of the colour map, and attempts to style objects that contain that key name.</p>
+            <p>The keys are themes such as facebook blue, github purple, or related to coding, such as websites, which have their own assigned blue colour. This blue is assigned to our project tooltips to distinguish those types of projects from others.</p>
+            <script src="https://gist.github.com/liamswork/afbca557100fa483bb2b8fcdcacc6b3b.js"></script>
+            <p>Objects such as the buttons, have their own themes based on the icons class within them. Looking below, we can see the classes of "facebook" and "linkedin" as examples. As previously mentioned, we have colours associated with these words.</p>
+            <script src="https://gist.github.com/liamswork/221ca0b2c84c98412c0dc3a98c146b08.js"></script>
+            <p>Using 2 more mixins, I added a glowing border to these buttons, and on hover, extended this glow by passing the keyword of "hover"</p>
+            <script src="https://gist.github.com/liamswork/01661f87aa02f09bc9cc46c2956eee7c.js"></script>
+            <p>We are now able to reproduce our buttons with minimal effort. The only other part we would need to add is the HTML for new buttons, and specific selectors in the class colour mixin.</p>
+            <script src="https://gist.github.com/liamswork/87eeb0854bc405389567e436ea2d0afa.js"></script>
+            <p>Above is the basic levitate mixin, and glowborder mixin. I have only included the 'all' argument to keep it short, but accepts the words 'left' 'right' 'top' 'bottom' also.</p>
+        
+            <div class="contact-social">
+                <h2> Here they are! Why don't you give them a hover, or a click to follow me on: </h2>
+                <div class="social-logos">
+                <a class="facebook btn" target="_blank" href="https://www.facebook.com/liam.t.wylie">
+                    <span class="icon-facebook"></span>
+                </a>
+                <a class="btn linkedin" target="_blank" href="https://www.linkedin.com/in/liam-wylie-18374613b/">
+                    <span class="icon-linkedin"></span>
+                </a>
+                <a class="btn twitter" target="_blank" href="https://twitter.com/LiamWylieDev">
+                    <span class="icon-twitter"></span>
+                </a>
+                <a class="btn instagram" target="_blank" href="https://www.instagram.com/liamwylie/">
+                  <span class="icon-instagram"></span>
+                </a>
+                <a class="btn treehouse" target="_blank" href="https://teamtreehouse.com/profiles/liamwylie2">
+                  <span class="icon-treehouse"></span>
+                </a>
+                <a class="btn github" target="_blank" href="https://github.com/liamswork">
+                  <span class="icon-github"></span>
+                </a>
+                </div>
+              </div>
+            </div>
         </div>   <!--End of inner closing div-->
         <!--Footer-->
         <footer>
