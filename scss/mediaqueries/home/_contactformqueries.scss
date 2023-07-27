@@ -1,3 +1,28 @@
+@media (min-width: 530px){
+    .inner .container-contact-form{
+        .contact-info{
+            .contact-social{
+                .social-logos{
+                    //logo boxes
+                    a{
+                        width:65px;
+                        height:65px;
+                        padding:3px;
+                        margin-right:5px;
+                        //logo icon
+                        span{
+                            font-size:40px;
+                            line-height: 56px;
+                        }
+                    }
+                }   
+            }
+
+        }
+    }
+}
+
+
 @media (min-width: 768px){
     .inner .container-contact-form{
 
@@ -8,18 +33,18 @@
                 //logo box container
                 .social-logos{
                     flex-direction: row;
-                    flex-wrap: wrap;
+                    flex-wrap: nowrap;
                     width:100%;
                     //logo boxes
                     a{
-                        width:55px;
-                        height:55px;
+                        width:75px;
+                        height:75px;
                         padding:3px;
                         margin-right:5px;
                         //logo icon
                         span{
-                            font-size:28px;
-                            line-height: 44px;
+                            font-size:48px;
+                            line-height: 60px;
                         }
                     }
                 }   
@@ -49,7 +74,6 @@
                 //logo box container
                 .social-logos{
                     flex-direction: row;
-                    flex-wrap: wrap;
                     width:100%;
                     //Logo boxes
                     a{
@@ -98,13 +122,19 @@
                     flex-direction: row;
                     flex-wrap: wrap;
                     //logo boxes
+                    .logo-box{
+                        width:33%;
+                        text-align: center;
+                    }
                     a{
                         margin-right:5px;
                         padding:8px;
+                        width:100px;
+                        height:100px;
                         //logo icons
                         span{
-                            font-size:36px;
-                            line-height: 36px;
+                            font-size:68px;
+                            line-height: 72px;
                         }
                     }
                 }   

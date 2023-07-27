@@ -1,16 +1,10 @@
-//BASE FONT-SIZES
-//h1 48px
-//h2 36px
-//h3 24px
-//
-//
-//
-//
-
 //Some base media queries, including .container bootstrap overwriting.
 @media (min-width: 530px){
     .main .inner{
         padding:5px 15px 0 15px;
+    }
+    .contact-social .social-logos{
+        flex-wrap:wrap;
     }
 }
 @media (min-width: 768px){

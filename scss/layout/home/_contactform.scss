@@ -48,15 +48,15 @@
                     }
 
                     //Circle properties
-                    width:65px;
-                    height:65px;
+                    width:125px;
+                    height:125px;
                     border-radius: 50%;
                     background-color:#000;
 
                     //Logo Icon properties. Line-height helps with alignment.
                     span{
-                        font-size:32px;
-                        line-height: 48px; //CHANGE THIS IN MEDIA QUERIES.
+                        font-size:72px;
+                        line-height: 98px; //CHANGE THIS IN MEDIA QUERIES.
                     }
                 }
             }
