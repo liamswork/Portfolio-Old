@@ -596,17 +596,17 @@ hr.rounded {
   border-color: #1a358f;
 }
 
-.container-contact-form .contact-info .contact-social .social-logos a.webpage {
+.contact-social .social-logos a.webpage {
   color: #fff;
 }
 
-.container-contact-form .contact-info .contact-social .social-logos a.webpage:hover {
+.contact-social .social-logos a.webpage:hover {
   border: 3px solid white;
   box-shadow: 0px 0px 6px white, 0px 0px 12px #ae00ff, 0px 0px 16px 7px #003cff;
   background-color: #fff;
 }
 
-.container-contact-form .contact-info .contact-social .social-logos a.webpage:hover span {
+.contact-social .social-logos a.webpage:hover span {
   color: #1a358f;
 }
 
@@ -622,17 +622,17 @@ hr.rounded {
   border-color: #7807ac;
 }
 
-.container-contact-form .contact-info .contact-social .social-logos a.javascript {
+.contact-social .social-logos a.javascript {
   color: #fff;
 }
 
-.container-contact-form .contact-info .contact-social .social-logos a.javascript:hover {
+.contact-social .social-logos a.javascript:hover {
   border: 3px solid white;
   box-shadow: 0px 0px 6px white, 0px 0px 12px #ae00ff, 0px 0px 16px 7px #003cff;
   background-color: #fff;
 }
 
-.container-contact-form .contact-info .contact-social .social-logos a.javascript:hover span {
+.contact-social .social-logos a.javascript:hover span {
   color: #7807ac;
 }
 
@@ -648,17 +648,17 @@ hr.rounded {
   border-color: #00a5a5;
 }
 
-.container-contact-form .contact-info .contact-social .social-logos a.placeholder {
+.contact-social .social-logos a.placeholder {
   color: #fff;
 }
 
-.container-contact-form .contact-info .contact-social .social-logos a.placeholder:hover {
+.contact-social .social-logos a.placeholder:hover {
   border: 3px solid white;
   box-shadow: 0px 0px 6px white, 0px 0px 12px #ae00ff, 0px 0px 16px 7px #003cff;
   background-color: #fff;
 }
 
-.container-contact-form .contact-info .contact-social .social-logos a.placeholder:hover span {
+.contact-social .social-logos a.placeholder:hover span {
   color: #00a5a5;
 }
 
@@ -674,17 +674,17 @@ hr.rounded {
   border-color: #3b5998;
 }
 
-.container-contact-form .contact-info .contact-social .social-logos a.facebook {
+.contact-social .social-logos a.facebook {
   color: #fff;
 }
 
-.container-contact-form .contact-info .contact-social .social-logos a.facebook:hover {
+.contact-social .social-logos a.facebook:hover {
   border: 3px solid white;
   box-shadow: 0px 0px 6px white, 0px 0px 12px #ae00ff, 0px 0px 16px 7px #003cff;
   background-color: #fff;
 }
 
-.container-contact-form .contact-info .contact-social .social-logos a.facebook:hover span {
+.contact-social .social-logos a.facebook:hover span {
   color: #3b5998;
 }
 
@@ -700,17 +700,17 @@ hr.rounded {
   border-color: #0077b5;
 }
 
-.container-contact-form .contact-info .contact-social .social-logos a.linkedin {
+.contact-social .social-logos a.linkedin {
   color: #fff;
 }
 
-.container-contact-form .contact-info .contact-social .social-logos a.linkedin:hover {
+.contact-social .social-logos a.linkedin:hover {
   border: 3px solid white;
   box-shadow: 0px 0px 6px white, 0px 0px 12px #ae00ff, 0px 0px 16px 7px #003cff;
   background-color: #fff;
 }
 
-.container-contact-form .contact-info .contact-social .social-logos a.linkedin:hover span {
+.contact-social .social-logos a.linkedin:hover span {
   color: #0077b5;
 }
 
@@ -726,17 +726,17 @@ hr.rounded {
   border-color: #00aced;
 }
 
-.container-contact-form .contact-info .contact-social .social-logos a.twitter {
+.contact-social .social-logos a.twitter {
   color: #fff;
 }
 
-.container-contact-form .contact-info .contact-social .social-logos a.twitter:hover {
+.contact-social .social-logos a.twitter:hover {
   border: 3px solid white;
   box-shadow: 0px 0px 6px white, 0px 0px 12px #ae00ff, 0px 0px 16px 7px #003cff;
   background-color: #fff;
 }
 
-.container-contact-form .contact-info .contact-social .social-logos a.twitter:hover span {
+.contact-social .social-logos a.twitter:hover span {
   color: #00aced;
 }
 
@@ -752,17 +752,17 @@ hr.rounded {
   border-color: #d93175;
 }
 
-.container-contact-form .contact-info .contact-social .social-logos a.instagram {
+.contact-social .social-logos a.instagram {
   color: #fff;
 }
 
-.container-contact-form .contact-info .contact-social .social-logos a.instagram:hover {
+.contact-social .social-logos a.instagram:hover {
   border: 3px solid white;
   box-shadow: 0px 0px 6px white, 0px 0px 12px #ae00ff, 0px 0px 16px 7px #003cff;
   background-color: #fff;
 }
 
-.container-contact-form .contact-info .contact-social .social-logos a.instagram:hover span {
+.contact-social .social-logos a.instagram:hover span {
   color: #d93175;
 }
 
@@ -778,17 +778,17 @@ hr.rounded {
   border-color: #5fcf80;
 }
 
-.container-contact-form .contact-info .contact-social .social-logos a.treehouse {
+.contact-social .social-logos a.treehouse {
   color: #fff;
 }
 
-.container-contact-form .contact-info .contact-social .social-logos a.treehouse:hover {
+.contact-social .social-logos a.treehouse:hover {
   border: 3px solid white;
   box-shadow: 0px 0px 6px white, 0px 0px 12px #ae00ff, 0px 0px 16px 7px #003cff;
   background-color: #fff;
 }
 
-.container-contact-form .contact-info .contact-social .social-logos a.treehouse:hover span {
+.contact-social .social-logos a.treehouse:hover span {
   color: #5fcf80;
 }
 
@@ -804,17 +804,17 @@ hr.rounded {
   border-color: #6e5494;
 }
 
-.container-contact-form .contact-info .contact-social .social-logos a.github {
+.contact-social .social-logos a.github {
   color: #fff;
 }
 
-.container-contact-form .contact-info .contact-social .social-logos a.github:hover {
+.contact-social .social-logos a.github:hover {
   border: 3px solid white;
   box-shadow: 0px 0px 6px white, 0px 0px 12px #ae00ff, 0px 0px 16px 7px #003cff;
   background-color: #fff;
 }
 
-.container-contact-form .contact-info .contact-social .social-logos a.github:hover span {
+.contact-social .social-logos a.github:hover span {
   color: #6e5494;
 }
 
@@ -943,6 +943,10 @@ hr.rounded {
   text-shadow: 0 0 7px #003cff, 0 0 10px #003cff, 0 0 21px #003cff, 0 0 42px #ae00ff, 0 0 82px #ae00ff, 0 0 92px #ae00ff, 0 0 102px #ae00ff, 0 0 151px #ae00ff;
 }
 
+.banner .banner-container .banner-text a {
+  text-decoration: none;
+}
+
 .banner .banner-container .banner-text h1 {
   text-align: center;
   margin: 0 20px;
@@ -962,7 +966,6 @@ hr.rounded {
 
 .main .inner .latest-projects {
   color: #fff;
-  margin-bottom: 50px;
 }
 
 .main .inner .latest-projects .bar .container h1 {
@@ -1004,8 +1007,9 @@ hr.rounded {
 .main .inner .latest-projects .project-list .item .img-container .category {
   position: absolute;
   top: 10px;
-  right: 0;
+  right: 5px;
   padding: 0 10px;
+  border-radius: 4px;
   line-height: 3rem;
   text-transform: uppercase;
   z-index: 1;
@@ -1031,30 +1035,49 @@ hr.rounded {
   margin-bottom: 15px;
 }
 
-.container-contact-form .contact-info .contact-details {
+.contact-details {
   display: flex;
   flex-direction: column;
   text-align: center;
   margin-bottom: 20px;
 }
 
-.container-contact-form .contact-info .contact-details h1 {
+.contact-details .row {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: center;
+}
+
+.contact-details h1 {
   margin: 15px 0;
 }
 
-.container-contact-form .contact-info .contact-social h2 {
+.contact-details h3 {
+  margin: 10px 0;
+}
+
+.contact-details h3 span {
+  border-radius: 50%;
+  border: 2px solid white;
+  padding: 5px;
+}
+
+.contact-social h2 {
   text-align: center;
   margin-bottom: 20px;
 }
 
-.container-contact-form .contact-info .contact-social .social-logos {
+.contact-social .social-logos {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
 }
 
-.container-contact-form .contact-info .contact-social .social-logos a {
+.contact-social .social-logos a {
   position: relative;
   margin: 5px;
   top: 0;
@@ -1067,53 +1090,71 @@ hr.rounded {
   background-color: #000;
 }
 
-.container-contact-form .contact-info .contact-social .social-logos a:hover {
+.contact-social .social-logos a:hover {
   top: -10px;
   transition: .5s ease;
 }
 
-.container-contact-form .contact-info .contact-social .social-logos a:hover {
+.contact-social .social-logos a:hover {
   border: 3px solid white;
   box-shadow: 0px 0px 6px white, 0px 0px 12px #ae00ff, 0px 0px 16px 7px #003cff;
 }
 
-.container-contact-form .contact-info .contact-social .social-logos a span {
+.contact-social .social-logos a span {
   font-size: 32px;
   line-height: 48px;
 }
 
-.container-contact-form .contact-form {
+.contact-form {
   padding: 0;
 }
 
-.container-contact-form .contact-form .container {
+.contact-form .container {
   width: 100%;
+  padding: 10px 20px;
 }
 
-.container-contact-form .contact-form .container h2 {
+.contact-form .container h1 {
   margin-bottom: 25px;
   text-align: center;
 }
 
-.container-contact-form .contact-form .container form {
+.contact-form .container form {
   display: flex;
   flex-direction: row;
   align-items: center;
   flex-wrap: wrap;
 }
 
-.container-contact-form .contact-form .container input[type=text], .container-contact-form .contact-form .container #email, .container-contact-form .contact-form .container select, .container-contact-form .contact-form .container textarea {
+.contact-form .container input[type=text], .contact-form .container #email, .contact-form .container select, .contact-form .container textarea {
   width: 100%;
   height: 50px;
   margin-bottom: 20px;
+  font-size: 22px;
 }
 
-.container-contact-form .contact-form .container #fname {
+.contact-form .container #fname {
   margin-right: 4%;
 }
 
-.container-contact-form .contact-form .container #fname, .container-contact-form .contact-form .container #lname {
+.contact-form .container #fname, .contact-form .container #lname {
   width: 48%;
+  font-size: 22px;
+}
+
+.inner-about-me .aboutme-container .aboutme-text {
+  width: 50%;
+}
+
+.inner-about-me .aboutme-container .aboutme-text .contact-social .social-logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.inner-about-me .aboutme-container .aboutme-img img {
+  height: initial;
 }
 
 .main .inner .scs-container .netmatters-text ul {
@@ -1123,24 +1164,26 @@ hr.rounded {
 
 .main .inner .scs-container .netmatters-text ul li {
   margin: 4px 0;
-  font-size: 16px;
+  font-size: 20px;
   color: #fff;
 }
 
-.main .inner .article-container {
+.article-container {
+  background-color: #333333;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 50px 0;
+  padding: 20px 10px;
+  border-radius: 10px;
 }
 
-.main .inner .article-container h1 {
+.article-container h1 {
   font-weight: 600;
 }
 
-.main .inner .article-container h2 {
+.article-container h2 {
   display: flex;
   flex-wrap: wrap;
   font-size: 20px;
@@ -1148,38 +1191,39 @@ hr.rounded {
   justify-content: center;
 }
 
-.main .inner .article-container .article-text {
+.article-container .article-text {
   text-align: center;
   width: 100%;
 }
 
-.main .inner .article-container .article-text h1 {
+.article-container .article-text h1 {
   text-align: center;
 }
 
-.main .inner .article-container .article-img {
+.article-container .article-img {
   margin-top: 20px;
 }
 
-.main .inner .article-container .article-img img {
+.article-container .article-img img {
   border-radius: 50px;
-  width: 100%;
+  width: 200px;
+  height: 200px;
   object-fit: fill;
   border: 3px solid white;
   box-shadow: 0px 0px 6px white, 0px 0px 8px #ae00ff, 0px 0px 8px 3px #003cff;
 }
 
 @media (min-width: 768px) {
-  .main .inner .article-container {
+  .article-container {
     flex-wrap: nowrap;
   }
-  .main .inner .article-container:nth-child(4n+1) {
+  .article-container:nth-child(4n+1) {
     flex-direction: row-reverse;
   }
-  .main .inner .article-container .article-img {
+  .article-container .article-img {
     margin: 0 30px;
   }
-  .main .inner .article-container .article-img img {
+  .article-container .article-img img {
     width: 300px;
     height: 300px;
   }
@@ -1249,12 +1293,24 @@ hr.rounded {
 }
 
 @media (min-width: 768px) and (max-width: 1260px) {
+  .latest-projects {
+    padding-bottom: 25px;
+  }
   .latest-projects .project-list .row .col-sm-6 {
     width: 45%;
   }
 }
 
+@media (min-width: 992px) {
+  .latest-projects {
+    padding-bottom: 35px;
+  }
+}
+
 @media (min-width: 1260px) {
+  .latest-projects {
+    padding-bottom: 45px;
+  }
   .project-list .row .col-lg-4 {
     width: 33%;
   }
@@ -1274,6 +1330,10 @@ hr.rounded {
   }
   .inner .container-contact-form .contact-info .contact-social .social-logos a span {
     font-size: 28px;
+    line-height: 44px;
+  }
+  .inner .container-contact-form .contact-form .container {
+    padding: 10px 50px;
   }
 }
 
@@ -1298,10 +1358,20 @@ hr.rounded {
   }
   .inner .container-contact-form .contact-info .contact-social .social-logos a span {
     font-size: 32px;
+    line-height: 38px;
   }
   .inner .container-contact-form .contact-form {
     margin: 0;
     padding: 0 15px;
+  }
+  .inner .container-contact-form .contact-form .container {
+    padding: 10px 30px;
+  }
+  .inner .container-contact-form .contact-form .container #fname, .inner .container-contact-form .contact-form .container #lname {
+    font-size: 18px;
+  }
+  .inner .container-contact-form .contact-form .container input[type=text], .inner .container-contact-form .contact-form .container #email, .inner .container-contact-form .contact-form .container select, .inner .container-contact-form .contact-form .container textarea {
+    font-size: 18px;
   }
 }
 
@@ -1325,9 +1395,13 @@ hr.rounded {
   }
   .inner .container-contact-form .contact-info .contact-social .social-logos a span {
     font-size: 36px;
+    line-height: 36px;
   }
   .inner .container-contact-form .contact-form {
     margin: 0;
     padding: 0 15px;
+  }
+  .inner .container-contact-form .contact-form .container {
+    padding: 10px 15px;
   }
 }

@@ -19,6 +19,7 @@
                         //logo icon
                         span{
                             font-size:28px;
+                            line-height: 44px;
                         }
                     }
                 }   
@@ -27,7 +28,9 @@
         }
         //Contact form container
         .contact-form{
-
+            .container{
+                padding: 10px 50px;
+            }
         }
     }
 }
@@ -58,6 +61,7 @@
                         //logo icon
                         span{
                             font-size:32px;
+                            line-height: 38px;
                         }
                     }
                 }   
@@ -66,6 +70,15 @@
         .contact-form{
             margin:0;
             padding: 0 15px;
+            .container{
+                padding: 10px 30px;
+                #fname,#lname{
+                    font-size: 18px;
+                }
+                input[type=text],#email, select,textarea{
+                    font-size: 18px;
+                }
+            }
         }
     }
 }
@@ -91,6 +104,7 @@
                         //logo icons
                         span{
                             font-size:36px;
+                            line-height: 36px;
                         }
                     }
                 }   
@@ -99,6 +113,9 @@
         .contact-form{
             margin:0;
             padding: 0 15px;
+            .container{
+                padding: 10px 15px;
+            }
         }
     }
 }

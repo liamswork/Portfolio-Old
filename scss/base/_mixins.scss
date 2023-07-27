@@ -22,7 +22,7 @@
             }
         }
 
-        .container-contact-form .contact-info .contact-social .social-logos{
+        .contact-social .social-logos{
             a.#{$class}{
                 color:#fff;
                 &:hover{
@@ -30,7 +30,6 @@
                     background-color: #fff;
                     span{
                         color:$color;
-
                     }
                 }
             }
@@ -54,8 +53,9 @@
 @mixin tooltip{
     position: absolute;
     top: 10px;              //These top three styles position the tooltip above the image, top right.
-    right: 0;
+    right:5px;
     padding: 0 10px;
+    border-radius: 4px;
     line-height: 3rem;
     text-transform: uppercase;
     z-index: 1;

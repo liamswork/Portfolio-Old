@@ -1,0 +1,21 @@
+.inner-about-me{
+    .aboutme-container{
+        .aboutme-text{
+            width:50%;
+            .contact-social{
+                .social-logos{
+                    display:flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    flex-wrap: wrap;
+                }
+            }
+        }
+        .aboutme-img{
+            img{
+                height:initial;
+            }
+        }
+    }
+}
+
