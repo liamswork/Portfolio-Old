@@ -1,0 +1,120 @@
+.main-navigation {
+    background-color: #333645;
+    position: relative;
+    
+    //Colour any spans based on their class. We will overwrite this on hover.
+    span{
+        font-size:1.3rem;
+    }
+
+    .link-icon-container {
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            min-width: 35px;
+    }
+    
+    .container > ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+
+        //Nav boxes are all li elements.
+        //Specifically targeting them like this avoids
+        //disturbing the list within subsections.
+        li:not(.nav-item--sub-menu){
+            flex: 1;
+            -webkit-flex: 1;
+            text-align: center;
+
+            //When nav boxes are hovered over, style according to class name.
+            &:hover{
+                color:inherit;
+                span{
+                    color:#fff;
+                }
+                &>a::before{
+                    @include triangleShape;
+                }
+            }
+
+            a{
+                position: relative;
+                display: block;
+                color: #fff;
+                padding: 19px 0 18px;
+                text-transform: uppercase;
+                font-size: 1.125rem;
+                text-decoration: none;
+                line-height: 1;
+                &:hover .link-text{
+                    text-decoration: underline;
+                }
+
+            }
+
+            //subsection divs, default to display none.
+            .sub-menu-banner{
+                margin: 0;
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                min-width: 100%;
+                z-index: 10;
+                padding-top: 50px;
+                padding-bottom: 50px;
+                
+                ul{
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    margin-top: -15px;
+                    list-style: none;
+                    text-align: left;
+                    padding:0px;
+                    li{
+                        display:block;
+                        flex:none;
+                        text-align: start;
+                    }
+
+                    .sub-menu-banner-title{
+                        color:#fff;
+                        display: block;
+                        width:100%;
+                        margin-bottom: 10px;
+                        margin-top: 15px;
+                        font-weight: 500;
+                    }
+                    .nav-item--sub-menu{
+                        width: 33%;
+                        margin-top: 15px;
+                    }
+
+                    a{
+                        color: #fff;
+                        line-height: 1.5rem;
+                        padding: 0.625rem 0.938rem 0.625rem 0;
+                        display: flex;
+                        align-items: center;
+                        .link-text{
+                            font-size: 1.1em;
+                        }
+
+                    }
+                }
+            }
+
+            //Display subsections on parent item hover
+            &:hover>div {
+                @media (min-width:992px){
+                        display: block;
+                }
+            }
+
+        }
+    }
+}

@@ -1,0 +1,160 @@
+//FOOTER STYLING
+footer{
+    font-family: Poppins;
+    background-color: $color-secondary;
+
+    @media (min-width: 1260px){
+            padding:47px 0 0;
+    }
+
+    h4{
+        color:#fff;
+        text-transform: uppercase;
+    }
+
+    //Footer Container ---------------------
+    .container{
+        //Footer Row Container ---------------------
+        .footer-row{
+            display:flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            @media (min-width: 1260px){
+                flex-wrap:nowrap;
+            }
+            //FOOTER SOCIAL BOX
+            .footer-social{
+                &>h4{
+                    margin-top: 15px;
+                }
+                @media (max-width: 767px){
+                    width:100%
+                }
+                @media (min-width: 1260px)
+                {
+                width: 400px;
+                }
+                a{
+                text-decoration: none;
+                text-align: center;
+                margin-right: 10px;
+                margin-bottom: 10px;
+                background-color: #212330;
+                font-size: 26px;
+                line-height: 26px;
+                padding: 12px 22px 16px;
+                margin-right: 7px;
+  
+                @media (max-width: 480px){
+                    width:35%; //Specifcally 35%, will never display 3 on a line on small screens.
+                    }
+                }
+
+                //icon specifics
+                span{
+                    position: relative;
+                    top: 4px;
+                }
+
+                .footer-image{
+                    width:250px;
+                    @media (min-width:480px){       //R
+                        width:320px;          
+                    }
+                    img{
+                        width:100%
+                    }
+                }
+
+                .footer-social-logos{
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    margin-bottom: 30px;
+                    @media(min-width: 480px){
+                        flex-wrap:nowrap;
+                    }
+                }
+            } 
+
+        //FOOTER NAV BOX 
+        .row{
+            display: flex;
+            flex-grow: 1;
+            flex-wrap:wrap;         //Default Wrap on small devices, this will change on a large device to display all content in one row.
+            .footer-nav{
+                padding-right:15px;
+                padding-left:15px;
+                margin-bottom:30px;
+                @media(max-width:768px){
+                    width:100%;
+                    flex-wrap:wrap;
+                }
+                @media(min-width:768px){
+                    width:50%;
+                    flex-wrap:nowrap;
+                }
+                @media(min-width:992px){
+                  width:25%;
+                  flex-wrap:nowrap;
+                }
+                h4{
+                    font-size: 1em;
+                    margin-bottom: 26px;
+                }
+                ul{
+                    li{
+                        list-style:none;
+                        line-height: 1.375rem;
+                        a{
+                            font-weight: 400;
+                            font-size: 0.8125rem;
+                            color:#fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+
+    }
+
+    //FOOTER BOTTOM BOX
+    .footer-bottom{
+        font-size: .8125rem;
+        padding-top:10px;
+        display:flex;
+        text-decoration: none;
+        color:#fff;
+        width: 100%;
+        background-color:$color-tertiary;
+
+        @media (min-width:768px){
+            display:flex;
+        }
+
+        ul{
+            display:flex;
+            flex-wrap:wrap;
+            list-style: none;
+            padding:0;
+        }
+        
+        a{
+            color:#fff;
+            text-decoration: none;
+            &:hover{text-decoration: underline;}
+        }
+
+        
+        .license{
+            text-decoration: none;
+            list-style: none;
+            color: #fff;
+            display: flex;
+            padding: 5px 0 10px;
+            width: 100%;
+        }
+    }
+  }

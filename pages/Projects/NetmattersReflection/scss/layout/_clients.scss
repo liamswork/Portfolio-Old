@@ -1,0 +1,67 @@
+.cms-block{
+    .section-clients{
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+        .sliding-clients{
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+            justify-content: center;
+            width:100%;
+            position: relative;
+            .owl-stage-outer{
+                overflow:visible;
+                .owl-stage{
+                    //some styles possibly missing here, alot of the styles are spread out on the original elements. Try to get stable and re-visit.
+                    //possibly use some bootstrap visibility/media query to limit logo amounts to appear cleaner
+                    display: flex;
+                    .item{
+                        vertical-align: middle;
+                        padding: 0 20px;
+                        position: relative;
+                        max-height: 70px;
+                        height: 70px;
+                        width: auto;
+                        display: flex;
+                        align-items: center;
+        
+                        &:hover{
+                            .description{
+                                display:block;
+        
+                            }
+                        }
+                        .box{
+                            position: relative;
+                            background-color: #333645;
+                            color: #fff;
+                            padding: 20px;
+                            font-size: .875rem;
+                            max-width: 280px;
+                            margin: 0 auto 50px;
+                            h3{
+                                position: relative;
+                                font-size: 1.125rem;
+                                color: #fff;
+                                padding-bottom: 17px;
+                                margin: 0;
+                            }
+        
+                        }
+                            img {
+                              max-height: 70px;
+                              width: auto!important;
+                              max-width: 200px;
+                              -webkit-filter: grayscale(1);
+                               filter: grayscale(1);
+                               &:hover{
+                                filter:none;
+                               }
+                            }
+                        }
+                    }
+            }
+        }
+    }
+}

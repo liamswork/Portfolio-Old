@@ -1,0 +1,97 @@
+
+    em{
+        font-size: 2rem;
+    }
+
+
+.brand-background{
+    background-color: $color-primary;
+    color:#fff;
+    .container{
+        background-color: $color-primary;
+        color:#fff;
+    }
+
+    a{
+        color:#fff;
+        em{
+            margin-right: -4px;
+            margin-left: 12px;
+            line-height: 35px;
+            font-style: normal;
+        }
+    }
+
+    .h1{
+        margin-top: -6px;
+        margin-bottom: 40px;
+    }
+
+    .client-quote {
+        font-weight: 600;
+        font-size: 1.3rem;
+        font-style: italic;
+    }
+
+    .client-quote-author{
+        font-weight: 600;
+        color: #a3a8ac;
+        font-size: 1.1rem;
+    }
+
+    .btn{
+        background-color: #272936;
+        color:#fff;
+        font-size: 20px;
+        &:hover{
+            background-color:darken(#272936, 10%);
+        }
+    }
+
+    .pull-right{
+        margin-right: -12px;
+        margin-left: 12px;
+    }
+
+    .btn-trustpilot{
+        margin-top: 55px;
+        border: none;
+        background-color: $color-trustpilot;
+        &:hover{
+            background-color:darken($color-trustpilot, 10%);
+        }
+        
+    }
+    
+    .btn-google{
+        margin-top: 55px;
+        border: none;
+        margin-right: 8px;
+        background-color: $color-google;
+        &:hover{
+            background-color:darken($color-google, 10%);
+        }
+    }
+
+    .btn-google, .btn-trustpilot{
+        @media (max-width: 768px){
+            margin-top:25px;
+        }
+    }
+    .btn, .btn-google, .btn-trustpilot{
+        border-radius: 6px;
+        padding: 10px 23px;
+
+    }
+
+    .btn-primary-inverse{
+        @media (max-width: 1259px){
+        margin-bottom: 35px;
+        }
+    }
+
+
+    .fa{
+        font-style: normal;
+    }
+}

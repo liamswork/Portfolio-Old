@@ -1,0 +1,190 @@
+@include service-colors;
+header{
+    .inner{
+        padding:20px 0;
+        background-color: #fff;
+        //Target all siblings that are immediately after another sibling.  "Select ANY +object after+ ANY"
+        .actions>*+*{
+            margin-left: 20px;
+        }
+        .row{
+            margin:0;
+        }
+        .row>*{
+            @media (max-width: 767px)
+            {
+                padding:0;
+                display: table-cell;
+                float: none;
+                vertical-align: middle;
+                width: 100%;
+            }
+        }
+        //LOGO AND CONTAINER SETTINGS
+        .logo-container{
+            @media (max-width: 991px){
+                display: table;
+                table-layout: fixed;
+            }
+            .logo{
+                img{
+                    max-width: 100%;
+                    display:block;
+                }
+            }
+        }
+
+        //Mobile button to call directly, only appears on mobile view.
+        .mobile{
+            @media (max-width: 991px){
+                font-size:32px;
+                margin-left:15px;
+            }
+        }
+
+        //.ACTIONS, on mobile view this will only be the search bar.
+        .actions{
+            display:flex;
+            float:right;
+            padding:7px 0;
+            //Target both support and contact buttons.
+            .header-btn {
+                @media (min-width: 1260px){
+                display: inline-block!important;
+                }
+            }
+            
+            .btn{
+                height: 56px;
+                line-height: 46px;
+                font-size: 1.1rem;
+                float: left;
+                //Support button
+                &-it {
+                    color: #fff;
+                    background-color: #4183d7;
+                    border-color: #4183d7;
+                    &.active, &:active, &:focus, &:hover {
+                    color: #fff;
+                    background-color: #2a6ec6;
+                    border-color: #2665b5;
+                    }
+                }
+                //Contact Button
+                &-default {
+                    &.active, &:active, &:focus, &:hover {
+                        color: #fff;
+                        background-color: #84858f;
+                        border-color: #797a85;
+                    }
+            
+                    .icon-paperplane{
+                        margin-right: 5px;
+                    }
+                }
+            }
+            
+            //Not sure why the css targets any span except ones with .title, i dont see any spans with the .title. Possibly dynamically added somewhere? Kept just in case.
+            .btn span:not(.title) {
+                font-size: 1.3rem;
+                line-height: 45px;
+            }
+        }
+
+        //Hamburger section//////////////
+        button.hamburger{
+            &:hover{
+                background-color:darken($color-primary, 10%);
+                opacity:1; //overwrite hamburger opacity of 0.7.
+            }
+        }
+        .hamburger-box{
+            display:block;
+            width:32px;
+            .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after{
+                border-radius: 0px;
+                width:32px;
+                background-color:#fff;
+            } 
+        }
+        ////////////////////////////////
+
+
+        //Large screen search bar///////
+        .search-form{
+            display:flex;
+            flex-direction:row;
+            .form-control{
+                width: 300px;
+                height: 56px;
+                display: none;
+                @media (min-width: 1260px){
+                    display: inline-block!important;
+                    border-radius: 0;
+                    width: 240px;
+                }
+                @media(max-width:991px){
+                    display: inline-block!important;
+                    border-radius: 0;
+                    width: 174px;
+                }
+            }
+            button{
+                outline: none;
+                padding: 7px 20px 3px;
+                height: 56px;
+                font-size: 1.063rem;
+                border-radius: 0 3px 3px 0; //Smooth top left and bottom left corners
+                border: none;
+                vertical-align: bottom;
+                background-color: #999aa2;
+                color: #fff;
+                &:hover{
+                    background-color: darken(#999aa2,10%);
+                }
+                .icon-search{
+                    font-size:32px;
+                }
+
+                @media (min-width: 992px) and (max-width: 1259px){
+                    border-radius: 3px; //between 992 and 1259 screen width, we remove the searchbar and the button is no longer inline. So we need to smooth the whole button
+                }
+            }
+        }
+        ////////////////////////////////
+        
+        //Mobile Search form styles. This is a seperate form entirely from the tablet/pc view search form.
+        .search-form-wrapper--mobile>.search-form {
+            margin-top: 11px;
+            position: relative;
+
+            .form-control{
+                background-color: rgba(0,0,0,.1);
+                outline: 1px solid hsla(0,0%,100%,.2);
+                border: 2px solid rgba(0,0,0,.1);
+                transition: none;
+                width: 100%;
+                padding-right: 40px;
+                display: inline-block; //This allows our icon to sit on top of the form input itself.
+            }
+
+            //Mobile button.
+            button {
+                background: none;
+                border: none;
+                color: #333645;
+                position: absolute;
+                right: 5px;
+                line-height: 47px;
+                font-size: 32px;
+                outline: none;
+
+                //Icon
+                span{
+                    font-weight:600;
+                }
+            }
+        }
+        ////////////////////////////////
+    }
+}
