@@ -10,6 +10,7 @@
     background-color: #000000;
     @include glowborder('right');
     overflow:hidden;
+    transition: 1s;
 
     //Top initials container
     .initials-container{

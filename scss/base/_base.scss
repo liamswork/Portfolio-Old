@@ -181,7 +181,14 @@ hr.rounded {
 
 }
 
-
+.nav-burger{
+  position: fixed;
+  top: 10px;
+  right:10px;
+  font-size: 72px;
+  color:yellow;
+  z-index: 1001;
+}
 
 
 /* Animate neon flicker */
