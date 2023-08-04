@@ -1,13 +1,13 @@
 .sidenav{
     //Base layout for navbar.
-    display:none;
+    display:flex;
     margin:0;
     position: fixed;
     width: 300px;
     transition: 0.5s;
     height: 100%;
     top:0;
-    left:0;
+    left:-310px;
     background-color: #000000;
     @include glowborder('right');
     overflow:hidden;
