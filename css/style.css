@@ -125,7 +125,7 @@ hr.rounded {
   top: 10px;
   right: 10px;
   font-size: 72px;
-  color: yellow;
+  color: #fff;
   z-index: 1001;
 }
 
@@ -139,6 +139,10 @@ hr.rounded {
     text-shadow: none;
     box-shadow: none;
   }
+}
+
+.icon-menu:before {
+  content: "\e944";
 }
 
 .icon-treehouse:before {
@@ -839,6 +843,7 @@ hr.rounded {
   margin: 0;
   position: fixed;
   width: 300px;
+  transition: 0.5s;
   height: 100%;
   top: 0;
   left: 0;
@@ -846,7 +851,6 @@ hr.rounded {
   border-right: 3px solid white;
   box-shadow: 2px 0px 6px white, 4px 0px 8px #ae00ff, 6px 0px 8px #003cff;
   overflow: hidden;
-  transition: 1s;
 }
 
 .sidenav .initials-container {
@@ -1308,6 +1312,23 @@ hr.rounded {
 @media (min-width: 1260px) {
   .sidenav {
     display: block;
+    width: 300px;
+  }
+  .nav-burger {
+    display: none;
+  }
+}
+
+@media (max-width: 1260px) {
+  .nav-burger {
+    display: block;
+  }
+  .sidenav {
+    width: 0;
+  }
+  .navbar-expanded {
+    display: block;
+    width: 100vw;
   }
 }
 

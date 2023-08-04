@@ -4,13 +4,14 @@
     margin:0;
     position: fixed;
     width: 300px;
+    transition: 0.5s;
     height: 100%;
     top:0;
     left:0;
     background-color: #000000;
     @include glowborder('right');
     overflow:hidden;
-    transition: 1s;
+
 
     //Top initials container
     .initials-container{

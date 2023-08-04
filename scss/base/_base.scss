@@ -186,7 +186,7 @@ hr.rounded {
   top: 10px;
   right:10px;
   font-size: 72px;
-  color:yellow;
+  color:#fff;
   z-index: 1001;
 }
 
@@ -217,6 +217,9 @@ hr.rounded {
 }
 
 //Icon content links.
+.icon-menu:before {
+  content: "\e944";
+}
 .icon-treehouse:before {
   content: "\e943";
 }

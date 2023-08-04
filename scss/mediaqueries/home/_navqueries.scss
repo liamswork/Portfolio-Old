@@ -1,5 +1,28 @@
 @media (min-width: 1260px) {
     .sidenav {
       display:block;
+      width:300px;
+    }
+    .nav-burger{
+      display:none;
     }
   }
+
+
+
+  @media (max-width: 1260px) {
+    .nav-burger{
+      display:block;
+    }
+    .sidenav {
+      width:0; //Extra width declaration to fix sliding sidenav button interactions.
+    }
+    //Dynamically added class to contain styling that isnt inline overwriting style.
+    .navbar-expanded {
+      display:block;
+      width: 100vw;
+    }
+  }
+
+
+  
