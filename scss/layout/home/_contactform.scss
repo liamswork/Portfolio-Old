@@ -106,9 +106,14 @@
                 width:100%;
             }
             //dynamically generated error styling.
-            form h3{
+            form h3.error{
                 margin:8px 0;
                 color:red;
+                width:100%;
+            }
+            form h3.success{
+                margin:8px 0;
+                color:limegreen;
                 width:100%;
             }
 
