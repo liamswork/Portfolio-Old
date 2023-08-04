@@ -299,14 +299,14 @@
                       <label class="hidden" for="email">Email</label>
                       <input type="email" class="form-control" id="email" name="email" placeholder="Your email..">
                   
-                      <label class="hidden" for="subject">Email</label>
-                      <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject..">
+                      <label class="hidden" for="phone">Mobile</label>
+                      <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone...">
 
-                      <label class="hidden" for="subject">Subject</label>
+
                       <textarea id="message" class="form-control" name="message" placeholder="Write your message here.." style="height:200px"></textarea>
                   
-                      <input type="submit" class="btn" value="Submit">
-                  
+                      <input type="submit" class="btn" value="Submit" onclick="validateForm()">
+                      <h2> All form fields are required.</h2>
                     </form>
                   </div>
                 </div>
@@ -342,6 +342,7 @@
     <script src="js/jquery-3.7.0.min.js"></script>
     <script src="js/typewrite.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/validation.js"></script>
 </body>
 
 </html>

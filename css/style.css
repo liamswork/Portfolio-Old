@@ -851,6 +851,7 @@ hr.rounded {
   border-right: 3px solid white;
   box-shadow: 2px 0px 6px white, 4px 0px 8px #ae00ff, 6px 0px 8px #003cff;
   overflow: hidden;
+  z-index: 1000;
 }
 
 .sidenav .initials-container {
@@ -1118,6 +1119,7 @@ hr.rounded {
   flex-direction: row;
   align-items: center;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .contact-form .container input[type=text], .contact-form .container #email, .contact-form .container select, .contact-form .container textarea {
@@ -1144,6 +1146,18 @@ hr.rounded {
 .contact-form .container .btn:hover {
   background-color: white;
   color: #003cff;
+}
+
+.contact-form .container form h2 {
+  margin: 25px 0;
+  color: white;
+  width: 100%;
+}
+
+.contact-form .container form h3 {
+  margin: 8px 0;
+  color: red;
+  width: 100%;
 }
 
 .inner-about-me .aboutme-container .aboutme-text {

@@ -76,6 +76,7 @@
                 flex-direction: row;
                 align-items: center;
                 flex-wrap: wrap;
+                justify-content: center;
 
 
             }
@@ -97,6 +98,18 @@
                     background-color: white;
                     color:#003cff;
                 }
+            }
+            //This should be the error message.
+            form h2{
+                margin:25px 0;
+                color:white;
+                width:100%;
+            }
+            //dynamically generated error styling.
+            form h3{
+                margin:8px 0;
+                color:red;
+                width:100%;
             }
 
         }

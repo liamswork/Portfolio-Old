@@ -11,6 +11,7 @@
     background-color: #000000;
     @include glowborder('right');
     overflow:hidden;
+    z-index: 1000; //Only makes a difference when we full screen the nav with the menu button.
 
 
     //Top initials container
