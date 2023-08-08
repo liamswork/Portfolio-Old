@@ -104,7 +104,7 @@ hr.rounded {
 
 .btn {
   color: white;
-  background-color: #003cff;
+  background-color: #1a358f;
   height: auto;
   line-height: 35px;
   padding: 5px 15px;
@@ -1058,7 +1058,14 @@ hr.rounded {
   padding: 5px;
 }
 
+.contact-social {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 .contact-social h2 {
+  width: 100%;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -1068,6 +1075,7 @@ hr.rounded {
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
+  width: 250px;
 }
 
 .contact-social .social-logos a {
@@ -1077,8 +1085,8 @@ hr.rounded {
   transition: 0.5s ease;
   border: 3px solid white;
   box-shadow: 0px 0px 6px white, 0px 0px 8px #ae00ff, 0px 0px 8px 3px #003cff;
-  width: 125px;
-  height: 125px;
+  width: 75px;
+  height: 75px;
   border-radius: 50%;
   background-color: #000;
 }
@@ -1094,8 +1102,9 @@ hr.rounded {
 }
 
 .contact-social .social-logos a span {
-  font-size: 72px;
-  line-height: 98px;
+  font-size: 40px;
+  line-height: 62px;
+  padding-left: 2px;
 }
 
 .contact-form {
@@ -1124,16 +1133,7 @@ hr.rounded {
   width: 100%;
   height: 50px;
   margin-bottom: 20px;
-  font-size: 22px;
-}
-
-.contact-form .container #fname {
-  margin-right: 4%;
-}
-
-.contact-form .container #fname, .contact-form .container #lname {
-  width: 48%;
-  font-size: 22px;
+  font-size: 16px;
 }
 
 .contact-form .container .btn {
@@ -1143,7 +1143,7 @@ hr.rounded {
 
 .contact-form .container .btn:hover {
   background-color: white;
-  color: #003cff;
+  color: #1a358f;
 }
 
 .contact-form .container form h2 {
@@ -1416,36 +1416,36 @@ hr.rounded {
 }
 
 @media (min-width: 530px) {
+  .inner .container-contact-form .contact-info .contact-social .social-logos {
+    width: 300px;
+  }
   .inner .container-contact-form .contact-info .contact-social .social-logos a {
-    width: 65px;
-    height: 65px;
     padding: 3px;
-    margin-right: 5px;
+    margin-right: 2px;
   }
   .inner .container-contact-form .contact-info .contact-social .social-logos a span {
     font-size: 40px;
-    line-height: 56px;
+    line-height: 62px;
   }
 }
 
 @media (min-width: 768px) {
   .inner .container-contact-form .contact-info .contact-social .social-logos {
     flex-direction: row;
-    flex-wrap: nowrap;
     width: 100%;
   }
   .inner .container-contact-form .contact-info .contact-social .social-logos a {
-    width: 75px;
-    height: 75px;
     padding: 3px;
     margin-right: 5px;
   }
-  .inner .container-contact-form .contact-info .contact-social .social-logos a span {
-    font-size: 48px;
-    line-height: 60px;
-  }
   .inner .container-contact-form .contact-form .container {
     padding: 10px 50px;
+  }
+  .inner .container-contact-form .contact-form #fname, .inner .container-contact-form .contact-form #lname {
+    font-size: 16px;
+  }
+  .inner .container-contact-form .contact-form input[type=text], .inner .container-contact-form .contact-form #email, .inner .container-contact-form .contact-form select, .inner .container-contact-form .contact-form textarea {
+    font-size: 16px;
   }
 }
 
@@ -1458,18 +1458,12 @@ hr.rounded {
     height: 50%;
   }
   .inner .container-contact-form .contact-info .contact-social .social-logos {
+    width: 300px;
     flex-direction: row;
-    width: 100%;
   }
   .inner .container-contact-form .contact-info .contact-social .social-logos a {
-    width: 60px;
-    height: 60px;
     margin-right: 5px;
     padding: 8px;
-  }
-  .inner .container-contact-form .contact-info .contact-social .social-logos a span {
-    font-size: 32px;
-    line-height: 38px;
   }
   .inner .container-contact-form .contact-form {
     margin: 0;
@@ -1499,6 +1493,7 @@ hr.rounded {
   .inner .container-contact-form .contact-info .contact-social .social-logos {
     flex-direction: row;
     flex-wrap: wrap;
+    width: 300px;
   }
   .inner .container-contact-form .contact-info .contact-social .social-logos .logo-box {
     width: 33%;
@@ -1507,12 +1502,6 @@ hr.rounded {
   .inner .container-contact-form .contact-info .contact-social .social-logos a {
     margin-right: 5px;
     padding: 8px;
-    width: 100px;
-    height: 100px;
-  }
-  .inner .container-contact-form .contact-info .contact-social .social-logos a span {
-    font-size: 68px;
-    line-height: 72px;
   }
   .inner .container-contact-form .contact-form {
     margin: 0;
@@ -1520,5 +1509,15 @@ hr.rounded {
   }
   .inner .container-contact-form .contact-form .container {
     padding: 10px 15px;
+  }
+  .inner .container-contact-form .contact-form .container #fname {
+    margin-right: 4%;
+  }
+  .inner .container-contact-form .contact-form .container #fname, .inner .container-contact-form .contact-form .container #lname {
+    width: 48%;
+    font-size: 20px;
+  }
+  .inner .container-contact-form .contact-form .container input[type=text], .inner .container-contact-form .contact-form .container #email, .inner .container-contact-form .contact-form .container select, .inner .container-contact-form .contact-form .container textarea {
+    font-size: 20px;
   }
 }

@@ -3,16 +3,15 @@
         .contact-info{
             .contact-social{
                 .social-logos{
+                    width:300px;
                     //logo boxes
                     a{
-                        width:65px;
-                        height:65px;
                         padding:3px;
-                        margin-right:5px;
+                        margin-right:2px;
                         //logo icon
                         span{
                             font-size:40px;
-                            line-height: 56px;
+                            line-height: 62px;
                         }
                     }
                 }   
@@ -33,19 +32,11 @@
                 //logo box container
                 .social-logos{
                     flex-direction: row;
-                    flex-wrap: nowrap;
                     width:100%;
                     //logo boxes
                     a{
-                        width:75px;
-                        height:75px;
                         padding:3px;
                         margin-right:5px;
-                        //logo icon
-                        span{
-                            font-size:48px;
-                            line-height: 60px;
-                        }
                     }
                 }   
             }
@@ -55,6 +46,12 @@
         .contact-form{
             .container{
                 padding: 10px 50px;
+            }
+            #fname,#lname{
+                font-size: 16px;
+            }
+            input[type=text],#email, select,textarea{
+                font-size: 16px;
             }
         }
     }
@@ -73,20 +70,12 @@
             .contact-social{
                 //logo box container
                 .social-logos{
+                    width:300px;
                     flex-direction: row;
-                    width:100%;
                     //Logo boxes
                     a{
-                        width:60px;
-                        height:60px;
                         margin-right:5px;
                         padding:8px;
-
-                        //logo icon
-                        span{
-                            font-size:32px;
-                            line-height: 38px;
-                        }
                     }
                 }   
             }
@@ -121,6 +110,7 @@
                 .social-logos{
                     flex-direction: row;
                     flex-wrap: wrap;
+                    width:300px;
                     //logo boxes
                     .logo-box{
                         width:33%;
@@ -129,13 +119,6 @@
                     a{
                         margin-right:5px;
                         padding:8px;
-                        width:100px;
-                        height:100px;
-                        //logo icons
-                        span{
-                            font-size:68px;
-                            line-height: 72px;
-                        }
                     }
                 }   
             }
@@ -145,6 +128,14 @@
             padding: 0 15px;
             .container{
                 padding: 10px 15px;
+                #fname{margin-right:4%;}
+                #fname,#lname{
+                    width:48%;
+                    font-size: 20px;
+                }
+                input[type=text],#email, select,textarea{
+                    font-size: 20px;
+                }
             }
         }
     }
