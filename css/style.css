@@ -1328,10 +1328,6 @@ hr.rounded {
 }
 
 @media (max-height: 750px) {
-  .sidenav .nav-link-container a h1 {
-    height: 250px;
-    width: 300px;
-  }
   .sidenav .nav-link-container a h2 {
     margin: 0;
   }
