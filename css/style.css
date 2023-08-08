@@ -944,7 +944,7 @@ hr.rounded {
   text-align: center;
   margin: 0 20px;
   margin-bottom: 25px;
-  letter-spacing: 5px;
+  letter-spacing: 3px;
   line-height: 45px;
   padding: 1.5rem 1.75rem 1.5rem;
   border: 0.4rem solid #fff;
@@ -1381,6 +1381,13 @@ hr.rounded {
   }
   header .banner .banner-container .banner-text p {
     font-size: 36px;
+  }
+}
+
+@media (min-width: 420px) and (max-width: 768px) {
+  header .banner .banner-container .banner-text h1 {
+    font-size: 48px;
+    padding: 2.5rem 2.75rem 2.5rem;
   }
 }
 
