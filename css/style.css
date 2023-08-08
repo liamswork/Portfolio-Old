@@ -863,11 +863,9 @@ hr.rounded {
 }
 
 .sidenav .initials-container a h1 {
-  height: 250px;
-  width: 300px;
-  font-size: 13rem;
+  font-size: 11rem;
   text-shadow: 0 0 7px #003cff, 0 0 10px #003cff, 0 0 21px #003cff, 0 0 42px #ae00ff, 0 0 82px #ae00ff, 0 0 92px #ae00ff, 0 0 102px #ae00ff, 0 0 151px #ae00ff;
-  padding: 4rem 6rem 5.5rem;
+  padding: 3rem 5rem 4.5rem;
   border: 0.4rem solid #fff;
   text-transform: uppercase;
   animation: flicker 1.5s infinite alternate;
@@ -946,9 +944,9 @@ hr.rounded {
   text-align: center;
   margin: 0 20px;
   margin-bottom: 25px;
-  letter-spacing: 12px;
-  line-height: 50px;
-  padding: 3rem 4rem 4rem;
+  letter-spacing: 5px;
+  line-height: 45px;
+  padding: 1.5rem 1.75rem 1.5rem;
   border: 0.4rem solid #fff;
   border-radius: 2rem;
   text-transform: uppercase;
@@ -1329,6 +1327,16 @@ hr.rounded {
   }
 }
 
+@media (max-height: 750px) {
+  .sidenav .nav-link-container a h1 {
+    height: 250px;
+    width: 300px;
+  }
+  .sidenav .nav-link-container a h2 {
+    margin: 0;
+  }
+}
+
 @media (min-width: 1260px) {
   .sidenav {
     display: block;
@@ -1373,19 +1381,10 @@ hr.rounded {
     font-size: 72px;
     margin-bottom: 0;
     padding: 3.5rem 5rem 5rem;
+    line-height: 75px;
   }
   header .banner .banner-container .banner-text p {
     font-size: 36px;
-  }
-}
-
-@media (min-width: 1260px) {
-  header .banner .banner-container .banner-text {
-    display: flex;
-  }
-  header .banner .banner-container .banner-text h1 {
-    font-size: 72px;
-    margin-bottom: 0;
   }
 }
 

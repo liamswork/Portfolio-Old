@@ -29,139 +29,83 @@ function validateForm(){
     let inputArray = [$fName.val(), $lName.val(), $email.val(), $phone.val(), $message.val()];
     let inputBoxArray = [$fName, $lName, $email, $phone, $message];
 
-    
+    //Remove previous h3 errors/sucesses.
+    const errorHeadings = $('h3.error');
+    errorHeadings.remove();
+    const successHeadings = $('h3.success');
+    successHeadings.remove();
 
-
-        //Remove previous h3 errors/sucesses.
-        const errorHeadings = $('h3.error');
-        errorHeadings.remove();
-        const successHeadings = $('h3.success');
-        successHeadings.remove();
-
-        //If ANY fields are empty.
-        for(let i = 0; i < inputArray.length; i++){
-            //Check to see if we already have an empty error message. If not, make one and append it.
-            if(isEmpty(inputArray[i])){
-                if(emptyError == ""){
-                    emptyError = "None of the fields can be empty.";
-                    $contactForm.append(`<h3 class="error">${emptyError}</h3>`)
-                }
-                //Add Error border
-                inputBoxArray[i].css("border", "3px solid red");
-            }else{
-                //Remove error border
-                inputBoxArray[i].css("border", "none");
-            }
-        }
-
-        
-        //If first name pattern is not valid
-        if(!namePattern.test($fName.val())){
-            //Check to see if we already have a name error. If not, make one and append it.
-            if(nameError == ""){
-                nameError = "Somethings wrong with the name you put in.";
-                $contactForm.append(`<h3 class="error">${nameError}</h3>`)
+    //If ANY fields are empty.
+    for(let i = 0; i < inputArray.length; i++){
+        //Check to see if we already have an empty error message. If not, make one and append it.
+        if(isEmpty(inputArray[i])){
+            if(emptyError == ""){
+                emptyError = "None of the fields can be empty.";
+                $contactForm.append(`<h3 class="error">${emptyError}</h3>`)
             }
             //Add Error border
-            $fName.css("border", "3px solid red");
-        } else {
+            inputBoxArray[i].css("border", "3px solid red");
+        }else{
             //Remove error border
-            $fName.css("border", "none");
-        }
-
-        //If last name pattern is not valid
-        if(!namePattern.test($lName.val())){
-            //Check to see if we already have a name error. If not, make one and append it.
-            if(nameError == ""){
-                nameError = "Somethings wrong with the name you put in.";
-                $contactForm.append(`<h3 class="error">${nameError}</h3>`)
-            }
-            //Add Error border
-            $lName.css("border", "3px solid red");
-        } else {
-            //Remove error border
-            $lName.css("border", "none");
-        }
-
-        //If email pattern is not valid
-        if(!emailPattern.test($email.val())){
-            //Add Error message
-            emailError = "Incorrect email format.";
-            $contactForm.append(`<h3 class="error">${emailError}</h3>`);
-            //Add error border
-            $email.css("border", "3px solid red");
-        } else {
-            //Remove error border
-            $email.css("border", "none");
-        }
-
-        //If phone pattern is not valid
-        if(!phonePattern.test($phone.val())){
-            //Add Error message
-            phoneError = "Incorrect phone format.";
-            $contactForm.append(`<h3 class="error">${phoneError}</h3>`);
-            //Add error border
-            $phone.css("border", "3px solid red");
-        } else {
-            //Remove error border
-            $phone.css("border", "none");
-        }
-        if(emptyError == "" || nameError == "" || phoneError == "" || emailError == "" ){
-            $contactForm.append(`<h3 class="success">Form sent successfully! I'll get back to you as soon as possible.</h3>`);
+            inputBoxArray[i].css("border", "none");
         }
     }
 
-    checkInputs();
-
-    //REGEX WATCHERS
-    //console.log($email.text());
-    //console.log(emailPattern.test($email.val()));
-    //console.log($phone.text());
-    //console.log(phonePattern.test($phone.val()));
-
-    //TO DO
-    //MAKE SURE THEY ARE VALID, E.G FIRST NAMES ONLY CONTAIN CERTAIN CHARCTERS, EMAIL REGEX, ETC
-    //IF ANY ERROR MESSAGES, PRINT WARNING MESSAGE
-    //WHEN ALL ENTRIES ARE FILLED AND NO ERRORS, PRINT SUCCESS MESSAGE
-
-   
-
-    //Handle empty boxes
-    /*if( !isEmpty($fName.val()) && !isEmpty($lName.val()) && !isEmpty($email.val()) &&
-        !isEmpty($phone.val()) && !isEmpty($message.val())){
-            console.log("There's no empty fields.");
-            $errorElement.text("There are no empty fields.");
-            $errorElement.css("color", "limegreen");
+    //If first name pattern is not valid
+    if(!namePattern.test($fName.val())){
+        //Check to see if we already have a name error. If not, make one and append it.
+        if(nameError == ""){
+            nameError = "Somethings wrong with the name you put in.";
+            $contactForm.append(`<h3 class="error">${nameError}</h3>`)
+        }
+        //Add Error border
+        $fName.css("border", "3px solid red");
     } else {
-        $errorElement.text("None of the fields can be empty.");
-        $errorElement.css("color", "red");
-    }*/
+        //Remove error border
+        $fName.css("border", "none");
+    }
 
-    //DEBUG WATCHERS---------------------------------------------------------------
-    //Reference to box testers.
-    //$fName.css("background-color", "red");
-    //$lName.css("background-color", "red");
-    //$email.css("background-color", "red");
-    //$phone.css("background-color", "red");
-    //$message.css("background-color", "red");
-    //$contactForm.css("background-color", "red");
-    
-    //Reference to box VALUE testers.
-    //console.log(`The value inside first name: ${$fName.val()}`);
-    //console.log(`The value inside last name: ${$lName.val()}`);
-    //console.log(`The value inside email: ${$email.val()}`);
-    //console.log(`The value inside phone: ${$phone.val()}`);
-    //console.log(`The value inside message: ${$message.val()}`);
+    //If last name pattern is not valid
+    if(!namePattern.test($lName.val())){
+        //Check to see if we already have a name error. If not, make one and append it.
+        if(nameError == ""){
+            nameError = "Somethings wrong with the name you put in.";
+            $contactForm.append(`<h3 class="error">${nameError}</h3>`)
+        }
+        //Add Error border
+        $lName.css("border", "3px solid red");
+    } else {
+        //Remove error border
+        $lName.css("border", "none");
+    }
 
-    //isEmpty tester.
-    //console.log(`The value inside first name is empty: ${isEmpty($fName.val())}`);
-    //console.log(`The value inside last name is empty: ${isEmpty($lName.val())}`);
-    //console.log(`The value inside email is empty: ${isEmpty($email.val())}`);
-    //console.log(`The value inside phone is empty: ${isEmpty($phone.val())}`);
-    //console.log(`The value inside message is empty: ${isEmpty($message.val())}`);
-    //DEBUG WATCHERS END   ----------------------------------------------------------
+    //If email pattern is not valid
+    if(!emailPattern.test($email.val())){
+        //Add Error message
+        emailError = "Incorrect email format.";
+        $contactForm.append(`<h3 class="error">${emailError}</h3>`);
+        //Add error border
+        $email.css("border", "3px solid red");
+    } else {
+        //Remove error border
+        $email.css("border", "none");
+    }
 
-  
+    //If phone pattern is not valid
+    if(!phonePattern.test($phone.val())){
+        //Add Error message
+        phoneError = "Incorrect phone format.";
+        $contactForm.append(`<h3 class="error">${phoneError}</h3>`);
+        //Add error border
+        $phone.css("border", "3px solid red");
+    } else {
+        //Remove error border
+        $phone.css("border", "none");
+    }
+    if(emptyError == "" && nameError == "" && phoneError == "" && emailError == "" ){
+        $contactForm.append(`<h3 class="success">Form sent successfully! I'll get back to you as soon as possible.</h3>`);
+    }
+}
 
 function isEmpty(value){
     if(value === ""){

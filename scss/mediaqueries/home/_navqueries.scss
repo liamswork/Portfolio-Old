@@ -1,3 +1,16 @@
+@media (max-height: 750px) {
+  .sidenav .nav-link-container a{
+  h1{
+    height:250px;
+    width:300px;
+  }
+
+    h2{
+      margin:0;
+    }
+  }
+}
+
 @media (min-width: 1260px) {
     .sidenav {
       display:block;
@@ -8,8 +21,6 @@
       display:none;
     }
   }
-
-
 
   @media (max-width: 1260px) {
     .nav-burger{
