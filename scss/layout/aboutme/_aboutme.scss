@@ -1,7 +1,28 @@
 .inner-about-me{
+    .content-container{
+        padding:15px 40px;
+        .about-description{
+            h1, h2, p{
+                margin-bottom: 10px;
+            }
+            .project-link{
+                transition: ease .5s;
+                text-shadow: 0px 0px 6px white,
+                0px 0px 8px #ae00ff,
+                0px 0px 8px#003cff;
+                border:3px solid transparent;
+                border-radius: 8px;
+                &:hover{
+                    text-decoration: none;
+                    @include glowborder("all", "hover");
+                    border:3px solid transparent;
+                    border-radius: 8px;
+                }
+            }
+        }
+    }
     .aboutme-container{
         .aboutme-text{
-            width:50%;
             .contact-social{
                 .social-logos{
                     display:flex;
@@ -12,6 +33,7 @@
             }
         }
         .aboutme-img{
+            text-align: center;
             img{
                 height:initial;
             }

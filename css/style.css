@@ -117,7 +117,8 @@ hr.rounded {
 .content-container {
   background-color: #333333;
   border-radius: 10px;
-  padding: 5px;
+  padding: 15px;
+  margin: 15px 0;
 }
 
 .nav-burger {
@@ -1180,8 +1181,27 @@ hr.rounded {
   width: 100%;
 }
 
-.inner-about-me .aboutme-container .aboutme-text {
-  width: 50%;
+.inner-about-me .content-container {
+  padding: 15px 40px;
+}
+
+.inner-about-me .content-container .about-description h1, .inner-about-me .content-container .about-description h2, .inner-about-me .content-container .about-description p {
+  margin-bottom: 10px;
+}
+
+.inner-about-me .content-container .about-description .project-link {
+  transition: ease .5s;
+  text-shadow: 0px 0px 6px white, 0px 0px 8px #ae00ff, 0px 0px 8px #003cff;
+  border: 3px solid transparent;
+  border-radius: 8px;
+}
+
+.inner-about-me .content-container .about-description .project-link:hover {
+  text-decoration: none;
+  border: 3px solid white;
+  box-shadow: 0px 0px 6px white, 0px 0px 12px #ae00ff, 0px 0px 16px 7px #003cff;
+  border: 3px solid transparent;
+  border-radius: 8px;
 }
 
 .inner-about-me .aboutme-container .aboutme-text .contact-social .social-logos {
@@ -1189,6 +1209,10 @@ hr.rounded {
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
+}
+
+.inner-about-me .aboutme-container .aboutme-img {
+  text-align: center;
 }
 
 .inner-about-me .aboutme-container .aboutme-img img {
@@ -1225,7 +1249,7 @@ hr.rounded {
 .article-container {
   background-color: #333333;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
@@ -1256,6 +1280,7 @@ hr.rounded {
 
 .article-container .article-img {
   margin-top: 20px;
+  width: 100%;
 }
 
 .article-container .article-img img {
@@ -1270,12 +1295,17 @@ hr.rounded {
 @media (min-width: 768px) {
   .article-container {
     flex-wrap: nowrap;
+    flex-direction: row;
   }
   .article-container:nth-child(4n+1) {
     flex-direction: row-reverse;
   }
+  .article-container .article-text {
+    width: 50%;
+  }
   .article-container .article-img {
     margin: 0 30px;
+    width: 50%;
   }
   .article-container .article-img img {
     width: 300px;
@@ -1320,7 +1350,7 @@ hr.rounded {
     margin: 0 35px;
   }
   .container {
-    width: 900px;
+    width: 100%;
   }
   .inner {
     margin: 0 45px;
@@ -1496,43 +1526,40 @@ hr.rounded {
 }
 
 @media (min-width: 1260px) {
-  .inner .container-contact-form {
-    margin: 25px 0;
-  }
-  .inner .container-contact-form .contact-info {
+  .inner .contact-info {
     display: block;
   }
-  .inner .container-contact-form .contact-info .contact-details, .inner .container-contact-form .contact-info .contact-social {
+  .inner .contact-info .contact-details, .inner .contact-info .contact-social {
     height: 50%;
   }
-  .inner .container-contact-form .contact-info .contact-social .social-logos {
+  .inner .contact-info .contact-social .social-logos {
     flex-direction: row;
     flex-wrap: wrap;
     width: 300px;
   }
-  .inner .container-contact-form .contact-info .contact-social .social-logos .logo-box {
+  .inner .contact-info .contact-social .social-logos .logo-box {
     width: 33%;
     text-align: center;
   }
-  .inner .container-contact-form .contact-info .contact-social .social-logos a {
+  .inner .contact-info .contact-social .social-logos a {
     margin-right: 5px;
     padding: 8px;
   }
-  .inner .container-contact-form .contact-form {
+  .inner .contact-form {
     margin: 0;
     padding: 0 15px;
   }
-  .inner .container-contact-form .contact-form .container {
+  .inner .contact-form .container {
     padding: 10px 15px;
   }
-  .inner .container-contact-form .contact-form .container #fname {
+  .inner .contact-form .container #fname {
     margin-right: 4%;
   }
-  .inner .container-contact-form .contact-form .container #fname, .inner .container-contact-form .contact-form .container #lname {
+  .inner .contact-form .container #fname, .inner .contact-form .container #lname {
     width: 48%;
     font-size: 20px;
   }
-  .inner .container-contact-form .contact-form .container input[type=text], .inner .container-contact-form .contact-form .container #email, .inner .container-contact-form .contact-form .container select, .inner .container-contact-form .contact-form .container textarea {
+  .inner .contact-form .container input[type=text], .inner .contact-form .container #email, .inner .contact-form .container select, .inner .contact-form .container textarea {
     font-size: 20px;
   }
 }
