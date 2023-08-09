@@ -25,6 +25,10 @@ function validateForm(){
     let emailError = "";
     let phoneError = "";
 
+    let errorMessage = "There are some issues with the form";
+
+
+
     //Input array
     let inputArray = [$fName.val(), $lName.val(), $email.val(), $phone.val(), $message.val()];
     let inputBoxArray = [$fName, $lName, $email, $phone, $message];
@@ -40,8 +44,10 @@ function validateForm(){
         //Check to see if we already have an empty error message. If not, make one and append it.
         if(isEmpty(inputArray[i])){
             if(emptyError == ""){
-                emptyError = "None of the fields can be empty.";
-                $contactForm.append(`<h3 class="error">${emptyError}</h3>`)
+                emptyError = "none of the fields can be empty";
+                errorMessage = errorMessage.concat(", ", emptyError);
+                console.log(errorMessage);
+                //$contactForm.append(`<h3 class="error">${emptyError}</h3>`)
             }
             //Add Error border
             inputBoxArray[i].css("border", "3px solid red");
@@ -55,8 +61,9 @@ function validateForm(){
     if(!namePattern.test($fName.val())){
         //Check to see if we already have a name error. If not, make one and append it.
         if(nameError == ""){
-            nameError = "Somethings wrong with the name you put in.";
-            $contactForm.append(`<h3 class="error">${nameError}</h3>`)
+            nameError = "incorrect name format";
+            errorMessage = errorMessage.concat(", ", nameError);
+           //$contactForm.append(`<h3 class="error">${nameError}</h3>`)
         }
         //Add Error border
         $fName.css("border", "3px solid red");
@@ -69,8 +76,9 @@ function validateForm(){
     if(!namePattern.test($lName.val())){
         //Check to see if we already have a name error. If not, make one and append it.
         if(nameError == ""){
-            nameError = "Somethings wrong with the name you put in.";
-            $contactForm.append(`<h3 class="error">${nameError}</h3>`)
+            nameError = "incorrect name format";
+            errorMessage = errorMessage.concat(", ", nameError);
+            //$contactForm.append(`<h3 class="error">${nameError}</h3>`)
         }
         //Add Error border
         $lName.css("border", "3px solid red");
@@ -82,8 +90,9 @@ function validateForm(){
     //If email pattern is not valid
     if(!emailPattern.test($email.val())){
         //Add Error message
-        emailError = "Incorrect email format.";
-        $contactForm.append(`<h3 class="error">${emailError}</h3>`);
+        emailError = "incorrect email format";
+        errorMessage = errorMessage.concat(", ", emailError);
+        //$contactForm.append(`<h3 class="error">${emailError}</h3>`);
         //Add error border
         $email.css("border", "3px solid red");
     } else {
@@ -94,8 +103,9 @@ function validateForm(){
     //If phone pattern is not valid
     if(!phonePattern.test($phone.val())){
         //Add Error message
-        phoneError = "Incorrect phone format.";
-        $contactForm.append(`<h3 class="error">${phoneError}</h3>`);
+        phoneError = "incorrect phone format";
+        errorMessage = errorMessage.concat(", ", phoneError);
+        //$contactForm.append(`<h3 class="error">${phoneError}</h3>`);
         //Add error border
         $phone.css("border", "3px solid red");
     } else {
@@ -104,6 +114,8 @@ function validateForm(){
     }
     if(emptyError == "" && nameError == "" && phoneError == "" && emailError == "" ){
         $contactForm.append(`<h3 class="success">Form sent successfully! I'll get back to you as soon as possible.</h3>`);
+    }else{
+        $contactForm.append(`<h3 class="error">${errorMessage}.</h3>`);
     }
 }
 

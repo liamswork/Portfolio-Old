@@ -7,7 +7,7 @@
             }
             .project-link{
                 transition: ease .5s;
-                text-shadow: 0px 0px 6px white,
+                text-shadow: 0px 0px 3px white,
                 0px 0px 8px #ae00ff,
                 0px 0px 8px#003cff;
                 border:3px solid transparent;
@@ -24,6 +24,22 @@
     .aboutme-container{
         .aboutme-text{
             .contact-social{
+                @media(min-width:560px)and(max-width:768px){
+                    .social-logos{
+                        width:300px;
+                    }
+                }
+                @media(min-width:768px){
+                    .social-logos{
+                        width:250px;
+                    }
+                }
+                @media(min-width:992px){
+                    .social-logos{
+                        width:300px;
+                    }
+                }
+
                 .social-logos{
                     display:flex;
                     flex-direction: row;

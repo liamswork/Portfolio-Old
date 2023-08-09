@@ -191,6 +191,14 @@ hr.rounded {
   z-index: 1001;
 }
 
+.article-header{
+  color:white;
+  text-shadow: 0px 0px 3px white,
+  0px 0px 8px #ae00ff,
+  0px 0px 16px#003cff;
+  font-weight: 600;
+}
+
 
 /* Animate neon flicker */
 @keyframes flicker {

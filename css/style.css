@@ -130,6 +130,12 @@ hr.rounded {
   z-index: 1001;
 }
 
+.article-header {
+  color: white;
+  text-shadow: 0px 0px 3px white, 0px 0px 8px #ae00ff, 0px 0px 16px #003cff;
+  font-weight: 600;
+}
+
 /* Animate neon flicker */
 @keyframes flicker {
   0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
@@ -1191,7 +1197,7 @@ hr.rounded {
 
 .inner-about-me .content-container .about-description .project-link {
   transition: ease .5s;
-  text-shadow: 0px 0px 6px white, 0px 0px 8px #ae00ff, 0px 0px 8px #003cff;
+  text-shadow: 0px 0px 3px white, 0px 0px 8px #ae00ff, 0px 0px 8px #003cff;
   border: 3px solid transparent;
   border-radius: 8px;
 }
@@ -1202,6 +1208,24 @@ hr.rounded {
   box-shadow: 0px 0px 6px white, 0px 0px 12px #ae00ff, 0px 0px 16px 7px #003cff;
   border: 3px solid transparent;
   border-radius: 8px;
+}
+
+@media (min-width: 560px) and (max-width: 768px) {
+  .inner-about-me .aboutme-container .aboutme-text .contact-social .social-logos {
+    width: 300px;
+  }
+}
+
+@media (min-width: 768px) {
+  .inner-about-me .aboutme-container .aboutme-text .contact-social .social-logos {
+    width: 250px;
+  }
+}
+
+@media (min-width: 992px) {
+  .inner-about-me .aboutme-container .aboutme-text .contact-social .social-logos {
+    width: 300px;
+  }
 }
 
 .inner-about-me .aboutme-container .aboutme-text .contact-social .social-logos {
@@ -1300,10 +1324,11 @@ hr.rounded {
   .article-container:nth-child(4n+1) {
     flex-direction: row-reverse;
   }
-  .article-container .article-text {
-    width: 50%;
+  .article-container:nth-child(4n+1) .article-img {
+    text-align: start;
   }
   .article-container .article-img {
+    text-align: end;
     margin: 0 30px;
     width: 50%;
   }
@@ -1494,7 +1519,7 @@ hr.rounded {
 @media (min-width: 992px) {
   .inner .container-contact-form .row {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
   }
   .inner .container-contact-form .contact-info .contact-details, .inner .container-contact-form .contact-info .contact-social {
     height: 50%;
