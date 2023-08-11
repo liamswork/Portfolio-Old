@@ -136,6 +136,10 @@ hr.rounded {
   font-weight: 600;
 }
 
+.nav-burger {
+  text-shadow: 0px 0px 3px white, 0px 0px 8px #ae00ff, 0px 0px 8px #003cff;
+}
+
 /* Animate neon flicker */
 @keyframes flicker {
   0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
@@ -1293,6 +1297,10 @@ hr.rounded {
   justify-content: center;
 }
 
+.article-container ul {
+  padding: 0;
+}
+
 .article-container .article-text {
   text-align: center;
   width: 100%;
@@ -1305,6 +1313,7 @@ hr.rounded {
 .article-container .article-img {
   margin-top: 20px;
   width: 100%;
+  text-align: center;
 }
 
 .article-container .article-img img {

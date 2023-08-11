@@ -4,6 +4,9 @@
         margin-top: 25px;
         display: flex;
         justify-content: space-between;
+        h2,h3{
+            margin-bottom: 0;
+        }
     }
     a:not(.btn), strong:not(.btn) {
         font-weight: 600;
@@ -13,7 +16,7 @@
 
 .latest-articles{
     .section{
-        padding-top:20px;
+        padding-top:0;
     }
 }
 

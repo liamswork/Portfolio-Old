@@ -9,6 +9,9 @@
                 line-height: 30px;
                 justify-content: center;
             }
+            ul{
+                padding:0;
+            }
 
             background-color: #333333;
             display:flex;
@@ -30,6 +33,7 @@
             .article-img{
                 margin-top:20px;
                 width:100%;
+                text-align: center;
                 img{
                     border-radius: 50px;
                     width: 200px;

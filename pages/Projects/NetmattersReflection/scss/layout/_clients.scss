@@ -1,20 +1,19 @@
 .cms-block{
-    .section-clients{
+    .section{
         padding-top: 50px;
         padding-bottom: 50px;
 
-        .sliding-clients{
+        .sliding-clients,.sliding-partners{
             display: flex;
             flex-direction: row;
             text-align: center;
-            justify-content: center;
-            width:100%;
-            position: relative;
+
             .owl-stage-outer{
-                overflow:visible;
+                overflow: inherit;
                 .owl-stage{
                     //some styles possibly missing here, alot of the styles are spread out on the original elements. Try to get stable and re-visit.
                     //possibly use some bootstrap visibility/media query to limit logo amounts to appear cleaner
+
                     display: flex;
                     .item{
                         vertical-align: middle;
@@ -29,7 +28,6 @@
                         &:hover{
                             .description{
                                 display:block;
-        
                             }
                         }
                         .box{

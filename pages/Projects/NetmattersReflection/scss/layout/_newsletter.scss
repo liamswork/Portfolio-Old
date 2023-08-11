@@ -1,4 +1,12 @@
 .newsletter-full-width{
+    form{
+        button{
+            &:hover{
+                background-color: #22242e;
+            }
+        }
+
+    }
 
     background-color: #ddd ;
     h2{
