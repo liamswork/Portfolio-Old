@@ -2,19 +2,11 @@
     .section{
         padding-top: 50px;
         padding-bottom: 50px;
-        .clinets{
-            display: flex;
-            flex-direction: row;
-            text-align: center;
-        }
         .sliding-clients,.sliding-partners{
-            display: flex;
-            flex-direction: row;
-            text-align: center;
-
             .owl-stage-outer{
                 overflow: inherit;
                 .owl-stage{
+                    min-width: 5500px;
                     .item{
                         vertical-align: middle;
                         padding: 0 20px;

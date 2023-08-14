@@ -6,6 +6,12 @@ footer{
     @media (min-width: 1260px){
             padding:47px 0 0;
     }
+    @media (min-width: 992px){
+        padding:37px 0 0;
+    }
+    @media (min-width: 768px){
+        padding:25px 0 0;
+    }
 
     h4{
         color:#fff;
@@ -25,7 +31,7 @@ footer{
             //FOOTER SOCIAL BOX
             .footer-social{
                 &>h4{
-                    margin-top: 15px;
+                    margin: 25px 0;
                 }
                 @media (max-width: 767px){
                     width:100%
@@ -35,6 +41,7 @@ footer{
                 width: 400px;
                 }
                 a{
+                min-width: 70px;
                 text-decoration: none;
                 text-align: center;
                 margin-right: 10px;
