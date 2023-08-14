@@ -67,6 +67,10 @@ $color-themes: (
   -moz-osx-font-smoothing: grayscale;
 }
 
+.main-wrapper{
+  overflow: hidden;
+}
+
 //Default description box to hidden and off of the page flow.
 .description{
   display:none;

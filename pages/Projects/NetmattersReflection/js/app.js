@@ -1,22 +1,22 @@
 $(document).ready(function(){
-    $('.owl-partners').owlCarousel({
+    $('.sliding-partners').owlCarousel({
         margin:10,
         loop:true,
         autoWidth:true,
-        items: 9,
+        items: 1,
         dots: false,
         autoplay:true,
-        autoplayTimeout:3000,
+        autoplayTimeout:2000,
         autoplayHoverPause:true
-    })
+    });
     $('.sliding-clients').owlCarousel({
         margin:10,
         loop:true,
         autoWidth:true,
-        items: 9,
+        items: 1,
         dots: false,
         autoplay:true,
-        autoplayTimeout:3000,
+        autoplayTimeout:2000,
         autoplayHoverPause:true
-    })
+    });
 });

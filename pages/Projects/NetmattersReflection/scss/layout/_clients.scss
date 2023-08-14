@@ -2,7 +2,11 @@
     .section{
         padding-top: 50px;
         padding-bottom: 50px;
-
+        .clinets{
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+        }
         .sliding-clients,.sliding-partners{
             display: flex;
             flex-direction: row;
@@ -11,10 +15,6 @@
             .owl-stage-outer{
                 overflow: inherit;
                 .owl-stage{
-                    //some styles possibly missing here, alot of the styles are spread out on the original elements. Try to get stable and re-visit.
-                    //possibly use some bootstrap visibility/media query to limit logo amounts to appear cleaner
-
-                    display: flex;
                     .item{
                         vertical-align: middle;
                         padding: 0 20px;
