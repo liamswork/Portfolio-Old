@@ -53,11 +53,12 @@
     $colors: map-get($color-themes, $color-type);
     @each $class, $color in $colors {
 
-        .description{
+            
             .btn-#{$class}{
                 background-color: $color;
+                color:white;
             }
-        }
+
 
         //NAV HEADER ICONS.
         .main-navigation{

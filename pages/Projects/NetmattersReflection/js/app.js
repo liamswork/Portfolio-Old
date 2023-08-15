@@ -19,4 +19,12 @@ $(document).ready(function(){
         autoplayTimeout:2000,
         autoplayHoverPause:true
     });
+    $('.banner-slider').owlCarousel({
+        loop:true,
+        items: 1,
+        dots: true,
+        autoplay:true,
+        autoplayTimeout:4000,
+        autoplayHoverPause:true
+    });
 });

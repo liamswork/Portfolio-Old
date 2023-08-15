@@ -71,6 +71,10 @@ $color-themes: (
   overflow: hidden;
 }
 
+.shown{
+  display:block;
+}
+
 //Default description box to hidden and off of the page flow.
 .description{
   display:none;
