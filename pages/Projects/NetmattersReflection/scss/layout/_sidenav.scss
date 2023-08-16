@@ -1,0 +1,106 @@
+.overlay{
+    position:fixed;
+    z-index: 99;
+    left:-2000px;
+    height:100vh;
+    width:100vw;
+    transition: background-color 1s;
+    background-color:rgba(0, 0, 0, 0.05);
+    &.shown{
+        transition: left 0s, background-color 0.5s;
+        left:0;
+        background-color:rgba(0, 0, 0, 0.3);
+    }
+}
+
+.sidebar.navbar-expanded{
+    transition:0.5s ease;
+    right:0!important;
+}
+.main-wrapper.navbar-expanded{
+    transition: margin-left .5s;
+    margin-left:-350px!important;
+    overflow:hidden;
+}
+
+body.navbar-expanded{
+    overflow:hidden;
+}
+
+.sidebar{
+    position:fixed;
+    background-color: $color-primary;
+    width:275px;
+    height:100%;
+    overflow:auto;
+    top:0;
+    right:-350px;
+    z-index:101;
+    transition:right 0.5s;
+    @media(min-width:992px){
+        width:350px;
+    }
+    //---Normalize lists.---
+    ul{
+        list-style:none;
+        padding:0;
+        margin:0;
+    }
+    li{
+        border-top: 1px solid rgba(0,0,0,.45);
+    }
+    a{
+        color: white;
+        text-transform: uppercase;
+    }
+    //---End of normalize.---
+
+
+    //Smaller Nav
+    .main{
+        padding:21px 0;
+    }
+    //Larger nav
+    .larger-nav{
+
+         &>li{
+            //Title of subsection.
+            //--Highlight this when anywhere in sub
+            //section is hovered over?--
+            &>a{
+                display: block;
+                position: relative;
+                color: #fff;
+                padding: 20px;
+                text-transform: uppercase;
+                text-decoration: none;
+                font-size: 1rem;
+            }
+            //Subsection of menu.
+            .sub-menu-banner{
+                .container{
+                    width:auto;
+                    padding-left: 0;
+                }
+                .nav-item{
+                    a{
+                        border-top: 1px solid hsla(0,0%,100%,.05);
+                        display: block;
+                        position: relative;
+                        background-color: rgba(0,0,0,.25);
+                        padding: 15px 20px;
+                        text-transform: uppercase;
+                        font-size: .875rem;
+                        text-decoration: none;
+
+                        &:before{
+                            content: "\BB";
+                            padding-right: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

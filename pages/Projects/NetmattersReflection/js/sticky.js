@@ -12,6 +12,7 @@ There are two headers.
 ".header-sticky" is the header that defaults to "display-none", until the previously mentioned conditions are met.
 */
 
+document.addEventListener("DOMContentLoaded", function() {
 //Create references to header elements and body of the document (main wrapper).
 const stickyHeader = document.querySelector('.header-sticky');
 const defaultHeader = document.querySelector('.header-default');
@@ -26,16 +27,15 @@ const headerHeight = defaultHeader.offsetHeight + 50;
 window.addEventListener("scroll", stickyFunction);
 function stickyFunction(event){
     const scrollDistance = window.scrollY; 
-
     //If we're past the header buffer zone
     if(scrollDistance > headerHeight){
-        console.log("Scroll, past buffer zone")
+        //console.log("Scroll, past buffer zone")
         if(scrollDistance > previousScrollPosition){
-            console.log("Scrolled down");
+            //console.log("Scrolled down");
             stickyHeader.classList.remove("sticky-shown")
             stickyHeader.classList.add("sticky-hidden")
         }else{
-            console.log("Scrolled up");
+            //console.log("Scrolled up");
             stickyHeader.classList.add("sticky-shown")
             stickyHeader.classList.remove("sticky-hidden")
         }
@@ -46,4 +46,5 @@ function stickyFunction(event){
 
     //Update previous scroll position for future checks.
     previousScrollPosition = scrollDistance;
-}
+    }
+  });

@@ -68,12 +68,18 @@ $color-themes: (
 }
 
 .main-wrapper{
-  overflow: hidden;
+  overflow:auto;
+  transition: margin-left 0.5s;
+}
+
+.main-inner{
+  overflow:hidden;
 }
 
 .shown{
   display:block;
 }
+
 
 //Default description box to hidden and off of the page flow.
 .description{

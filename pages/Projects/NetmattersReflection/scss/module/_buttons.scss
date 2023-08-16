@@ -28,6 +28,10 @@
     white-space: normal;
 }
 
+.btn:focus{
+    outline:none!important;
+}
+
 .btn-subscribe {
     outline: none;
     color: #fff;

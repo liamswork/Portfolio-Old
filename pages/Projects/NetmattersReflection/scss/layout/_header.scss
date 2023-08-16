@@ -7,6 +7,12 @@ header{
         top: -200px;
         z-index: 100;
         transition: 0.5s ease;
+        .container{
+            @media(max-width:992px){
+                padding: 10px 10px 20px 10px;
+            }
+        }
+
     }
     .sticky-shown{
         top: 0px;
