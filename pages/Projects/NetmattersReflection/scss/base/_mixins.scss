@@ -59,6 +59,24 @@
                 color:white;
             }
 
+            .icon-#{$class}{
+                color:$color;
+                &:hover{
+                    
+                }
+            }
+        .banner .sliding .owl-stage-outer .owl-stage .owl-stage .owl-item .item .content{
+            .btn-#{$class}{
+
+                    background-color: $color;
+                    border-color: $color;
+                &.active, &:active, &:focus, &:hover {
+                    color: #fff;
+                    //background-color: #7e57a0;
+                    //border-color: #735093;
+                }
+            }
+        }
 
         //NAV HEADER ICONS.
         .main-navigation{
@@ -90,6 +108,9 @@
             //CARD ICON
             .icon{
                 background-color: $color;
+                span{
+                    color:white;
+                }
             }
 
             //CARD BUTTON
@@ -102,6 +123,9 @@
                 .icon{
                     background-color: white;
                     color: $color;
+                    span{
+                        color:$color;
+                    }
                 }
                 .btn-container .btn{
                     background-color: white;

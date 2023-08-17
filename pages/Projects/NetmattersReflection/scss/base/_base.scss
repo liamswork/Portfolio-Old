@@ -68,8 +68,12 @@ $color-themes: (
 }
 
 .main-wrapper{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
   overflow:auto;
-  transition: margin-left 0.5s;
+  transition: all 0.5s;
 }
 
 .main-inner{

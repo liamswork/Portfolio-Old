@@ -51,6 +51,16 @@
         text-align: center;
         
         a{
+            position:relative;
+            &:after{
+                content: "new";
+                position: absolute;
+                top: -15px;
+                bottom: 0;
+                right: -164px;
+                left: 0;
+                text-shadow: 0px 0px 3px white, 0px 0px 8px #ae00ff, 0px 0px 16px #003cff;
+            }
             top:0;
             transition: 0.5s ease;
             border:3px solid transparent; //transparent border stops box from growing on hover.

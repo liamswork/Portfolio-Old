@@ -1,0 +1,72 @@
+.banner{
+    position: relative;
+    display:block;
+    min-height:100vh;
+    overflow:hidden;
+
+    .banner-container{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        min-height:100vh;
+        top:0;
+        right:0;
+        bottom:0;
+        left:0;
+
+
+        img{
+            position:absolute;
+            top:0;
+            left:0;
+            height:100%;
+            width:100%;
+            object-fit: cover;
+            z-index: 0;
+        }
+        .banner-text{
+            z-index: 10;
+            display:flex;
+            flex-wrap: wrap;
+            align-items: center;
+            flex-direction: column;
+            color:#fff;
+            text-shadow:
+            0 0 7px $color-glowblue,
+            0 0 10px $color-glowblue,
+            0 0 21px $color-glowblue,
+            0 0 42px $color-glowpurple,
+            0 0 82px $color-glowpurple,
+            0 0 92px $color-glowpurple,
+            0 0 102px $color-glowpurple,
+            0 0 151px $color-glowpurple;
+            
+            //Main banner text
+            a{
+                text-decoration: none;
+            }
+                h1{
+
+                    text-align: center;
+                    margin: 0 20px;
+                    margin-bottom:25px;
+                    letter-spacing: 3px;
+                    line-height: 45px;
+    
+                    //Padding and border for banner text
+                    padding: 1.5rem 1.75rem 1.5rem;
+                    border: 0.4rem solid #fff;
+                    border-radius: 2rem;
+                    text-transform: uppercase;
+                    animation: flicker 1.5s infinite alternate;
+                    //Flicker keyframes found in base file. Will move if I use more
+                }
+
+            //Banner subtext
+            p{
+                font-size: 24px;
+            }
+        }
+
+    }
+}

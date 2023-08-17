@@ -891,6 +891,7 @@ hr.rounded {
 }
 
 .sidenav .nav-link-container a {
+  position: relative;
   top: 0;
   transition: 0.5s ease;
   border: 3px solid transparent;
@@ -898,6 +899,16 @@ hr.rounded {
   text-decoration: none;
   width: 75%;
   margin-bottom: 15px;
+}
+
+.sidenav .nav-link-container a:after {
+  content: "new";
+  position: absolute;
+  top: -15px;
+  bottom: 0;
+  right: -164px;
+  left: 0;
+  text-shadow: 0px 0px 3px white, 0px 0px 8px #ae00ff, 0px 0px 16px #003cff;
 }
 
 .sidenav .nav-link-container a:hover {
