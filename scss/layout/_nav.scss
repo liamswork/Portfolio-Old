@@ -8,7 +8,7 @@
     height: 100%;
     top:0;
     left:-310px;
-    background-color: #000000;
+    background-color: $color-primary;
     @include glowborder('right');
     overflow:hidden;
     z-index: 1000; //Only makes a difference when we full screen the nav with the menu button.
@@ -52,7 +52,7 @@
         
         a{
             position:relative;
-            &:after{
+            /*&:after{
                 content: "new";
                 position: absolute;
                 top: -15px;
@@ -60,7 +60,7 @@
                 right: -164px;
                 left: 0;
                 text-shadow: 0px 0px 3px white, 0px 0px 8px #ae00ff, 0px 0px 16px #003cff;
-            }
+            }*/
             top:0;
             transition: 0.5s ease;
             border:3px solid transparent; //transparent border stops box from growing on hover.

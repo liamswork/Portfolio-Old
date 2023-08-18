@@ -19,7 +19,7 @@ function startTime() {
     $time.text(`${h} : ${m} : ${s}`);
 
     if(s == '00' && oo === false){
-        console.log("OO");
+        //console.log("OO");
         oo = true;
         //GNOME HERE
         $backgroundImage.attr("src",`${gnomePath}`);
@@ -27,7 +27,7 @@ function startTime() {
     }
 
     if(s == '01' && oo === true){
-        console.log("YOU HAVE BEEN UN-OO'D");
+        //console.log("YOU HAVE BEEN UN-OO'D");
         oo = false;
         //GNOME GONE AGAIN
         $backgroundImage.attr("src",`${brickPath}`);

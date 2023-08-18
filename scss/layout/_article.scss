@@ -13,7 +13,7 @@
                 padding:0;
             }
 
-            background-color: #333333;
+            background-color: $color-secondary;
             display:flex;
             flex-direction: column;
             align-items: center;
@@ -49,6 +49,9 @@
         flex-wrap: nowrap;
         flex-direction: row;
         //Reverse row on odd article containers
+        &:last-of-type{
+            margin-bottom:25px;
+        }
         &:nth-child(4n+1){
         flex-direction: row-reverse;
         .article-img{

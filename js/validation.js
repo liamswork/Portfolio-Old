@@ -6,8 +6,8 @@ function validateForm(){
     
     //Prevent page refresh and clear console for clarity.
     event.preventDefault();
-    console.clear();
-    console.log("Validating...");
+    //console.clear();
+    //console.log("Validating...");
 
     //Refrence to input boxes. Access value with $fName.val()
     const $fName = $('.contact-form #fname');
@@ -46,8 +46,7 @@ function validateForm(){
             if(emptyError == ""){
                 emptyError = "none of the fields can be empty";
                 errorMessage = errorMessage.concat(", ", emptyError);
-                console.log(errorMessage);
-                //$contactForm.append(`<h3 class="error">${emptyError}</h3>`)
+                //console.log(errorMessage);
             }
             //Add Error border
             inputBoxArray[i].css("border", "3px solid red");
@@ -63,7 +62,6 @@ function validateForm(){
         if(nameError == ""){
             nameError = "incorrect name format";
             errorMessage = errorMessage.concat(", ", nameError);
-           //$contactForm.append(`<h3 class="error">${nameError}</h3>`)
         }
         //Add Error border
         $fName.css("border", "3px solid red");
@@ -78,7 +76,6 @@ function validateForm(){
         if(nameError == ""){
             nameError = "incorrect name format";
             errorMessage = errorMessage.concat(", ", nameError);
-            //$contactForm.append(`<h3 class="error">${nameError}</h3>`)
         }
         //Add Error border
         $lName.css("border", "3px solid red");
@@ -92,7 +89,6 @@ function validateForm(){
         //Add Error message
         emailError = "incorrect email format";
         errorMessage = errorMessage.concat(", ", emailError);
-        //$contactForm.append(`<h3 class="error">${emailError}</h3>`);
         //Add error border
         $email.css("border", "3px solid red");
     } else {
@@ -105,7 +101,6 @@ function validateForm(){
         //Add Error message
         phoneError = "incorrect phone format";
         errorMessage = errorMessage.concat(", ", phoneError);
-        //$contactForm.append(`<h3 class="error">${phoneError}</h3>`);
         //Add error border
         $phone.css("border", "3px solid red");
     } else {

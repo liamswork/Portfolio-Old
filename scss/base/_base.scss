@@ -1,6 +1,6 @@
 //Base webpage colours
-$color-primary:#3a3636;
-$color-secondary:#191a22;
+$color-primary:#110d16;
+$color-secondary:#1c0f2c;
 $color-tertiary:#3a3939;
 
 //Base glow scheme
@@ -131,7 +131,7 @@ body{
 
 .main{
   height:100%;
-  background-color: #121212;
+  background-color: $color-primary;
   overflow:hidden;
   
   .inner{
@@ -172,7 +172,7 @@ hr.rounded {
 }
 
 .content-container{
-  background-color: #333333;
+  background-color: $color-secondary;
   border-radius: 10px;
   padding:15px;
   margin: 15px 0;

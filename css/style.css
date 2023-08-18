@@ -76,7 +76,7 @@ h1, h2, h3, h4, p, a, span {
 
 .main {
   height: 100%;
-  background-color: #121212;
+  background-color: #110d16;
   overflow: hidden;
 }
 
@@ -115,7 +115,7 @@ hr.rounded {
 }
 
 .content-container {
-  background-color: #333333;
+  background-color: #1c0f2c;
   border-radius: 10px;
   padding: 15px;
   margin: 15px 0;
@@ -817,7 +817,7 @@ hr.rounded {
 .footer-bottom {
   color: #fff;
   width: 100%;
-  background-color: #191a22;
+  background-color: #1c0f2c;
   display: flex;
   justify-content: center;
 }
@@ -858,7 +858,7 @@ hr.rounded {
   height: 100%;
   top: 0;
   left: -310px;
-  background-color: #000000;
+  background-color: #110d16;
   border-right: 3px solid white;
   box-shadow: 2px 0px 6px white, 4px 0px 8px #ae00ff, 6px 0px 8px #003cff;
   overflow: hidden;
@@ -892,6 +892,15 @@ hr.rounded {
 
 .sidenav .nav-link-container a {
   position: relative;
+  /*&:after{
+                content: "new";
+                position: absolute;
+                top: -15px;
+                bottom: 0;
+                right: -164px;
+                left: 0;
+                text-shadow: 0px 0px 3px white, 0px 0px 8px #ae00ff, 0px 0px 16px #003cff;
+            }*/
   top: 0;
   transition: 0.5s ease;
   border: 3px solid transparent;
@@ -899,16 +908,6 @@ hr.rounded {
   text-decoration: none;
   width: 75%;
   margin-bottom: 15px;
-}
-
-.sidenav .nav-link-container a:after {
-  content: "new";
-  position: absolute;
-  top: -15px;
-  bottom: 0;
-  right: -164px;
-  left: 0;
-  text-shadow: 0px 0px 3px white, 0px 0px 8px #ae00ff, 0px 0px 16px #003cff;
 }
 
 .sidenav .nav-link-container a:hover {
@@ -1202,12 +1201,34 @@ hr.rounded {
   width: 100%;
 }
 
-.inner-about-me .content-container {
-  padding: 15px 40px;
+.inner-about-me h1, .inner-about-me h2, .inner-about-me p {
+  margin-bottom: 10px;
 }
 
-.inner-about-me .content-container .about-description h1, .inner-about-me .content-container .about-description h2, .inner-about-me .content-container .about-description p {
-  margin-bottom: 10px;
+.inner-about-me p {
+  font-size: 20px;
+}
+
+.inner-about-me .about-behind-the-code .aboutme-img {
+  text-align: center;
+}
+
+.inner-about-me .about-behind-the-code .aboutme-img img {
+  height: initial;
+}
+
+.inner-about-me .content-container {
+  padding: 40px;
+}
+
+.inner-about-me .content-container .about-description .special {
+  transition: ease .7s;
+  text-shadow: 0px 0px 3px white, 0px 0px 8px #ae00ff, 0px 0px 8px #003cff;
+}
+
+.inner-about-me .content-container .about-description .special:hover, .inner-about-me .content-container .about-description .special:focus, .inner-about-me .content-container .about-description .special:active {
+  text-decoration: none;
+  text-shadow: 0px 0px 3px white, 6px -5px 3px #ae00ff, -6px 5px 3px #003cff;
 }
 
 .inner-about-me .content-container .about-description .project-link {
@@ -1217,45 +1238,35 @@ hr.rounded {
   border-radius: 8px;
 }
 
-.inner-about-me .content-container .about-description .project-link:hover {
+.inner-about-me .content-container .about-description .project-link:hover, .inner-about-me .content-container .about-description .project-link:focus, .inner-about-me .content-container .about-description .project-link:active {
   text-decoration: none;
-  border: 3px solid white;
-  box-shadow: 0px 0px 6px white, 0px 0px 12px #ae00ff, 0px 0px 16px 7px #003cff;
-  border: 3px solid transparent;
+  text-shadow: 0px 0px 10px white, 0px 0px 20px #ae00ff, 0px 0px 20px #003cff;
   border-radius: 8px;
 }
 
 @media (min-width: 560px) and (max-width: 768px) {
-  .inner-about-me .aboutme-container .aboutme-text .contact-social .social-logos {
+  .inner-about-me .about-contact .aboutme-text .contact-social .social-logos {
     width: 300px;
   }
 }
 
 @media (min-width: 768px) {
-  .inner-about-me .aboutme-container .aboutme-text .contact-social .social-logos {
+  .inner-about-me .about-contact .aboutme-text .contact-social .social-logos {
     width: 250px;
   }
 }
 
 @media (min-width: 992px) {
-  .inner-about-me .aboutme-container .aboutme-text .contact-social .social-logos {
+  .inner-about-me .about-contact .aboutme-text .contact-social .social-logos {
     width: 300px;
   }
 }
 
-.inner-about-me .aboutme-container .aboutme-text .contact-social .social-logos {
+.inner-about-me .about-contact .aboutme-text .contact-social .social-logos {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
-}
-
-.inner-about-me .aboutme-container .aboutme-img {
-  text-align: center;
-}
-
-.inner-about-me .aboutme-container .aboutme-img img {
-  height: initial;
 }
 
 .main .codingexamples-inner h1 {
@@ -1286,7 +1297,7 @@ hr.rounded {
 }
 
 .article-container {
-  background-color: #333333;
+  background-color: #1c0f2c;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1340,6 +1351,9 @@ hr.rounded {
   .article-container {
     flex-wrap: nowrap;
     flex-direction: row;
+  }
+  .article-container:last-of-type {
+    margin-bottom: 25px;
   }
   .article-container:nth-child(4n+1) {
     flex-direction: row-reverse;
