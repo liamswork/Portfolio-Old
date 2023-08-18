@@ -10,8 +10,11 @@
             top:85% !important;
             left:0;
             right:0;
+            .owl-dot.active span {
+                background-color: white;
+            }
         button{
-                margin: 0 5px
+                margin: 0 3px;
             }
 
             .owl-dot.active{
@@ -19,6 +22,8 @@
                 border-radius:50%;
                 span{
                     margin:5px 5px;
+                    width: 11px;
+                    height: 11px
                 }
             }
         }
@@ -116,13 +121,10 @@
                                 font-size: 1.25rem;
                                 line-height: 50px;
                                 color: #fff;
-                                //background-color: #926fb1;
-                                //border-color: #926fb1;
-                            &.active, &:active, &:focus, &:hover {
-                                color: #fff;
-                                //background-color: #7e57a0;
-                                //border-color: #735093;
-                            }
+
+                                &.active, &:active, &:focus, &:hover {
+                                    color: #fff;
+                                }
                                 i{
                                     line-height: 49px;
                                     font-size:28px;
@@ -130,7 +132,6 @@
                             }
                         }
                     }
-        
                 }
             }
         }

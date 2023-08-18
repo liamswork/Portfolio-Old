@@ -73,11 +73,13 @@ $color-themes: (
   left:0;
   width:100%;
   overflow:auto;
-  transition: all 0.5s;
+  transition: left 0.5s;
+  z-index:110;
+  background-color: white;
 }
 
 .main-inner{
-  overflow:hidden;
+  overflow: hidden;
 }
 
 .shown{
@@ -92,6 +94,13 @@ $color-themes: (
   bottom: 100%;
   left: -200px;
   right: -200px;
+  .box a{
+    color:white;
+    text-decoration: none;
+    &:hover,&:focus{
+      text-decoration: none;
+    }
+  }
     p{
       margin-bottom: 0;
     }
