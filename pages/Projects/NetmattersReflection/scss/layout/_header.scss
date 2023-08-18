@@ -1,28 +1,10 @@
 @include service-colors;
 header{
-    //Sticky header settings.
-    .header-sticky{
-        width:100%;
-        position: fixed;
-        top: -200px;
-        z-index: 100;
-        transition: 0.5s ease;
-        .container{
-            @media(max-width:992px){
-                padding: 10px 10px 20px 10px;
-            }
-        }
-
-    }
-    .sticky-shown{
-        top: 0px;
-    }
-    .sticky-hidden{
-        top: -200px;
-    }
-    //Default header settings.
     .inner{
-        padding:20px 0 0 0;
+        padding:20px 0;
+        @media (min-width: 992px){
+            padding:20px 0 0 0;
+        }
         background-color: #fff;
         //Target all siblings that are immediately after another sibling.  "Select ANY +object after+ ANY"
         .actions>*+*{
@@ -208,7 +190,30 @@ header{
         }
         ////////////////////////////////
     }
-    @media(max-width:992px){
-        margin-bottom: 20px;
+
+     //Sticky header settings.
+     .header-sticky{
+        position: fixed;
+        top: -200px;
+        width: 100%;
+        left:0;
+        z-index: 110;
+        transition: all 0.5s;
+        overflow:hidden;
+
     }
+    .sticky-expanded{
+        left:-292px;
+        @media (min-width: 992px){
+            left:-367px;
+        }
+     }
+     
+     .sticky-shown{
+         top: 0px;
+     }
+     .sticky-hidden{
+         top: -200px;
+     }
+    //Default header settings.
 }

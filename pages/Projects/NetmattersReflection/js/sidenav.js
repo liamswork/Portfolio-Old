@@ -1,6 +1,7 @@
 const $sideNav = $(".sidebar");
-const $mainWrapper = $(".main-wrapper")
-const $overlay = $(".overlay")
+const $mainWrapper = $(".main-wrapper");
+const $overlay = $(".overlay");
+const $stickyHeader = $('.header-sticky');
 let isOpen = false;
 let previousHamburger = null;
 
@@ -11,6 +12,7 @@ function handleNav(hamburger){
         $mainWrapper.toggleClass('navbar-expanded');
         $overlay.toggleClass('shown');
         document.body.classList.toggle('navbar-expanded');
+        $stickyHeader.toggleClass('sticky-expanded');
 
         //Remove is-active from hamburger clicked to open the menu.
         previousHamburger.classList.remove('is-active');
@@ -19,6 +21,7 @@ function handleNav(hamburger){
         isOpen = false;
     }else{
         //Apply style classes which move the page and open the navbar.
+        $stickyHeader.toggleClass('sticky-expanded');
         document.body.classList.toggle('navbar-expanded');
         $sideNav.toggleClass('navbar-expanded');
         $mainWrapper.toggleClass('navbar-expanded');

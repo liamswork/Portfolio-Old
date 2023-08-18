@@ -13,10 +13,9 @@ There are two headers.
 */
 
 document.addEventListener("DOMContentLoaded", function() {
-//Create references to header elements and body of the document (main wrapper).
+//Create references to header elements
 const stickyHeader = document.querySelector('.header-sticky');
 const defaultHeader = document.querySelector('.header-default');
-const content = document.querySelector('.main-wrapper');
 
 //Default previous scroll position to window scroll, in case of refresh.
 let previousScrollPosition = window.scrollY;    
@@ -30,6 +29,7 @@ function stickyFunction(event){
     //If we're past the header buffer zone
     if(scrollDistance > headerHeight){
         //console.log("Scroll, past buffer zone")
+        stickyHeader.style.display = "block";
         if(scrollDistance > previousScrollPosition){
             //console.log("Scrolled down");
             stickyHeader.classList.remove("sticky-shown")
@@ -40,8 +40,10 @@ function stickyFunction(event){
             stickyHeader.classList.remove("sticky-hidden")
         }
     }else{
-        stickyHeader.classList.remove("sticky-shown")
-        stickyHeader.classList.add("sticky-hidden")
+        if(scrollDistance == 0){
+            console.log(scrollDistance);
+            stickyHeader.style.display = "none";
+        }
     }
 
     //Update previous scroll position for future checks.
