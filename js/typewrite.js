@@ -9,7 +9,7 @@ for(let i = 0; i < charArray.length; i++){
     setTimeout(function() {
         currentText.push(charArray[i]);
         textElement.text(currentText.join(''));
-      }, (i + 1) * 200);
+      }, (i + 1) * 150);
 }
 
 //STRETCH GOALS--

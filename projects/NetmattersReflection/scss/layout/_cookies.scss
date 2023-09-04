@@ -35,6 +35,7 @@
     padding: 30px;
 }
 
+//small "manager cookies" button that opens the cookie context box.
 body .crumb-settings-btn{
     position: fixed;
     line-height: 22px;
@@ -59,13 +60,20 @@ body .crumb-settings-btn{
         border-color: #999aa2;
         box-shadow: 0 3px 35px rgba(0,0,0,.1);
     }
-
 }
 
-.crumb-app{
-    .v-cloak--hidden{
-        .crumb-consent{
+#changebutton{
+    &:hover{
+        color: #fff;
+        background-color: #84858f;
+        border-color: #797a85;
+    }
+}
 
-        }
+#acceptbutton{
+    &:hover{
+        color: #fff;
+        background-color: #7e57a0;
+        border-color: #735093;
     }
 }

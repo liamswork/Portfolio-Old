@@ -29,43 +29,48 @@
                     flex-wrap: wrap;
                     flex-direction: row;
                 }
-                //Project card
-                .item{
-                    position: relative;
-                    @include levitate;
-                    min-height:375px; //Sizing fix for different variety of text boxes on larger screens
-                    margin-top: 25px;
-                    border-radius: 8px;
 
-                    @include glowborder('all');
-                    &:hover{
-                        @include glowborder('all','hover');
-                    }
+                div{
+                    margin:15px 0;
+                    .item{
+                        position: relative;
+                        @include levitate;
+                        min-height:375px; //Sizing fix for different variety of text boxes on larger screens
+                        height:100%;
+                        border-radius: 8px;
     
-                    //Image container
-                    .img-container{
-                        .category{
-                            @include tooltip;
+                        @include glowborder('all');
+                        &:hover{
+                            @include glowborder('all','hover');
                         }
-                        img{
-                            object-fit: cover;
-                        }
-                    }
-                    //Text block describing project
-                    .block{
-                        text-align: center; //This targets button. Important.
-                        h3{
-                            margin-bottom:15px;
-                            a{  
-                                //Strip default decorations
-                                text-decoration: none;
+        
+                        //Image container
+                        .img-container{
+                            .category{
+                                @include tooltip;
+                            }
+                            img{
+                                object-fit: cover;
                             }
                         }
-                        p{
-                            margin-bottom:15px
+                        //Text block describing project
+                        .block{
+                            text-align: center; //This targets button. Important.
+                            h3{
+                                margin-bottom:15px;
+                                a{  
+                                    //Strip default decorations
+                                    text-decoration: none;
+                                }
+                            }
+                            p{
+                                margin-bottom:15px
+                            }
                         }
                     }
                 }
+                //Project card
+
             }
         }
     }

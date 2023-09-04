@@ -65,15 +65,14 @@
                     
                 }
             }
-        .banner .sliding .owl-stage-outer .owl-stage .owl-stage .owl-item .item .content{
+        .banner .sliding .owl-stage-outer .owl-stage .owl-item .item .content{
             .btn-#{$class}{
 
                     background-color: $color;
                     border-color: $color;
-                &.active, &:active, &:focus, &:hover {
+                &:hover {
                     color: #fff;
-                    //background-color: #7e57a0;
-                    //border-color: #735093;
+                    background-color:darken($color, 4%);
                 }
             }
         }

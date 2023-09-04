@@ -206,6 +206,7 @@ hr.rounded {
 }
 
 
+
 /* Animate neon flicker */
 @keyframes flicker {
   0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
@@ -232,8 +233,17 @@ hr.rounded {
 }
 
 //Icon content links.
-.icon-menu:before {
-  content: "\e944";
+.icon-php:before {
+  content: "\e945";
+}
+.icon-javascript:before {
+  content: "\e946";
+}
+.icon-css3:before {
+  content: "\e947";
+}
+.icon-html5:before {
+  content: "\e948";
 }
 .icon-treehouse:before {
   content: "\e943";
@@ -324,6 +334,9 @@ hr.rounded {
 }
 .icon-apps1:before {
   content: "\e942";
+}
+.icon-menu:before {
+  content: "\e944";
 }
 .icon-mouse:before {
   content: "\e906";

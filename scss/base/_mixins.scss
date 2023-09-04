@@ -9,6 +9,9 @@
                     color:white;
                     background-color: $color;
                     border-color: $color;
+                    span{
+                        color:$color;
+                    }
                 }
 
                 .btn-#{$class}{
@@ -45,14 +48,17 @@
 }
 
 @mixin tooltip{
+    display:flex;
+    justify-content: center;
     position: absolute;
     top: 10px;              //These top three styles position the tooltip above the image, top right.
     right:5px;
-    padding: 0 10px;
+    padding: 5px 10px;
     border-radius: 4px;
     line-height: 3rem;
     text-transform: uppercase;
     z-index: 1;
+    
 }
 
 @mixin glowborder($side: 'left', $state : 'base') {
@@ -131,3 +137,16 @@
     }
 }
 @include service-colors;
+
+@mixin languageIcon(){
+    background-color: white;
+    width:25px;
+    height:25px;
+    border-radius: 50%;
+    line-height:28px;
+    font-size:16px;
+    margin:0 3px;
+}
+.language-icon{
+    @include languageIcon;
+  }
