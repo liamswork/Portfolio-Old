@@ -21,6 +21,7 @@
 //---These styles will be applied to move content----
 .sidebar.navbar-expanded{
     right:0!important;
+    z-index: 1000;
 }
 .main-wrapper.navbar-expanded{
     left:-275px!important;
@@ -29,6 +30,7 @@
     position:absolute;
     width:100%;
     right:-275px;
+    margin-right:-17px;
     @media(min-width:992px){
         left:-350px!important;
         position:absolute;
@@ -43,6 +45,7 @@ body.navbar-expanded{
 //---End of styles when navbar is expanded-----------
 
 .sidebar{
+
     //Sidebar box values.
     position:fixed;
     background-color: $color-primary;
@@ -52,7 +55,7 @@ body.navbar-expanded{
     top:0;
     right:0!important;
     z-index:1;
-    transition:right 0.5s;
+    transition:right 0.5s,width 0.5s;
     @media(min-width:992px){
         width:350px;
     }

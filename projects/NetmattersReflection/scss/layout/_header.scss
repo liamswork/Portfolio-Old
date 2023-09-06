@@ -199,13 +199,14 @@ header{
         left:0;
         z-index: 110;
         transition: all 0.5s;
-        overflow:hidden;
+        overflow: visible !important;
 
     }
     .sticky-expanded{
-        left:-292px;
+        left:-275px;
+
         @media (min-width: 992px){
-            left:-367px;
+            left:-350px;
         }
      }
      
