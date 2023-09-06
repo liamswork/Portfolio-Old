@@ -96,7 +96,7 @@ header{
 
         //Hamburger section//////////////
         button.hamburger{
-            &:hover{
+            &:hover,&:active,&:focus,&:focus-within{
                 background-color:darken($color-primary, 10%);
                 opacity:1; //overwrite hamburger opacity of 0.7.
             }
