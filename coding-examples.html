@@ -52,45 +52,108 @@
     </div>
 
     <div class="main">
-        <div class="inner codingexamples-inner">
-            <h1 class="article-header">Fancy buttons coloured with a mixin by classname.</h1>
-            <h2>Start by creating the mixin to colour objects by their class.</h2>
-            <p>This mixin, when initialised will take an optional parameter, this is to access any of the layers of our colour map for whatever reason we choose to use a colour from the darkened palette.</p>
-            <p>It then loops through each key of the colour map, and attempts to style objects that contain that key name.</p>
-            <p>The keys are themes such as facebook blue, github purple, or related to coding, such as websites, which have their own assigned blue colour. This blue is assigned to our project tooltips to distinguish those types of projects from others.</p>
-            <script src="https://gist.github.com/liamswork/afbca557100fa483bb2b8fcdcacc6b3b.js"></script>
-            <p>Objects such as the buttons, have their own themes based on the icons class within them. Looking below, we can see the classes of "facebook" and "linkedin" as examples. As previously mentioned, we have colours associated with these words.</p>
-            <script src="https://gist.github.com/liamswork/221ca0b2c84c98412c0dc3a98c146b08.js"></script>
-            <p>Using 2 more mixins, I added a glowing border to these buttons, and on hover, extended this glow by passing the keyword of "hover"</p>
-            <script src="https://gist.github.com/liamswork/01661f87aa02f09bc9cc46c2956eee7c.js"></script>
-            <p>We are now able to reproduce our buttons with minimal effort. The only other part we would need to add is the HTML for new buttons, and specific selectors in the class colour mixin.</p>
-            <script src="https://gist.github.com/liamswork/87eeb0854bc405389567e436ea2d0afa.js"></script>
-            <p>Above is the basic levitate mixin, and glowborder mixin. I have only included the 'all' argument to keep it short, but accepts the words 'left' 'right' 'top' 'bottom' also.</p>
-        
-            <div class="contact-social">
-                <h2> Here they are! Why don't you give them a hover, or a click to follow me on: </h2>
-                <div class="social-logos">
-                <a class="facebook btn" target="_blank" href="https://www.facebook.com/liam.t.wylie">
-                    <span class="icon-facebook"></span>
-                </a>
-                <a class="btn linkedin" target="_blank" href="https://www.linkedin.com/in/liam-wylie-18374613b/">
-                    <span class="icon-linkedin"></span>
-                </a>
-                <a class="btn twitter" target="_blank" href="https://twitter.com/LiamWylieDev">
-                    <span class="icon-twitter"></span>
-                </a>
-                <a class="btn instagram" target="_blank" href="https://www.instagram.com/liamwylie/">
-                  <span class="icon-instagram"></span>
-                </a>
-                <a class="btn treehouse" target="_blank" href="https://teamtreehouse.com/profiles/liamwylie2">
-                  <span class="icon-treehouse"></span>
-                </a>
-                <a class="btn github" target="_blank" href="https://github.com/liamswork">
-                  <span class="icon-github"></span>
-                </a>
+        <div class="inner coding-examples-inner">
+
+            <!--SQL Code Example-->
+            <div class="content-container">
+                <div class="container-description">
+                    <h2 class="article-header">SQL Database query</h2>
+                    <p>Using a relational database, I retrieve some data using a subquery, and ordered the results.</p>
+                    <a id="code1" class="btn" href="#">Read More</a>
                 </div>
-              </div>
+                <div id="code-box-1" class="code-example-box container">
+                    <div class="block">
+                        <h2 class="article-header">Objective</h2>
+                        <p>My objective was to query a relational database to find all drama movies and list them in order of year released (ascending). </p>
+                    </div>
+                    <div class="block">
+                        <h2 class="article-header">Method</h2>
+                        <div class="code-github">
+                            <script src="https://gist.github.com/liamswork/20919b02980848a3f393c2a514bf4888.js"></script>
+                        </div>
+                        <p>Movie genres are located within a table named "movie_genres". This table only contains movie IDs, and an associated genre ID for that movie.</p>
+                        <p>The "genres" table contains the plain text description of what the genre ID actually is. Using a subquery, I filter my results to only show movies that have a genre ID equal to the "Drama" genre ID.</p>
+
+                    </div>
+                    <div class="block">
+                        <h2 class="article-header">Results</h2>
+                        <img src="img/SQL-Results.png" alt="Results of my SQL query.">
+                        <p>Here are the results from the query.</p>
+                    </div>
+                    <div class="close-btn">
+                        <a id="close1" class="btn" href="#">Close</a>
+                    </div>
+
+                </div>
             </div>
+
+            <!--SCSS Code Example-->
+            <div class="content-container">
+                <div class="container-description">
+                    <h2 class="article-header">Social Media Button SCSS Mixins</h2>
+                    <p>Using multiple SCSS mixins, I create buttons that, hover, levitate and also colour depending on their class.</p>
+                    <a id="code2" class="btn" href="#">Read More</a>
+                </div>
+
+                <div id="code-box-2" class="code-example-box container">
+
+                    <div class="block">
+                        <h2 class="article-header">Objective</h2>
+                        <p>Expand my knowledge of SCSS by experimenting with reusable code blocks using mixins to create complex social media buttons.</p>
+                    </div>
+
+                    <div class="block">
+                        <h2 class="article-header">Method</h2>
+                        <div class="code-github">
+                            <script src="https://gist.github.com/liamswork/5acd029fc5061ebb79888d5e24d87972.js"></script>
+                        </div>
+                        <p>The first mixin takes an argument of which direction the box should glow in. In our case, I've only shown the "all" direction, but other directions exist for other elements that may use this glow scheme.</p>
+                        <p>The mixin also takes a state and defaults to 'base'. Base is the buttons without any hover/focus. In scss, we can attach a second instance of the mixin for the hover version, but just pass the hover. All this state does is enlarge the glow to give it emphasis.</p>
+                        <div class="code-github">
+                            <script src="https://gist.github.com/liamswork/36b0832444220d81908014a5d47bcf0f.js"></script>
+                        </div>
+                        <p>Above is our next step. We apply a transition and a hover state to our object that moves the item top:-10px.</p>
+                        <p>Finally, below is the most complicated part of our mixin. The Colour-by-class mixin.</p>
+                        <div class="code-github">
+                            <script src="https://gist.github.com/liamswork/6b56cc440eebeddc791e306f482e9a30.js"></script>
+                        </div>
+                        <p>In our base styles, we have a colour map, with social media colours and a colour type (base, light dark)</p>
+                        <p>We use this mixin to style any anchor tags of a class that matches the name in the colour map. We change the background colour to white, as the icons are originally white, making a nice transition..</p>
+                    </div>
+                    <div class="block">
+                        <h2 class="article-header">Results</h2>
+                        <div class="contact-social">
+                            <div class="social-logos">
+                                <a class="facebook btn" target="_blank" href="https://www.facebook.com/liam.t.wylie">
+                                    <span class="icon-facebook"></span>
+                                </a>
+                                <a class="btn linkedin" target="_blank" href="https://www.linkedin.com/in/liam-wylie-18374613b/">
+                                    <span class="icon-linkedin"></span>
+                                </a>
+                                <a class="btn twitter" target="_blank" href="https://twitter.com/LiamWylieDev">
+                                    <span class="icon-twitter"></span>
+                                </a>
+                                <a class="btn instagram" target="_blank" href="https://www.instagram.com/liamwylie/">
+                                <span class="icon-instagram"></span>
+                                </a>
+                                <a class="btn treehouse" target="_blank" href="https://teamtreehouse.com/profiles/liamwylie2">
+                                <span class="icon-treehouse"></span>
+                                </a>
+                                <a class="btn github" target="_blank" href="https://github.com/liamswork">
+                                <span class="icon-github"></span>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="close-btn">
+                        <a id="close2" class="btn" href="#">Close</a>
+                    </div>
+                    
+
+                </div>
+            </div>
+            
         </div>   <!--End of inner closing div-->
         <!--Footer-->
         <footer>
@@ -109,8 +172,6 @@
                 </div>
             </div>
         </footer> 
-
-
     </div> <!--End of main closing div-->
     <script src="js/jquery-3.7.0.min.js"></script>
     <script src="js/bootstrap.js"></script>

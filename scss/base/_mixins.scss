@@ -26,7 +26,7 @@
             a.#{$class}{
                 color:#fff;
                 &:hover{
-                    @include glowborder('all','hover');
+
                     background-color: #fff;
                     span{
                         color:$color;
@@ -94,8 +94,8 @@
         @if $side=='all'{
             border:3px solid white;
             box-shadow: 0px 0px 6px white,
-                        0px 0px 8px #ae00ff,
-                        0px 0px 8px 3px #003cff;
+                        0px 0px 8px $color-glowpurple,
+                        0px 0px 8px 3px $color-glowblue;
         }
     }
 
@@ -104,7 +104,7 @@
             border-left:3px solid white;
             box-shadow: 2px 0px 6px white,
                         4px 0px 8px $color-glowpurple,
-                        6px 0px 8px$color-glowblue;
+                        6px 0px 8px $color-glowblue;
         }
     
         @if $side=='right'{
@@ -131,8 +131,8 @@
         @if $side=='all'{
             border:3px solid white;
             box-shadow: 0px 0px 6px white,
-                        0px 0px 12px #ae00ff,
-                        0px 0px 16px 7px #003cff;
+                        0px 0px 12px $color-glowpurple,
+                        0px 0px 16px 7px $color-glowblue;
         }
     }
 }

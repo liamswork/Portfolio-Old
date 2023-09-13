@@ -114,11 +114,22 @@ hr.rounded {
   font-weight: 600;
 }
 
+.btn:hover {
+  color: white;
+  background-color: #172f7e;
+}
+
+.btn:active, .btn:visited {
+  text-decoration: none;
+  color: white;
+}
+
 .content-container {
   background-color: #1c0f2c;
   border-radius: 10px;
   padding: 15px;
   margin: 15px 0;
+  box-shadow: inset 0px 0px 3px 3px #7730771a;
 }
 
 .nav-burger {
@@ -617,8 +628,6 @@ hr.rounded {
 }
 
 .contact-social .social-logos a.webpage:hover {
-  border: 3px solid white;
-  box-shadow: 0px 0px 6px white, 0px 0px 12px #ae00ff, 0px 0px 16px 7px #003cff;
   background-color: #fff;
 }
 
@@ -647,8 +656,6 @@ hr.rounded {
 }
 
 .contact-social .social-logos a.javascript:hover {
-  border: 3px solid white;
-  box-shadow: 0px 0px 6px white, 0px 0px 12px #ae00ff, 0px 0px 16px 7px #003cff;
   background-color: #fff;
 }
 
@@ -677,8 +684,6 @@ hr.rounded {
 }
 
 .contact-social .social-logos a.placeholder:hover {
-  border: 3px solid white;
-  box-shadow: 0px 0px 6px white, 0px 0px 12px #ae00ff, 0px 0px 16px 7px #003cff;
   background-color: #fff;
 }
 
@@ -707,8 +712,6 @@ hr.rounded {
 }
 
 .contact-social .social-logos a.facebook:hover {
-  border: 3px solid white;
-  box-shadow: 0px 0px 6px white, 0px 0px 12px #ae00ff, 0px 0px 16px 7px #003cff;
   background-color: #fff;
 }
 
@@ -737,8 +740,6 @@ hr.rounded {
 }
 
 .contact-social .social-logos a.linkedin:hover {
-  border: 3px solid white;
-  box-shadow: 0px 0px 6px white, 0px 0px 12px #ae00ff, 0px 0px 16px 7px #003cff;
   background-color: #fff;
 }
 
@@ -767,8 +768,6 @@ hr.rounded {
 }
 
 .contact-social .social-logos a.twitter:hover {
-  border: 3px solid white;
-  box-shadow: 0px 0px 6px white, 0px 0px 12px #ae00ff, 0px 0px 16px 7px #003cff;
   background-color: #fff;
 }
 
@@ -797,8 +796,6 @@ hr.rounded {
 }
 
 .contact-social .social-logos a.instagram:hover {
-  border: 3px solid white;
-  box-shadow: 0px 0px 6px white, 0px 0px 12px #ae00ff, 0px 0px 16px 7px #003cff;
   background-color: #fff;
 }
 
@@ -827,8 +824,6 @@ hr.rounded {
 }
 
 .contact-social .social-logos a.treehouse:hover {
-  border: 3px solid white;
-  box-shadow: 0px 0px 6px white, 0px 0px 12px #ae00ff, 0px 0px 16px 7px #003cff;
   background-color: #fff;
 }
 
@@ -857,8 +852,6 @@ hr.rounded {
 }
 
 .contact-social .social-logos a.github:hover {
-  border: 3px solid white;
-  box-shadow: 0px 0px 6px white, 0px 0px 12px #ae00ff, 0px 0px 16px 7px #003cff;
   background-color: #fff;
 }
 
@@ -978,7 +971,7 @@ hr.rounded {
 
 .sidenav .nav-link-container a:hover {
   border: 3px solid white;
-  box-shadow: 0px 0px 6px white, 0px 0px 12px #ae00ff, 0px 0px 16px 7px #003cff;
+  box-shadow: 0px 0px 6px white, 0px 0px 12px #ae00ff, 0px 0px 16px 7px #003cff;
 }
 
 .sidenav .nav-link-container a h2 {
@@ -1075,7 +1068,7 @@ hr.rounded {
   height: 100%;
   border-radius: 8px;
   border: 3px solid white;
-  box-shadow: 0px 0px 6px white, 0px 0px 8px #ae00ff, 0px 0px 8px 3px #003cff;
+  box-shadow: 0px 0px 6px white, 0px 0px 8px #ae00ff, 0px 0px 8px 3px #003cff;
 }
 
 .main .inner .latest-projects .project-list div .item:hover {
@@ -1085,7 +1078,7 @@ hr.rounded {
 
 .main .inner .latest-projects .project-list div .item:hover {
   border: 3px solid white;
-  box-shadow: 0px 0px 6px white, 0px 0px 12px #ae00ff, 0px 0px 16px 7px #003cff;
+  box-shadow: 0px 0px 6px white, 0px 0px 12px #ae00ff, 0px 0px 16px 7px #003cff;
 }
 
 .main .inner .latest-projects .project-list div .item .img-container .category {
@@ -1164,7 +1157,7 @@ hr.rounded {
 .contact-details a:hover {
   text-decoration: none;
   border: 3px solid white;
-  box-shadow: 0px 0px 6px white, 0px 0px 8px #ae00ff, 0px 0px 8px 3px #003cff;
+  box-shadow: 0px 0px 6px white, 0px 0px 8px #ae00ff, 0px 0px 8px 3px #003cff;
 }
 
 .contact-social {
@@ -1193,7 +1186,7 @@ hr.rounded {
   top: 0;
   transition: 0.5s ease;
   border: 3px solid white;
-  box-shadow: 0px 0px 6px white, 0px 0px 8px #ae00ff, 0px 0px 8px 3px #003cff;
+  box-shadow: 0px 0px 6px white, 0px 0px 8px #ae00ff, 0px 0px 8px 3px #003cff;
   width: 75px;
   height: 75px;
   border-radius: 50%;
@@ -1207,7 +1200,7 @@ hr.rounded {
 
 .contact-social .social-logos a:hover {
   border: 3px solid white;
-  box-shadow: 0px 0px 6px white, 0px 0px 12px #ae00ff, 0px 0px 16px 7px #003cff;
+  box-shadow: 0px 0px 6px white, 0px 0px 12px #ae00ff, 0px 0px 16px 7px #003cff;
 }
 
 .contact-social .social-logos a span {
@@ -1348,20 +1341,85 @@ hr.rounded {
   flex-wrap: wrap;
 }
 
-.main .codingexamples-inner h1 {
-  margin-bottom: 20px;
+.main .coding-examples-inner .content-container {
+  padding-top: 20px;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
-.main .codingexamples-inner h2 {
+.main .coding-examples-inner .content-container .container-description .article-header {
+  padding: 0px 0px 15px 0px;
+}
+
+.main .coding-examples-inner .content-container .container-description p {
   margin-bottom: 15px;
 }
 
-.main .codingexamples-inner p {
-  padding-bottom: 15px;
+.main .coding-examples-inner .content-container .container-description .btn {
+  margin-bottom: 15px;
 }
 
-.main .codingexamples-inner .contact-social {
-  margin: 15px 0;
+.main .coding-examples-inner .content-container .code-example-box {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: all 0.3s;
+  max-height: 0px;
+  background-color: #150b21;
+  border-radius: 10px;
+  box-shadow: inset 0px 1px 7px 2px #2a1b2dc7;
+  padding: 0;
+}
+
+.main .coding-examples-inner .content-container .code-example-box .btn {
+  display: inline-block;
+}
+
+.main .coding-examples-inner .content-container .code-example-box .block {
+  padding: 12px;
+}
+
+.main .coding-examples-inner .content-container .code-example-box .block h2 {
+  padding: 10px 0px 15px 0px;
+}
+
+.main .coding-examples-inner .content-container .code-example-box .block p {
+  padding-bottom: 10px;
+}
+
+.main .coding-examples-inner .content-container .code-example-box .block img {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+@media (min-width: 992px) {
+  .main .coding-examples-inner .content-container .code-example-box .block img {
+    height: 50%;
+    width: 50%;
+  }
+}
+
+.main .coding-examples-inner .content-container .code-example-box .block .code-github {
+  overflow: visible;
+  background-color: white;
+}
+
+.main .coding-examples-inner .content-container .code-example-box.code-block-open {
+  max-height: 2000px;
+  padding: 20px 7px;
+  transition: max-height 0.75s, padding .5s;
+}
+
+@media (min-width: 768px) {
+  .main .coding-examples-inner .content-container .code-example-box.code-block-open {
+    padding: 20px 60px;
+  }
+}
+
+.main .coding-examples-inner .contact-social .social-logos {
+  width: 100%;
 }
 
 .main .inner .scs-container .netmatters-text ul {
@@ -1423,7 +1481,7 @@ hr.rounded {
   height: 200px;
   object-fit: fill;
   border: 3px solid white;
-  box-shadow: 0px 0px 6px white, 0px 0px 8px #ae00ff, 0px 0px 8px 3px #003cff;
+  box-shadow: 0px 0px 6px white, 0px 0px 8px #ae00ff, 0px 0px 8px 3px #003cff;
 }
 
 @media (min-width: 768px) {

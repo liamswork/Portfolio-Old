@@ -1,16 +1,78 @@
+
 .main{
-    .codingexamples-inner{
-        h1{
-            margin-bottom: 20px;
+    .coding-examples-inner{
+        .content-container{
+            padding-top:20px;
+            text-align: center;
+            margin-bottom:50px;
+            .container-description{
+                .article-header{
+                    padding:0px 0px 15px 0px;
+                }
+                p{
+                    margin-bottom:15px;
+                }
+                .btn{
+                    margin-bottom: 15px;
+                }
+            }
+            .code-example-box{
+                display:flex;
+                flex-direction: column;
+                overflow:hidden;
+                transition:all 0.3s;
+                max-height:0px;
+                background-color: darken($color-secondary, 3%);
+                border-radius: 10px;
+                box-shadow: inset 0px 1px 7px 2px #2a1b2dc7;
+                padding:0;
+                //close button
+                .btn{
+                    display:inline-block;
+                }
+                .block{
+                    padding:12px;
+                    h2{
+                        padding:10px 0px 15px 0px;
+                    }
+                    p{
+                        padding-bottom: 10px;
+                    }
+                    img{
+                        position: relative;
+                        height:100%;
+                        width:100%;
+                        object-fit: contain;
+                        @media(min-width:992px){
+                        height:50%;
+                        width:50%;
+                        }
+                    }
+                    //TYPES OF CODE EXAMPLE
+                    .code-github{
+                        overflow:visible;
+                        background-color: white;
+                    }
+                    .code-image{
+    
+                    }
+                }
+            }
+            .code-example-box.code-block-open{
+                max-height:2000px;
+                padding:20px 7px;
+                transition:max-height 0.75s, padding .5s;
+                @media(min-width:768px){
+                    padding:20px 60px;
+                }
+            }
+
         }
-        h2{
-            margin-bottom: 15px;
-        }
-        p{
-            padding-bottom: 15px;
-        }
+        //Social media icons flexbox behaviour specific for this page.
         .contact-social{
-            margin:15px 0;
+            .social-logos{
+                width:100%;
+            }
         }
     }
 }
