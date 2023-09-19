@@ -8,16 +8,16 @@
                 .category{
                     color:white;
                     background-color: $color;
-                    border-color: $color;
+
                     span{
                         color:$color;
                     }
                 }
-
-                .btn-#{$class}{
-                    color:white;
-                    background-color: $color;
-                    border-color: $color;
+                p.#{$class}{
+                    span{
+                        color:white;
+                        background-color: $color;
+                    }
                 }
             }
         }
@@ -26,7 +26,6 @@
             a.#{$class}{
                 color:#fff;
                 &:hover{
-
                     background-color: #fff;
                     span{
                         color:$color;
