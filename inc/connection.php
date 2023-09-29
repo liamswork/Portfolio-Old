@@ -8,13 +8,12 @@
 */
 
 try{
-  //Local DB connection, will need table name changing.
-  $db = new PDO("mysql:host=localhost;dbname=articles", 'root', '');
   //Live DB connection
-  $db = new PDO("mysql:host=localhost;dbname=liamwyli_portfolioc", 'liamwyli_liamwylie', '%[qIxUJg1]f{');
+  $db = new PDO("mysql:host=localhost;dbname=liamwyli_portfolio", 'root', '');
   //Give exception handling capability
   $db->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 } catch (Exception $e) {
-  echo "Unable to connect to latest news database. <br> <br>";
+  echo "Unable to connect to enquiry database. <br> <br>";
+  echo $e->getMessage();
 }
 

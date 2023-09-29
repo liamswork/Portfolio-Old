@@ -1,11 +1,18 @@
-function validateForm(){
+const submitButton = document.getElementById('formsubmit');
+
+if(submitButton){
+    submitButton.addEventListener('click', function(event) {
+        validateForm(event);
+    });
+}
+
+
+function validateForm(event){
     //Declare regex patterns. Has a built in .test() function where you pass it a piece of text.
     let emailPattern = /^((?:(?:(?:[a-zA-Z0-9][\.\-\+_]?)*)[a-zA-Z0-9])+)\@((?:(?:(?:[a-zA-Z0-9][\.\-_]?){0,62})[a-zA-Z0-9])+)\.([a-zA-Z0-9]{2,6})$/;
     let namePattern = /^[a-zA-Z]+(([\'\,\.\- ][a-zA-Z ])?[a-zA-Z]*)*$/
     let phonePattern = /^(((\+44\s?|0044\s?)?|(\(?0))((2[03489]\)?\s?\d{4}\s?\d{4})|(1[23456789]1\)?\s?\d{3}\s?\d{4})|(1[23456789][234578][0234679]\)?\s?\d{6})|(1[2579][0245][0467]\)?\s?\d{5})|(11[345678]\)?\s?\d{3}\s?\d{4})|(1[35679][234689]\s?[46789][234567]\)?\s?\d{4,5})|([389]\d{2}\s?\d{3}\s?\d{4})|([57][0-9]\s?\d{4}\s?\d{4})|(500\s?\d{6})|(7[456789]\d{2}\s?\d{6})))$/
     
-    //Prevent page refresh and clear console for clarity.
-    event.preventDefault();
     //console.clear();
     //console.log("Validating...");
 
@@ -13,7 +20,7 @@ function validateForm(){
     const $fName = $('.contact-form #fname');
     const $lName = $('.contact-form #lname');
     const $email = $('.contact-form #email');
-    const $phone = $('.contact-form #phone');
+    const $phone = $('.contact-form #telephone');
     const $message = $('.contact-form #message');
 
     //Reference to contact form. Used to append additional error messages.
@@ -50,6 +57,8 @@ function validateForm(){
             }
             //Add Error border
             inputBoxArray[i].css("border", "3px solid red");
+            //Prevent form submission
+            event.preventDefault();
         }else{
             //Remove error border
             inputBoxArray[i].css("border", "none");
@@ -65,6 +74,8 @@ function validateForm(){
         }
         //Add Error border
         $fName.css("border", "3px solid red");
+        //Prevent form submission
+        event.preventDefault();
     } else {
         //Remove error border
         $fName.css("border", "none");
@@ -79,6 +90,8 @@ function validateForm(){
         }
         //Add Error border
         $lName.css("border", "3px solid red");
+        //Prevent form submission
+        event.preventDefault();
     } else {
         //Remove error border
         $lName.css("border", "none");
@@ -91,6 +104,8 @@ function validateForm(){
         errorMessage = errorMessage.concat(", ", emailError);
         //Add error border
         $email.css("border", "3px solid red");
+        //Prevent form submission
+        event.preventDefault();
     } else {
         //Remove error border
         $email.css("border", "none");
@@ -103,6 +118,8 @@ function validateForm(){
         errorMessage = errorMessage.concat(", ", phoneError);
         //Add error border
         $phone.css("border", "3px solid red");
+        //Prevent form submission
+        event.preventDefault();
     } else {
         //Remove error border
         $phone.css("border", "none");

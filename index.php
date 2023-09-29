@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-
+<?php include 'inc/form-process.php';?>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -280,24 +280,40 @@
                 <div class="contact-form col-lg-6 col-md-6">
                   <div class="container">
                     <h1 class="article-header">Contact me:</h1>
-                    <form action="#">
+                    <form id="contact-form" method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
                       <label class="hidden" for="fname">First Name</label>
-                      <input type="text" class="form-control" id="fname" name="firstname" placeholder="Your name..">
+                      <input type="text" class="form-control <?php if($fnameErr){echo "has-error";}?>" id="fname" name="fname" placeholder="First Name..." value="<?php if($fname){echo $fname;}?>">
                   
                       <label class="hidden" for="lname">Last Name</label>
-                      <input type="text" class="form-control" id="lname" name="lastname" placeholder="Your last name..">
+                      <input type="text" class="form-control <?php if($lnameErr){echo "has-error";}?>" id="lname" name="lname" placeholder="Last Name..." value="<?php if($lname){echo $lname;}?>">
 
                       <label class="hidden" for="email">Email</label>
-                      <input type="email" class="form-control" id="email" name="email" placeholder="Your email..">
+                      <input type="email" class="form-control <?php if($emailErr){echo "has-error";}?>" id="email" name="email" placeholder="Your Email..." value="<?php if($email){echo $email;}?>">
                   
-                      <label class="hidden" for="phone">Mobile</label>
-                      <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone...">
+                      <label class="hidden" for="telephone">Mobile</label>
+                      <input type="text" class="form-control <?php if($telephoneErr){echo "has-error";}?>" id="telephone" name="telephone" placeholder="Your Telephone..." value="<?php if($telephone){echo $telephone;}?>">
 
 
-                      <textarea id="message" class="form-control" name="message" placeholder="Write your message here.." style="height:200px"></textarea>
+                      <textarea id="message" class="form-control <?php if($messageErr){echo "has-error";}?>" name="message" placeholder="Write your message here.." style="height:200px"><?php if($message){echo $message;}?></textarea>
                   
-                      <input type="submit" class="btn" value="Submit" onclick="validateForm()">
-                      <h2> All form fields are required.</h2>
+                      <button href="#contact-form" id="formsubmit" name="submit" class="btn">Send Enquiry</button>
+                      <h3 class="<?php 
+                      if($success_message){
+                          echo "success";
+                        }else if($fnameErr || $lnameErr || $telephoneErr || $emailErr ){
+                          echo "error";
+                        }
+                        ?>">
+                        <!--Status message-->
+                        <?php 
+                      if($success_message){
+                        echo $success_message;
+                        } else if($fnameErr || $lnameErr || $telephoneErr || $emailErr ){
+                        echo $errorMessage;
+                        }else{
+                        echo "All form fields are required.";
+                        }?>
+                      </h2>
                     </form>
                   </div>
                 </div>
@@ -336,6 +352,7 @@
     <script src="js/typewrite.js"></script>
     <script src="js/app.js"></script>
     <script src="js/validation.js"></script>
+
 </body>
 
 </html>

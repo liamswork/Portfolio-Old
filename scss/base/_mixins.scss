@@ -1,40 +1,44 @@
 //Included in the bottom of this mixin file.
-@mixin service-colors($color-type: primary) {
-    $colors: map-get($color-themes, $color-type);
+@mixin service-colors {
+    $colors: map-get($color-themes, primary);
     
     @each $class, $color in $colors {
-        .project-list{
-            .#{$class}{
-                .category{
-                    color:white;
+        .project-list {
+            .#{$class} {
+                .category {
+                    color: white;
                     background-color: $color;
 
-                    span{
-                        color:$color;
+                    span {
+                        color: $color;
                     }
                 }
-                p.#{$class}{
-                    span{
-                        color:white;
+                p.#{$class} {
+                    span {
+                        color: white;
                         background-color: $color;
                     }
                 }
             }
         }
 
-        .contact-social .social-logos{
-            a.#{$class}{
-                color:#fff;
-                &:hover{
+        .contact-social .social-logos {
+            a.#{$class} {
+                color: #fff;
+                &:hover {
                     background-color: #fff;
-                    span{
-                        color:$color;
+                    span {
+                        color: $color;
                     }
                 }
             }
         }
     }
 }
+
+
+@include service-colors;
+
 
 //requires object to have top:0 to function correctly. This way, it resets when not hovered.
 @mixin levitate{
@@ -135,7 +139,7 @@
         }
     }
 }
-@include service-colors;
+
 
 @mixin languageIcon(){
     background-color: white;
